@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Afacad", system-ui;
+}
+
+.banner .container-fluid{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.banner-heding{
+top: 20px;
+text-align: start;
+left: 36px;
+}
+
+.banner h1 {
+  font-size: 25px;
+  font-weight: 500;
+}
+.banner h2 {
+  font-size: 23px;
+  font-weight: 700;
+} 
+
+.custome-tab-body {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s;
+}
+
+.custome-tab-body p {
+  color: black;
+}
+
+.book-btn{
+  background-color: #acff3b;
+  color: black;
+  width: 170px;
+  border-radius: 3px;
+}
+
+.book-btn:hover{
+  background-color: #acff3b;
+  color: black;
+  width: 170px;
+  border-radius: 3px;
+}
+
+.customNav-tabs {
+  border-width: 0px;
+}
+
+.customeNav-link{
+  color: black;
+  background-color: #acff3b;
+}
+
+.customeNav-link.active {
+  color: black; /* Text color for the active link */
+  background-color: #acff3b; /* Background color for the active link */
+}
+
+.delivery-text {
+  color: #acff3b;
+
+}
+
+
