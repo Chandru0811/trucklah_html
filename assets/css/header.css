@@ -45,18 +45,17 @@
   background-color: #333333;
   color: #acff3b;
   font-size: 16px;
-  font-weight: 500;
   font-family: "Afacad", system-ui;
-  padding-left: 0rem;
-  padding-right: 1rem;
+  padding: 2px 18px !important;
+  margin: 0 25px 0 10px;
 }
 
 .header .userlogin-button-large:hover {
   background-color: #333333;
   color: #acff3b;
   font-size: 16px;
-  font-weight: 500;
   font-family: "Afacad", system-ui;
+  padding: 2px 18px !important;
 }
 
 .header-logo {
@@ -69,13 +68,13 @@
 
 .header-menu a {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 20px;
   font-family: "Afacad", system-ui;
 }
 
 .header-menu a:hover {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   font-family: "Afacad", system-ui;
 }
 
@@ -101,7 +100,7 @@
 
 @media screen and (max-width: 380px) and (min-width: 320px) {
   .header-logo {
-    max-width: 150px;
+    max-width: 120px;
   }
   .navbar-toggler .button {
     max-width: 150px;
