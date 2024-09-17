@@ -45,7 +45,502 @@
     />
   </head>
   <body>
-    <h1>Trucklah</h1>
+    <!-- Header -->
+    <section class="headerSection" >
+      <nav id="NavBar" class="navbar mainNav navbar-expand-xl header">
+        <div
+          class="container-fluid d-flex justify-content-between align-items-center"
+        >
+          <img
+            src="assets/images/header/logo.png"
+            alt="header-logo"
+            class="img-fluid header-logo text-start"
+            width="160"
+          />
+          <div class="d-flex align-items-center mb-1">
+            <span
+              class="navbar-text d-xl-none align-items-center justify-content-end login-button"
+            >
+              <button
+                class="btn btn-button userlogin-button dotted-border d-flex justify-content-center align-items-center"
+                type="submit"
+              >
+                <i class="fa-solid fa-user me-2"></i>
+                Login
+              </button>
+            </span>
+            &nbsp;&nbsp;&nbsp;
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarText">
+            <!-- Collapsed View (Small Screens) -->
+            <ul
+              class="navbar-nav mx-auto lg-0 d-xl-none d-flex pt-2"
+              id="default-search"
+            >
+              <li class="nav-item header-menu">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Business</a
+                >
+              </li>
+              <li class="nav-item header-menu">
+                <a class="nav-link" href="#">Individuals</a>
+              </li>
+              <li class="nav-item header-menu">
+                <a class="nav-link" href="#">Drivers</a>
+              </li>
+            </ul>
+
+            <!-- Expanded View (Large Screens) -->
+            <div class="ms-auto d-none d-xl-flex align-items-center">
+              <ul class="navbar-nav flex-row gap-4">
+                <li class="nav-item header-menu">
+                  <a class="nav-link" aria-current="page" href="#">Business</a>
+                </li>
+                <li class="nav-item header-menu">
+                  <a class="nav-link" href="#">Individuals</a>
+                </li>
+                <li class="nav-item header-menu">
+                  <a class="nav-link" href="#">Drivers</a>
+                </li>
+              </ul>
+              <span
+                class="navbar-text d-none d-xl-inline align-items-center justify-content-end login-button"
+              >
+                <button
+                  class="btn btn-button login-button userlogin-button-large py-2 px-4 dotted-border d-flex justify-content-center align-items-center ms-3"
+                  type="submit"
+                >
+                  <i class="fa-solid fa-user me-2"></i>
+                  Login
+                </button>
+              </span>
+              &nbsp;&nbsp;
+            </div>
+            &nbsp;&nbsp;
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- Header End  -->
+
+    <!-- Hero Section Start  -->
+    <section class="banner" >
+      <div class="container-fluid">
+        <div class="banner_section">
+          <div class="owl-carousel carousel_slider">
+            <div class="item">
+              <img
+                src="./assets/images/banner_image_1.png"
+                alt="slider_image1"
+                class="img-fluid banner_image"
+              />
+            </div>
+            <div class="item">
+              <img
+                src="./assets/images/banner_image_1.png"
+                alt="slider_image2"
+                class="img-fluid banner_image"
+              />
+            </div>
+            <div class="item">
+              <img
+                src="./assets/images/banner_image_1.png"
+                alt="slider_image3"
+                class="img-fluid banner_image"
+              />
+            </div>
+            <div class="item">
+              <img
+                src="./assets/images/banner_image_1.png"
+                alt="slider_image4"
+                class="img-fluid banner_image"
+              />
+            </div>
+          </div>
+          <div class="row m-0 bannerTabs ps-5 mt-5">
+            <div class="col-9 mb-3">
+              <div class="banner-heding text-align-start mb-5">
+                <h1>Trucklah Moving Made Easy</h1>
+                <p class="display-3 delivery-text1" style="font-weight: 700px">
+                  AFFORDABLE, SAFE & FAST
+                  <span class="delivery-text">DELIVERY</span>
+                </p>
+                <h2>Courier & Delivery Services Singapore</h2>
+              </div>
+            </div>
+
+            <div class="col-8 mb-3">
+              <ul
+                class="nav ps-5 nav-tabs customNav-tabs"
+                id="myTab"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link customeNav-link mb-2 h-100 ps-5 pe-5"
+                    style="border-top-right-radius: 0px"
+                    id="item_moving-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#item_moving"
+                    type="button"
+                    role="tab"
+                    aria-controls="item_moving"
+                    aria-selected="true"
+                  >
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-between"
+                    >
+                      <img
+                        src="./assets/images/item_moving.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <p style="font-weight: 700">Item Moving</p>
+                    </div>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link customeNav-link mb-2 h-100 ps-5 pe-5"
+                    style="border-radius: 0px"
+                    id="moving_package-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#moving_package"
+                    type="button"
+                    role="tab"
+                    aria-controls="moving_package"
+                    aria-selected="false"
+                  >
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-between"
+                    >
+                      <img
+                        src="./assets/images/moving_package.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <p style="font-weight: 700">Moving Package</p>
+                    </div>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link customeNav-link mb-2 h-100 ps-5 pe-5"
+                    style="border-top-left-radius: 0px"
+                    id="cross_broder-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#cross_broder"
+                    type="button"
+                    role="tab"
+                    aria-controls="cross_broder"
+                    aria-selected="false"
+                  >
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-between"
+                    >
+                      <img
+                        src="./assets/images/cross_broder.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <p style="font-weight: 700">Cross-Border</p>
+                    </div>
+                  </button>
+                </li>
+              </ul>
+              <div
+                class="tab-content rounded custome-tab-body"
+                id="myTabContent"
+              >
+                <!-- Item Moving Tab -->
+                <div
+                  class="tab-pane sub-tabs fade show active"
+                  id="item_moving"
+                  role="tabpanel"
+                  aria-labelledby="item_moving-tab"
+                >
+                  <div class="row p-4">
+                    <div class="col-md-9 col-12">
+                      <p style="color: white">
+                        Lorem ipsum dolor sit amet consectetur. Aliquam nibh
+                        quam vivamus ultricies semper sed gravida dictumst nunc.
+                        Ut ac luctus facilisis ipsum mauris.
+                        <span style="color: #acff3b">View More</span>
+                      </p>
+                    </div>
+                    <div class="col-md-3 col-12">
+                      <button
+                        class="btn book-btn fw-bold d-flex justify-content-center align-items-center"
+                      >
+                        Book Now <i class="fa-solid fa-arrow-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Moving Package Tab -->
+                <div
+                  class="tab-pane sub-tabs fade"
+                  id="moving_package"
+                  role="tabpanel"
+                  aria-labelledby="moving_package"
+                >
+                  <div class="row p-4">
+                    <div class="col-md-9 col-12">
+                      <p style="color: white">
+                        Lorem ipsum dolor sit amet consectetur. Aliquam nibh
+                        quam vivamus ultricies semper sed gravida dictumst nunc.
+                        Ut ac luctus facilisis ipsum mauris.
+                        <span style="color: #acff3b">View More</span>
+                      </p>
+                    </div>
+                    <div class="col-md-3 col-12">
+                      <button
+                        class="btn book-btn fw-bold d-flex justify-content-center align-items-center"
+                      >
+                        Book Now <i class="fa-solid fa-arrow-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Cross Border Tab -->
+                <div
+                  class="tab-pane sub-tabs fade"
+                  id="cross_broder"
+                  role="tabpanel"
+                  aria-labelledby="cross_broder-tab"
+                >
+                  <div class="row p-4">
+                    <div class="col-md-9 col-12">
+                      <p style="color: white">
+                        Lorem ipsum dolor sit amet consectetur. Aliquam nibh
+                        quam vivamus ultricies semper sed gravida dictumst nunc.
+                        Ut ac luctus facilisis ipsum mauris.
+                        <span style="color: #acff3b">View More</span>
+                      </p>
+                    </div>
+                    <div class="col-md-3 col-12">
+                      <button
+                        class="btn book-btn fw-bold d-flex justify-content-center align-items-center"
+                      >
+                        Book Now <i class="fa-solid fa-arrow-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="d-flex justify-content-center">
+              <i class="fa-solid fa-arrow-right"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+              <i class="fa-light fa-square-chevron-left"></i>
+              <i class="fa-light fa-square-chevron-right"></i>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End  -->
+
+    <!-- Footer Start -->
+    <section class="footer">
+      <div class="connect">
+        <div class="row m-0">
+          <div class="col-md-5 col-12">
+            <div class="d-flex justify-content-center align-items-center px-5">
+              <h3 class="conect_heading display-5 fw-bold pt-5">
+                Let’s Connect with us! Discuss for grow ...
+              </h3>
+            </div>
+          </div>
+          <div class="col-md-7 col-12">
+            <form>
+              <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 col-12 input-colum">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Name"
+                    class="form-control footer-form"
+                  />
+                </div>
+                <div class="col-lg-6 col-12 input-colum">
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Email Id"
+                    class="form-control footer-form"
+                  />
+                </div>
+                <div class="col-lg-6 col-12 input-colum">
+                  <input
+                    type="text"
+                    id="phone"
+                    name="phone"
+                    placeholder="Phone Number"
+                    class="form-control footer-form"
+                  />
+                </div>
+                <div class="col-lg-6 col-12 input-colum">
+                  <input
+                    type="text"
+                    id="country"
+                    name="country"
+                    placeholder="Country"
+                    class="form-control footer-form"
+                  />
+                </div>
+                <div class="col-12">
+                  <input
+                    type="text"
+                    id="message"
+                    name="message"
+                    placeholder="Message"
+                    class="form-control footer-form"
+                  />
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn footer-btn">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      <div class="container">
+        <div class="row m-0">
+          <div class="col-md-3 text-start">
+            <h6 class="footer-title">Location</h6>
+            <div class="footer-links">
+              <div class="links">
+                <a
+                  href="#"
+                  class="text-decoration-none"
+                  style="font-size: 16px; color: rgba(51, 51, 51, 1)"
+                >
+                  <i class="fa-solid fa-location-dot me-2"></i>
+                  The Alexcier, 237 Alexandra Road, #04-10</a
+                >
+              </div>
+              <div class="links">
+                <a
+                  href="#"
+                  class="text-decoration-none"
+                  style="font-size: 16px; color: rgba(51, 51, 51, 1)"
+                >
+                  <i class="fa-regular fa-envelope me-2"></i
+                  >info@trucklah.com</a
+                >
+              </div>
+              <div class="links">
+                <a
+                  href="#"
+                  class="text-decoration-none"
+                  style="font-size: 16px; color: rgba(51, 51, 51, 1)"
+                >
+                  <i class="fa-solid fa-phone me-2"></i>
+                  +65 8894 1306</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 text-start">
+            <h6 class="footer-title">Help</h6>
+            <div class="footer-links">
+              <div class="links2">Register</div>
+              <div class="links2">Login</div>
+              <div class="links2">Terms & condition</div>
+              <div class="links2">Privacy Policy</div>
+            </div>
+          </div>
+          <div class="col-md-3 text-start">
+            <h6 class="footer-title" style="white-space: nowrap">
+              Our Services
+            </h6>
+            <div class="footer-links">
+              <div class="links2">Online Truck</div>
+              <div class="links2">Booking</div>
+              <div class="links2">Packers & Movers</div>
+              <div class="links2">Logistics Services</div>
+            </div>
+          </div>
+          <div class="col-md-3 text-start d-flex justify-content-center">
+            <ul
+              class="list-unstyled line-divider d-flex justify-content-center align-items-center"
+            >
+              <li>
+                <a href="#" class="text-decoration-none me-2">
+                  <i
+                    class="fab fa-facebook"
+                    style="font-size: 20px; color: rgba(51, 51, 51, 1)"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none me-2">
+                  <i
+                    class="fab fa-instagram"
+                    style="font-size: 20px; color: rgba(51, 51, 51, 1)"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none me-2">
+                  <i
+                    class="fab fa-linkedin"
+                    style="font-size: 20px; color: rgba(51, 51, 51, 1)"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none me-2">
+                  <i
+                    class="fab fa-youtube"
+                    style="font-size: 20px; color: rgba(51, 51, 51, 1)"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none me-2">
+                  <i
+                    class="fab fa-tiktok"
+                    style="font-size: 20px; color: rgba(51, 51, 51, 1)"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none">
+                  <i
+                    class="fab fa-x-twitter"
+                    style="font-size: 20px; color: rgba(51, 51, 51, 1)"
+                  ></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer End  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
