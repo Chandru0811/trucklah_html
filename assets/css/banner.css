@@ -10,6 +10,12 @@
   padding-right: 0px !important;
 }
 
+.banner_section {
+  background-image: url("../images/banner_image_1.png");
+  background-repeat: no-repeat;
+  padding: 10px 10px 80px;
+}
+
 .banner h1 {
   font-size: 25px;
   font-weight: 500;
@@ -21,15 +27,10 @@
   color: white;
 }
 
-.bannerTabs {
-  position: absolute;
-  top: 0;
-  z-index: 999;
-}
-
 .custome-tab-body {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 0.3s;
+  border-radius: 10px;
 }
 
 .custome-tab-body p {
@@ -39,41 +40,40 @@
 .book-btn {
   background-color: #acff3b;
   color: black;
-  width: 170px;
+  padding: 3px 20px;
   border-radius: 3px;
 }
 
 .book-btn:hover {
   background-color: #acff3b;
   color: black;
-  width: 170px;
+  padding: 3px 20px;
   border-radius: 3px;
 }
 
 .customeNav-link:hover {
-  color: #000; 
-  background-color: #acff3b; 
+  color: #000;
+  background-color: #acff3b;
 }
 
 /* Change active color for nav links */
 .customNav-tabs.active {
-  color: #000000; 
-  background-color: #95f70d; 
+  color: #000000;
+  background-color: #95f70d;
 }
 
 /* Change hover color for nav-tabs */
 .customeNav-link :hover {
-  color: #000000; 
-  background-color: #acff3b; 
+  color: #000000;
+  background-color: #acff3b;
 }
 
 /* Change active color for nav-tabs */
 .customNav-tabs .nav-link.active {
-  color: #000000; 
-  background-color: #95f70d; 
-  border-color: #95f70d; 
+  color: #000000;
+  background-color: #95f70d;
+  border-color: #95f70d;
 }
-
 
 .customNav-tabs {
   border-width: 0px;
@@ -93,6 +93,6 @@
   color: transparent !important;
   -webkit-text-stroke: 0.3px #acff3b;
 }
-.delivery-text1{
+.delivery-text1 {
   color: white;
 }
