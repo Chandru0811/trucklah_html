@@ -5,25 +5,27 @@
   font-family: "Afacad", system-ui;
 }
 
-.banner .container-fluid{
+.banner .container-fluid {
   padding-left: 0px !important;
   padding-right: 0px !important;
-}
-
-.banner-heding{
-top: 20px;
-text-align: start;
-left: 36px;
 }
 
 .banner h1 {
   font-size: 25px;
   font-weight: 500;
+  color: white;
 }
 .banner h2 {
   font-size: 23px;
   font-weight: 700;
-} 
+  color: white;
+}
+
+.bannerTabs {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+}
 
 .custome-tab-body {
   background-color: rgba(255, 255, 255, 0.1);
@@ -34,37 +36,63 @@ left: 36px;
   color: black;
 }
 
-.book-btn{
+.book-btn {
   background-color: #acff3b;
   color: black;
   width: 170px;
   border-radius: 3px;
 }
 
-.book-btn:hover{
+.book-btn:hover {
   background-color: #acff3b;
   color: black;
   width: 170px;
   border-radius: 3px;
 }
+
+.customeNav-link:hover {
+  color: #000; 
+  background-color: #acff3b; 
+}
+
+/* Change active color for nav links */
+.customNav-tabs.active {
+  color: #000000; 
+  background-color: #95f70d; 
+}
+
+/* Change hover color for nav-tabs */
+.customeNav-link :hover {
+  color: #000000; 
+  background-color: #acff3b; 
+}
+
+/* Change active color for nav-tabs */
+.customNav-tabs .nav-link.active {
+  color: #000000; 
+  background-color: #95f70d; 
+  border-color: #95f70d; 
+}
+
 
 .customNav-tabs {
   border-width: 0px;
 }
 
-.customeNav-link{
+.customeNav-link {
   color: black;
   background-color: #acff3b;
 }
 
 .customeNav-link.active {
-  color: black; /* Text color for the active link */
-  background-color: #acff3b; /* Background color for the active link */
+  color: black;
+  background-color: #acff3b;
 }
 
 .delivery-text {
-  color: #acff3b;
-
+  color: transparent !important;
+  -webkit-text-stroke: 0.3px #acff3b;
 }
-
-
+.delivery-text1{
+  color: white;
+}

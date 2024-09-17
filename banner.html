@@ -48,237 +48,208 @@
     <section class="banner">
       <div class="container-fluid">
         <div class="banner_section">
-          <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
+          <div class="owl-carousel carousel_slider">
+            <div class="item">
+              <img
+                src="./assets/images/banner_image_1.png"
+                alt="slider_image1"
+                class="img-fluid banner_image"
+              />
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="./assets/images/banner_image_1.png"
-                  class="d-block w-100"
-                  alt="banner_image_1"
-                />
-                <div class="carousel-caption d-none d-md-block banner-heding">
-                  <div class="banner-heding text-align-start mb-5">
-                    <h1>Trucklah Moving Made Easy</h1>
-                    <p class="display-3">
-                      AFFORDABLE, SAFE & FAST
-                      <span class="delivery-text">DELIVERY</span>
-                    </p>
-                    <h2>Courier & Delivery Services Singapore</h2>
+            <div class="item">
+              <img
+                src="./assets/images/banner_image_1.png"
+                alt="slider_image2"
+                class="img-fluid banner_image"
+              />
+            </div>
+            <div class="item">
+              <img
+                src="./assets/images/banner_image_1.png"
+                alt="slider_image3"
+                class="img-fluid banner_image"
+              />
+            </div>
+            <div class="item">
+              <img
+                src="./assets/images/banner_image_1.png"
+                alt="slider_image4"
+                class="img-fluid banner_image"
+              />
+            </div>
+          </div>
+          <div class="row m-0 bannerTabs ps-5 mt-5">
+            <div class="col-9 mb-3">
+              <div class="banner-heding text-align-start mb-5">
+                <h1>Trucklah Moving Made Easy</h1>
+                <p class="display-3 delivery-text1" style="font-weight: 700px;">
+                  AFFORDABLE, SAFE & FAST
+                  <span class="delivery-text">DELIVERY</span>
+                </p>
+                <h2>Courier & Delivery Services Singapore</h2>
+              </div>
+            </div>
+          
+            <div class="col-8 mb-3">
+              <ul
+                class="nav ps-5 nav-tabs customNav-tabs"
+                id="myTab"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link customeNav-link mb-2 h-100 ps-5 pe-5"
+                    style="border-top-right-radius: 0px"
+                    id="item_moving-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#item_moving"
+                    type="button"
+                    role="tab"
+                    aria-controls="item_moving"
+                    aria-selected="true"
+                  >
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-between"
+                    >
+                      <img
+                        src="./assets/images/item_moving.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <p style="font-weight: 700">Item Moving</p>
+                    </div>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link customeNav-link mb-2 h-100 ps-5 pe-5"
+                    style="border-radius: 0px"
+                    id="moving_package-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#moving_package"
+                    type="button"
+                    role="tab"
+                    aria-controls="moving_package"
+                    aria-selected="false"
+                  >
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-between"
+                    >
+                      <img
+                        src="./assets/images/moving_package.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <p style="font-weight: 700">Moving Package</p>
+                    </div>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link customeNav-link mb-2 h-100 ps-5 pe-5"
+                    style="border-top-left-radius: 0px"
+                    id="cross_broder-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#cross_broder"
+                    type="button"
+                    role="tab"
+                    aria-controls="cross_broder"
+                    aria-selected="false"
+                  >
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-between"
+                    >
+                      <img
+                        src="./assets/images/cross_broder.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <p style="font-weight: 700">Cross-Border</p>
+                    </div>
+                  </button>
+                </li>
+              </ul>
+              <div
+                class="tab-content rounded custome-tab-body"
+                id="myTabContent"
+              >
+                <!-- Item Moving Tab -->
+                <div
+                  class="tab-pane sub-tabs fade show active"
+                  id="item_moving"
+                  role="tabpanel"
+                  aria-labelledby="item_moving-tab"
+                >
+                  <div class="row p-4">
+                    <div class="col-md-9 col-12">
+                      <p style="color: white">
+                        Lorem ipsum dolor sit amet consectetur. Aliquam nibh
+                        quam vivamus ultricies semper sed gravida dictumst nunc.
+                        Ut ac luctus facilisis ipsum mauris.
+                        <span style="color: #acff3b">View More</span>
+                      </p>
+                    </div>
+                    <div class="col-md-3 col-12">
+                      <button class="btn book-btn fw-bold d-flex justify-content-center align-items-center">
+                        Book Now <i class="fa-solid fa-arrow-right"></i>
+                      </button>
+                    </div>
                   </div>
-                  <div class="row">
-                    <div class="col-md-9 col-12 bammerTabs">
-                      <!-- Tabs navigation -->
-                      <ul
-                        class="nav ps-5 nav-tabs customNav-tabs"
-                        id="myTab"
-                        role="tablist"
-                      >
-                        <li class="nav-item" role="presentation">
-                          <button
-                            class="nav-link customeNav-link mb-2"
-                            id="item_moving-tab"
-                            data-bs-toggle="tab"
-                            data-bs-target="#item_moving"
-                            type="button"
-                            role="tab"
-                            aria-controls="item_moving"
-                            aria-selected="true"
-                          >
-                            <div
-                              class="d-flex flex-column align-items-center justify-content-between"
-                            >
-                              <img
-                                src="./assets/images/item_moving.png"
-                                alt=""
-                                class="img-fluid"
-                              />
-                              <p style="font-weight: 700;">Item Moving</p>
-                            </div>
-                          </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button
-                            class="nav-link customeNav-link mb-2"
-                            id="moving_package-tab"
-                            data-bs-toggle="tab"
-                            data-bs-target="#moving_package"
-                            type="button"
-                            role="tab"
-                            aria-controls="moving_package"
-                            aria-selected="false"
-                          >
-                            <div
-                              class="d-flex flex-column align-items-center justify-content-between"
-                            >
-                              <img
-                                src="./assets/images/moving_package.png"
-                                alt=""
-                                class="img-fluid"
-                              />
-                              <p style="font-weight: 700;">Moving Package</p>
-                            </div>
-                          </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button
-                            class="nav-link customeNav-link mb-2"
-                            id="cross_broder-tab"
-                            data-bs-toggle="tab"
-                            data-bs-target="#cross_broder"
-                            type="button"
-                            role="tab"
-                            aria-controls="cross_broder"
-                            aria-selected="false"
-                          >
-                            <div
-                              class="d-flex flex-column align-items-center justify-content-between"
-                            >
-                              <img
-                                src="./assets/images/cross_broder.png"
-                                alt=""
-                                class="img-fluid"
-                              />
-                              <p style="font-weight: 700;">Cross-Border</p>
-                            </div>
-                          </button>
-                        </li>
-                      </ul>
-
-                      <!-- Tab content -->
-                      <div
-                        class="tab-content rounded custome-tab-body"
-                        id="myTabContent"
-                        
-                      >
-                        <!-- Overview Tab -->
-                        <div
-                          class="tab-pane sub-tabs fade show active"
-                          id="item_moving"
-                          role="tabpanel"
-                          aria-labelledby="item_moving-tab"
-                        >
-                          <div class="row p-4">
-                            <div class="col-md-9 col-12">
-                              <p style="color: white">
-                                Lorem ipsum dolor sit amet consectetur. Aliquam
-                                nibh quam vivamus ultricies semper sed gravida
-                                dictumst nunc. Ut ac luctus facilisis ipsum
-                                mauris.
-                                <span style="color: #acff3b">View More</span>
-                              </p>
-                            </div>
-                            <div class="col-md-3 col-12">
-                              <button class="btn book-btn fw-bold">
-                                Book Now <i class=""></i>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Photos Tab -->
-                        <div
-                          class="tab-pane sub-tabs fade"
-                          id="moving_package"
-                          role="tabpanel"
-                          aria-labelledby="moving_package"
-                        >
-                          <div class="row p-4">
-                            <div class="col-md-9 col-12">
-                              <p style="color: white">
-                                Lorem ipsum dolor sit amet consectetur. Aliquam
-                                nibh quam vivamus ultricies semper sed gravida
-                                dictumst nunc. Ut ac luctus facilisis ipsum
-                                mauris.
-                                <span style="color: #acff3b">View More</span>
-                              </p>
-                            </div>
-                            <div class="col-md-3 col-12">
-                              <button class="btn book-btn fw-bold">
-                                Book Now <i class=""></i>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Quick Info Tab -->
-                        <div
-                          class="tab-pane sub-tabs fade"
-                          id="cross_broder"
-                          role="tabpanel"
-                          aria-labelledby="cross_broder-tab"
-                        >
-                          <div class="row p-4">
-                            <div class="col-md-9 col-12">
-                              <p style="color: white">
-                                Lorem ipsum dolor sit amet consectetur. Aliquam
-                                nibh quam vivamus ultricies semper sed gravida
-                                dictumst nunc. Ut ac luctus facilisis ipsum
-                                mauris.
-                                <span style="color: #acff3b">View More</span>
-                              </p>
-                            </div>
-                            <div class="col-md-3 col-12">
-                              <button class="btn book-btn fw-bold">
-                                Book Now <i class=""></i>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                </div>
+                <!-- Moving Package Tab -->
+                <div
+                  class="tab-pane sub-tabs fade"
+                  id="moving_package"
+                  role="tabpanel"
+                  aria-labelledby="moving_package"
+                >
+                  <div class="row p-4">
+                    <div class="col-md-9 col-12">
+                      <p style="color: white">
+                        Lorem ipsum dolor sit amet consectetur. Aliquam nibh
+                        quam vivamus ultricies semper sed gravida dictumst nunc.
+                        Ut ac luctus facilisis ipsum mauris.
+                        <span style="color: #acff3b">View More</span>
+                      </p>
+                    </div>
+                    <div class="col-md-3 col-12">
+                      <button class="btn book-btn fw-bold d-flex justify-content-center align-items-center">
+                        Book Now <i class="fa-solid fa-arrow-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Cross Border Tab -->
+                <div
+                  class="tab-pane sub-tabs fade"
+                  id="cross_broder"
+                  role="tabpanel"
+                  aria-labelledby="cross_broder-tab"
+                >
+                  <div class="row p-4">
+                    <div class="col-md-9 col-12">
+                      <p style="color: white">
+                        Lorem ipsum dolor sit amet consectetur. Aliquam nibh
+                        quam vivamus ultricies semper sed gravida dictumst nunc.
+                        Ut ac luctus facilisis ipsum mauris.
+                        <span style="color: #acff3b">View More</span>
+                      </p>
+                    </div>
+                    <div class="col-md-3 col-12">
+                      <button class="btn book-btn fw-bold d-flex justify-content-center align-items-center">
+                        Book Now <i class="fa-solid fa-arrow-right"></i>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="carousel-item">
-                <img
-                  src="./assets/images/banner_image_1.png"
-                  class="d-block w-100"
-                  alt="banner_image_1"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>
-                    Some representative placeholder content for the second
-                    slide.
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./assets/images/banner_image_1.png"
-                  class="d-block w-100"
-                  alt="banner_image_1"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>
-                    Some representative placeholder content for the third slide.
-                  </p>
-                </div>
-              </div>
             </div>
+            <!-- <div class="d-flex justify-content-center">
+              <i class="fa-solid fa-arrow-right"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+              <i class="fa-light fa-square-chevron-left"></i>
+              <i class="fa-light fa-square-chevron-right"></i>
+            </div> -->
           </div>
         </div>
       </div>
