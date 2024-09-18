@@ -12,6 +12,7 @@
 
 .banner_section {
   background-image: url("../images/banner_image_1.png");
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 10px 10px 80px;
 }
@@ -34,7 +35,9 @@
 }
 
 .custome-tab-body p {
-  color: black;
+  color: #ffffff !important;
+  font-size: 20px !important;
+  font-weight: 500 !important;
 }
 
 .book-btn {
