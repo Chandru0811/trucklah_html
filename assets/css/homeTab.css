@@ -27,14 +27,15 @@
 
 @media screen and (max-width: 626px) {
   .homeSection-2_tab {
-   display: block;
+    display: block;
   }
 }
 
 .homeSection-2 .nav-pills .nav-link.active {
   background-color: black;
   color: #acff3b;
-  /* text-decoration: underline; */
+  border-bottom: 2px dotted #acff3b;
+  border-radius: 0px;
 }
 
 .homeSection-2 .nav-pills .nav-link {
