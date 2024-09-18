@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Afacad", system-ui;
 }
 .frequently_content {
   background: url(../images/accortion_bg_img.jpg);
@@ -18,6 +19,14 @@
   line-height: 96px;
   text-align: left;
 }
+.bg_frequently {
+  background-image: url(../images/freqently_bg_img.jpg);
+  background-repeat: no-repeat;
+  height: 40vh;
+  background-position: bottom;
+  background-size: contain;
+}
+
 .toggler_accordion .accordion-item {
   border: none;
   border-bottom: 1px solid lightgray;
