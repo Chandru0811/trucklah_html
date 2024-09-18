@@ -2,66 +2,47 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Afacad", system-ui;
 }
 /* troubled_content */
 .troubled_content {
-  background: url(../images/troubled_bg_img.jpg);
+  background: url(../images/troubled_bg_img.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 400px;
-  width: 100% !important;
+  background-size: contain;
+  background-position: bottom;
 }
+
 .call_us {
   background: #acff3b !important;
   color: #333333;
   font-weight: bolder !important;
-  padding: 5px 40px !important;
+  padding: 5px 30px !important;
   margin: 20px auto;
 }
 
 /* store  */
 .store {
   background: #acff3b;
-  background-image: url(../images/store_bg.png);
-  background-repeat: no-repeat;
-  background-size: 60%;
-  background-position: right;
-  padding: 50px 0;
 }
 
 .store_imgs img {
   max-width: 200px;
 }
 
-@media screen and (max-width: 992px) {
-  .store {
-    background: #acff3b;
+@media screen and (min-width: 1050px) {
+  .store .col-background {
     background-image: url(../images/store_bg.png);
     background-repeat: no-repeat;
-    background-size: 100%;
     background-position: right;
-    padding: 50px 0;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .store {
-    background: #acff3b;
-    /* background-image: url(../images/store_bg.png); */
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    padding: 0;
-    margin: 0 !important;
-  }
-
-  .store h1 {
-    display: flex;
-    justify-content: center;
-  }
-  .store_imgs img {
-    max-width: 100px;
-    display: flex;
-    flex-direction: column;
-  }
+.store h1 {
+  display: flex;
+  justify-content: center;
+}
+.store_imgs img {
+  max-width: 100px;
+  display: flex;
+  flex-direction: column;
 }
