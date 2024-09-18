@@ -54,24 +54,25 @@
   border-radius: 3px;
 }
 
+.customeNav-link .nav-link{
+  color: #000;
+}
+
 .customeNav-link:hover {
   color: #000;
   background-color: #acff3b;
 }
 
-/* Change active color for nav links */
 .customNav-tabs.active {
   color: #000000;
   background-color: #95f70d;
 }
 
-/* Change hover color for nav-tabs */
 .customeNav-link :hover {
   color: #000000;
   background-color: #acff3b;
 }
 
-/* Change active color for nav-tabs */
 .customNav-tabs .nav-link.active {
   color: #000000;
   background-color: #95f70d;
