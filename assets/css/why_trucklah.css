@@ -19,8 +19,7 @@
 .whyTrucklahBackground .card {
   border: none;
   box-shadow: 2px 4px 4px #ccc;
-  margin-right: 10px;
-  height: max-content;
+  min-height: 450px;
   margin-bottom: 10px;
 }
 .whyTrucklahBackground .card-title {
@@ -45,4 +44,8 @@
   width: 60px;
   height: 60px;
   margin-bottom: 35px;
+}
+
+.carousel_cards_slide .owl-stage-outer {
+  margin: 0 0 4rem 0;
 }

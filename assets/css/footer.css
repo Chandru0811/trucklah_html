@@ -107,8 +107,8 @@
 }
 .connect .footer-btn:hover {
   border: 1px solid;
-  background: #333333;
-  color: #acff3b;
+  background-color: #95f70d !important;
+  color: black !important;
   padding: 12px 45px !important;
   font-weight: 500;
   margin-top: 10px;

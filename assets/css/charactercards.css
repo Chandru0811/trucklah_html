@@ -18,6 +18,11 @@
   font-family: "Afacad", system-ui;
 }
 
+.inner_btn:hover {
+  background-color: #95f70d !important;
+  color: black !important;
+}
+
 .button-border-group {
   padding: 6px;
   background-color: #fff;

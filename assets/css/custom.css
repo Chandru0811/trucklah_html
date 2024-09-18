@@ -224,8 +224,8 @@
 }
 .connect .footer-btn:hover {
   border: 1px solid;
-  background: #333333;
-  color: #acff3b;
+  background-color: #95f70d !important;
+  color: black !important;
   padding: 12px 45px !important;
   font-weight: 500;
   margin-top: 10px;
@@ -304,7 +304,7 @@
 }
 
 .book-btn:hover {
-  background-color: #acff3b;
+  background-color: #95f70d;
   color: black;
   padding: 3px 20px;
   border-radius: 3px;
@@ -316,7 +316,7 @@
 
 .customeNav-link:hover {
   color: #000;
-  background-color: #acff3b;
+  background-color: #95f70d;
 }
 
 .customNav-tabs.active {
@@ -326,7 +326,6 @@
 
 .customeNav-link :hover {
   color: #000000;
-  background-color: #acff3b;
 }
 
 .customNav-tabs .nav-link.active {
@@ -355,15 +354,138 @@
 }
 .delivery-text1 {
   color: white;
+  font-weight: 700 !important;
+  font-size: 77px;
+}
+
+.item-moving-radius {
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-top-left-radius: 20px !important;
+  border-bottom-left-radius: 20px !important;
+  font-weight: 600 !important;
+  font-size: 22px !important;
+  min-width: 12rem !important;
+}
+
+.package-moving-radius {
+  border-radius: 0px !important;
+  font-weight: 600 !important;
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  font-size: 22px !important;
+  min-width: 12rem !important;
+}
+
+.cross-broder-radius {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-top-right-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+  font-weight: 600 !important;
+  font-size: 22px !important;
+  min-width: 12rem !important;
+}
+
+@media screen and (max-width: 716px) {
+  .item-moving-radius {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    font-weight: 600 !important;
+    font-size: 22px !important;
+    min-width: 12rem !important;
+  }
+
+  .package-moving-radius {
+    border-radius: 0px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    font-weight: 600 !important;
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    font-size: 22px !important;
+    min-width: 12rem !important;
+  }
+
+  .cross-broder-radius {
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    font-weight: 600 !important;
+    font-size: 22px !important;
+    min-width: 12rem !important;
+  }
+}
+@media screen and (max-width: 523px) {
+  .item-moving-radius {
+    border-radius: 20px !important;
+    font-weight: 600 !important;
+    font-size: 22px !important;
+    min-width: 12rem !important;
+  }
+
+  .package-moving-radius {
+    border-radius: 20px !important;
+    font-weight: 600 !important;
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    font-size: 22px !important;
+    min-width: 12rem !important;
+  }
+
+  .cross-broder-radius {
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    font-weight: 600 !important;
+    font-size: 22px !important;
+    min-width: 12rem !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .delivery-text1 {
+    color: white;
+    font-weight: 700 !important;
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1245px) {
+  .delivery-text1 {
+    color: white;
+    font-weight: 700 !important;
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .delivery-text1 {
+    color: white;
+    font-weight: 700 !important;
+    font-size: 44px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .delivery-text1 {
+    color: white;
+    font-weight: 700 !important;
+    font-size: 100px;
+  }
+  .custome-tab-body p {
+    font-size: 26px !important;
+  }
 }
 
 /* Banner End  */
 
 /* Section Two Start  */
 
-/* Home Section -2 */
-
-/* Home Section -2 */
 .homeSection-2 {
   background-color: #acff3b;
   border-radius: 10px;
@@ -424,9 +546,6 @@
   font-size: 700;
   font-size: 22px;
 }
-/* .Home Section -2 */
-
-/* .Home Section -3 */
 
 .homeSection-3 {
   background-image: url("../images/home_bg-design_image.png");
@@ -443,7 +562,7 @@
 /* Why Trucklah Start  */
 
 .whyTrucklahBackground {
-  background: linear-gradient(to bottom, #f6f6f6 85%, #fff 85%);
+  background: linear-gradient(to bottom, #f6f6f6 80%, #fff 80%);
 }
 
 .whyTrucklahHeading {
@@ -456,8 +575,7 @@
 .whyTrucklahBackground .card {
   border: none;
   box-shadow: 2px 4px 4px #ccc;
-  margin-right: 10px;
-  height: max-content;
+  min-height: 450px;
   margin-bottom: 10px;
 }
 .whyTrucklahBackground .card-title {
@@ -484,6 +602,10 @@
   margin-bottom: 35px;
 }
 
+.carousel_cards_slide .owl-stage-outer {
+  margin: 0 0 4rem 0;
+}
+
 /* Why Trucklah End  */
 
 /* Card Start  */
@@ -501,6 +623,11 @@
   font-family: "Afacad", system-ui;
 }
 
+.inner_btn:hover {
+  background-color: #95f70d !important;
+  color: black !important;
+}
+
 .button-border-group {
   padding: 6px;
   background-color: #fff;
@@ -508,6 +635,7 @@
   position: relative;
   top: 20px;
 }
+
 /* Card End  */
 
 /* FAQ Start  */
@@ -579,6 +707,11 @@ button.accordion-button:not(.collapsed)::after {
   font-weight: bolder !important;
   padding: 5px 30px !important;
   margin: 20px auto;
+}
+
+.call_us:hover {
+  background-color: #95f70d !important;
+  color: black !important;
 }
 
 /* store  */
