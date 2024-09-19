@@ -125,6 +125,11 @@
   background-color: #acff3b;
   padding: 15px 0;
 }
+.footer-conent {
+  color: #acff3b;
+  background-color: #333333;
+  padding: 15px 0;
+}
 .connect_heading {
   color: #333333 !important;
   font-size: 52px;
@@ -243,18 +248,18 @@
   position: absolute;
 }
 .footer-links .links {
-  margin-bottom: 20px;
+  margin: 30px 0;
   padding: 5px;
   cursor: pointer;
 }
 .footer-links .links2 {
-  margin-bottom: 10px;
-  padding: 5px;
+  margin: 30px 0;
+  padding: 0px;
   cursor: pointer;
 }
 .line-divider i {
   border-right: 1px solid;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 /* Footer End  */
@@ -271,6 +276,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding: 10px 10px 80px;
+  background-position: center;
 }
 
 .banner h1 {
@@ -299,14 +305,14 @@
 .book-btn {
   background-color: #acff3b;
   color: black;
-  padding: 3px 20px;
+  padding: 5px 30px;
   border-radius: 3px;
 }
 
 .book-btn:hover {
   background-color: #95f70d;
   color: black;
-  padding: 3px 20px;
+  padding: 5px 30px;
   border-radius: 3px;
 }
 
@@ -517,7 +523,15 @@
   border-bottom: 2px dotted #acff3b;
   border-radius: 0px;
 }
-
+.nav-pills {
+  margin: 0 15px !important;
+}
+@media screen and (max-width: 553px) {
+  .nav-pills {
+    display: flex;
+    justify-content: center;
+  }
+}
 .homeSection-2 .nav-pills .nav-link {
   color: white;
 }
@@ -677,6 +691,7 @@
 .toggler_accordion .accordion-button:not(.collapsed) {
   background: none !important;
   box-shadow: none !important;
+  color: #000 !important;
 }
 .conntent_text {
   line-height: 34px;
@@ -697,16 +712,24 @@ button.accordion-button:not(.collapsed)::after {
 .troubled_content {
   background: url(../images/troubled_bg_img.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: bottom;
+}
+@media screen and (max-width: 1350px) {
+  .troubled_content {
+    background: url(../images/troubled_bg_img.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+  }
 }
 
 .call_us {
   background: #acff3b !important;
   color: #333333;
   font-weight: bolder !important;
-  padding: 5px 30px !important;
-  margin: 20px auto;
+  padding: 8px 35px !important;
+  margin: 10px auto;
 }
 
 .call_us:hover {
