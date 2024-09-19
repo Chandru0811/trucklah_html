@@ -653,6 +653,7 @@
   font-weight: 500 !important;
   line-height: 29.33px;
   font-family: "Afacad", system-ui;
+  padding: 5px 30px;
 }
 
 .inner_btn:hover {
@@ -682,6 +683,7 @@
     font-weight: 500 !important;
     line-height: 29.33px;
     font-family: "Afacad", system-ui;
+    padding: 2px 10px !important;
   }
 }
 
