@@ -789,9 +789,9 @@ button.accordion-button:not(.collapsed)::after {
     line-height: 46px;
   }
   .accordian_heading {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
-    line-height: 28.67px;
+    line-height: 22.67px;
     text-align: left;
   }
 }
