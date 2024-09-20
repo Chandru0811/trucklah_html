@@ -280,12 +280,12 @@
 }
 
 .banner h1 {
-  font-size: 25px;
+  font-size: 32px;
   font-weight: 500;
   color: white;
 }
 .banner h2 {
-  font-size: 23px;
+  font-size: 32px;
   font-weight: 700;
   color: white;
 }
@@ -356,7 +356,7 @@
 
 .delivery-text {
   color: transparent !important;
-  -webkit-text-stroke: 0.3px #acff3b;
+  -webkit-text-stroke: 1px #acff3b;
 }
 .delivery-text1 {
   color: white;
@@ -500,6 +500,8 @@
 .homeSection-2 {
   background-color: #acff3b;
   border-radius: 10px;
+  margin: 2.5rem 1.5rem;
+  padding: 0 !important;
 }
 
 /* .bg-image {
@@ -509,7 +511,7 @@
 
 .homeSection-2_tab {
   border-radius: 40px;
-  background-color: black;
+  background-color: #333;
   color: white;
   font-weight: 500;
   font-size: 22px;
@@ -523,10 +525,13 @@
 }
 
 .homeSection-2 .nav-pills .nav-link.active {
-  background-color: black;
+  background-color: #333;
   color: #acff3b;
   border-bottom: 2px dotted #acff3b;
   border-radius: 0px;
+}
+.homeSection-2 .nav-pills .nav-link.active:focus-visible {
+  box-shadow: none;
 }
 .top_nav_pills {
   margin: 0 35px !important;
@@ -552,6 +557,10 @@
 
 .homeSection-2 .nav-pills .nav-link {
   color: white;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 29.33px;
+  text-align: left;
 }
 
 .homeSection-2 .tab-content {
@@ -561,32 +570,32 @@
 
 .bookingNow-btn {
   background-color: #acff3b;
-  color: black;
+  color: #333333;
   padding: 5px 25px;
   border-radius: 3px;
-  border: 1.5px solid #000;
-  font-size: 700;
+  border: 2px solid #333;
+  font-weight: 700;
   font-size: 22px;
 }
 
 .bookingNow-btn:hover {
   background-color: #95f70d;
-  color: black;
-
+  color: #333333;
   border-radius: 3px;
-  border: 1.5px solid #000;
-  font-size: 700;
+  border: 2px solid #333333;
+  font-weight: 700;
   font-size: 22px;
 }
 
 .homeSection-3 {
   background-image: url("../images/home_bg-design_image.png");
   background-repeat: no-repeat;
+  background-position: left bottom;
 }
 .text-backgroung-image {
   background-image: url("../images/bg_transport_agency_text\ _image.png");
   background-repeat: no-repeat;
-  top: 0;
+  background-position: top;
 }
 
 /* Home Section Two End  */
@@ -653,7 +662,8 @@
   font-weight: 500 !important;
   line-height: 29.33px;
   font-family: "Afacad", system-ui;
-  padding: 5px 30px;
+  padding: 12px 0px;
+  width: 100%;
 }
 
 .inner_btn:hover {
@@ -662,11 +672,12 @@
 }
 
 .button-border-group {
-  padding: 6px;
-  background-color: #fff;
-  border-radius: 5px;
+  padding: 7px;
+  background-color: #f3f3f3;
+  border-radius: 8px;
   position: relative !important;
-  top: 20px;
+  top: 35px;
+  width: 80%;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .character_cards {
