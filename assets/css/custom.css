@@ -144,7 +144,7 @@
 .connect .footer-form {
   background: none !important;
   border: none;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #333333 !important;
   border-radius: 0;
   font-weight: 700;
   margin: 1.8rem 0;
@@ -516,11 +516,18 @@
   font-weight: 500;
   font-size: 22px;
   display: flex;
+  margin: 0 35px !important;
 }
 
 @media screen and (max-width: 626px) {
   .homeSection-2_tab {
     display: block;
+    margin: 0 !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  .tab-content {
+    padding: 5px !important;
   }
 }
 
@@ -566,6 +573,9 @@
 .homeSection-2 .tab-content {
   font-weight: 500;
   font-size: 22px;
+}
+.tab-content {
+  padding: 25px;
 }
 
 .bookingNow-btn {
@@ -757,12 +767,23 @@
   background: none !important;
   box-shadow: none !important;
   color: #000 !important;
+  padding: 0 15px !important;
+}
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  padding: 10px 15px !important;
+}
+button:focus:not(:focus-visible):focus {
+  box-shadow: none !important;
 }
 .conntent_text {
   line-height: 34px;
   font-size: 18px;
   font-weight: 400;
   color: #6b6a6a;
+  padding: 0 15px;
 }
 button.accordion-button::after {
   background-image: url("../images/open.svg");
@@ -807,6 +828,12 @@ button.accordion-button:not(.collapsed)::after {
     line-height: 22.67px;
     text-align: left;
   }
+}
+.toggler_accordion
+  .accordion-item:first-of-type
+  > .accordion-header
+  .accordion-button {
+  padding: 0 15px !important;
 }
 
 /* FAQ End  */
