@@ -578,17 +578,17 @@
   padding: 25px;
 }
 
-.bookingNow-btn {
+.bookingNow_btn {
   background-color: #acff3b;
   color: #333333;
-  padding: 5px 25px;
+  padding: 4px 25px !important;
   border-radius: 3px;
   border: 2px solid #333;
   font-weight: 700;
   font-size: 22px;
 }
 
-.bookingNow-btn:hover {
+.bookingNow_btn:hover {
   background-color: #95f70d;
   color: #333333;
   border-radius: 3px;
@@ -630,8 +630,8 @@
 .whyTrucklahBackground .card {
   border: none;
   box-shadow: 2px 4px 4px #ccc;
-  min-height: 450px;
-  margin-bottom: 10px;
+  min-height: 400px;
+  margin: 8px;
 }
 .whyTrucklahBackground .card-title {
   font-size: 24px;
@@ -647,23 +647,29 @@
   text-align: left;
 }
 .owl-theme .owl-dots .owl-dot {
-  border: 2px solid #333;
+  border: none !important;
   border-radius: 100%;
   margin: 0 2.5px;
 }
-.owl-theme .owl-dots .owl-dot:active {
-  border: none !important;
+.owl-theme .owl-dots .owl-dot.active {
+  border: 1px solid #333 !important;
   border-radius: 100%;
 }
+
 .owl-theme .owl-dots .owl-dot span {
   margin: 3px !important;
   border: none;
+  background-color: #6a6666;
 }
 
 .whyTrucklahBackground .owl-theme .owl-dots .owl-dot.active span {
   border: 4px solid #333 !important;
-  background: #333 !important;
+  background: 495057 !important;
   margin: 3px !important;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #333 !important;
 }
 
 .whyTrucklahBackground .imageDiv {
@@ -673,7 +679,28 @@
 }
 
 .carousel_cards_slide .owl-stage-outer {
-  margin: 0 0 4rem 0;
+  margin: 0 0 3rem 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .carousel_cards_slide .owl-stage-outer {
+    margin: 0 0 4rem 0;
+  }
+  .whyTrucklahBackground .card {
+    border: none;
+    box-shadow: 2px 4px 4px #ccc;
+    min-height: 450px;
+    margin: 8px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .whyTrucklahBackground .card {
+    border: none;
+    box-shadow: 2px 4px 4px #ccc;
+    min-height: 460px;
+    margin: 8px;
+  }
 }
 
 /* Why Trucklah End  */
@@ -773,7 +800,7 @@
 [type="reset"]:not(:disabled),
 [type="submit"]:not(:disabled),
 button:not(:disabled) {
-  padding: 10px 15px !important;
+  padding: 10px 15px;
 }
 button:focus:not(:focus-visible):focus {
   box-shadow: none !important;
