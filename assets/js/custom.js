@@ -23,3 +23,29 @@ $(document).ready(function () {
     },
   });
 });
+
+$(document).ready(function () {
+  $("#contactForm").submit(function (event) {
+    event.preventDefault();
+
+    var formData = {
+      name: $("#name").val(),
+      email: $("#email").val(),
+      phone: $("#phone").val(),
+      country: $("#country").val(),
+      message: $("#message").val(),
+    };
+
+    console.log("Form Data:", formData);
+
+    $.ajax({
+      data: formData,
+      success: function () {
+        $("#contactForm").trigger("reset");
+      },
+      error: function (error) {
+        console.error("Error:", error);
+      },
+    });
+  });
+});

@@ -814,6 +814,15 @@
   background-position: bottom;
   background-size: contain;
 }
+@media screen and (max-width: 425px) {
+  .bg_frequently {
+    background-image: url(../images/freqently_bg_img.jpg);
+    background-repeat: no-repeat;
+    height: 16vh;
+    background-position: bottom;
+    background-size: contain;
+  }
+}
 
 .toggler_accordion .accordion-item {
   border: none;
