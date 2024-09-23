@@ -856,7 +856,7 @@ button:focus:not(:focus-visible):focus {
   font-size: 18px;
   font-weight: 400;
   color: #6b6a6a;
-  padding: 0 15px;
+  padding: 15px;
 }
 button.accordion-button::after {
   background-image: url("../images/open.svg");
