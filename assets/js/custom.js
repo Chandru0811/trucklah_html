@@ -49,3 +49,21 @@ $(document).ready(function () {
     });
   });
 });
+
+document
+  .getElementById("view-more-item-moving")
+  .addEventListener("click", function () {
+    document.getElementById("pills-home-tab").click();
+  });
+
+document
+  .getElementById("view-more-house-moving")
+  .addEventListener("click", function () {
+    document.getElementById("pills-profile-tab").click();
+  });
+
+document
+  .getElementById("view-more-cross-border")
+  .addEventListener("click", function () {
+    document.getElementById("pills-contact-tab").click();
+  });

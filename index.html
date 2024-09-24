@@ -21,7 +21,7 @@
     />
     <meta property="og:url" content="https://trucklah.com" />
     <meta property="og:site_name" content="Trucklah" />
-    <meta property="og:image" content="./assets/images/trucklah_og.png" />
+    <meta property="og:image" content="./assets/images/trucklah_og.webp" />
 
     <meta property="og:image:width" content="512" />
     <meta property="og:image:height" content="512" />
@@ -42,7 +42,10 @@
     />
     <meta name="twitter:site" content="@trucklah" />
 
-    <meta name="twitter:image" content="./assets/images/trucklah_twitter.png" />
+    <meta
+      name="twitter:image"
+      content="./assets/images/trucklah_twitter.webp"
+    />
 
     <!-- Google Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -83,7 +86,7 @@
           class="container-fluid d-flex justify-content-between align-items-center"
         >
           <img
-            src="assets/images/header/logo.png"
+            src="assets/images/header/logo.webp"
             alt="header-logo"
             class="img-fluid header-logo text-start"
             width="160"
@@ -204,7 +207,7 @@
                     >
                       <div class="pb-3">
                         <img
-                          src="./assets/images/item_moving.png"
+                          src="./assets/images/item_moving.webp"
                           alt="Icon"
                           class="img-fluid"
                         />
@@ -225,7 +228,7 @@
                     >
                       <div class="pb-3">
                         <img
-                          src="./assets/images/moving_package.png"
+                          src="./assets/images/moving_package.webp"
                           alt="Icon"
                           class="img-fluid"
                         />
@@ -246,7 +249,7 @@
                     >
                       <div class="pb-3">
                         <img
-                          src="./assets/images/cross_broder.png"
+                          src="./assets/images/cross_broder.webp"
                           alt="Icon"
                           class="img-fluid"
                         />
@@ -276,7 +279,7 @@
                             Need help moving? Residential or Commercial, Big or
                             Small, Trucklah can help you! &nbsp;&nbsp;&nbsp;
                             <span
-                              id="pills-home-tab"
+                              id="view-more-item-moving"
                               style="color: #acff3b; cursor: pointer"
                               onclick="document.getElementById('pills-home-tab').scrollIntoView({ behavior: 'smooth', block: 'start' });"
                             >
@@ -317,7 +320,7 @@
                             rates, trained manpower, fail-safe packing,
                             worry-free moving guaranteed. &nbsp;&nbsp;&nbsp;
                             <span
-                              id="pills-profile-tab"
+                              id="view-more-house-moving"
                               style="color: #acff3b; cursor: pointer"
                               onclick="document.getElementById('pills-profile-tab').scrollIntoView({ behavior: 'smooth', block: 'start' });"
                               >View More</span
@@ -357,7 +360,7 @@
                             between. We pick from your door and deliver at the
                             destination door.
                             <span
-                              id="pills-contact-tab"
+                              id="view-more-cross-border"
                               style="color: #acff3b; cursor: pointer"
                               onclick="document.getElementById('pills-contact-tab').scrollIntoView({ behavior: 'smooth', block: 'start' });"
                               >View More</span
@@ -411,10 +414,10 @@
                           class="nav-link active"
                           id="pills-home-tab"
                           data-bs-toggle="pill"
-                          data-bs-target="#pills-home"
+                          data-bs-target="#pills-item-moving"
                           type="button"
                           role="tab"
-                          aria-controls="pills-home"
+                          aria-controls="pills-item-moving"
                           aria-selected="true"
                         >
                           Item Moving
@@ -425,10 +428,10 @@
                           class="nav-link"
                           id="pills-profile-tab"
                           data-bs-toggle="pill"
-                          data-bs-target="#pills-profile"
+                          data-bs-target="#pills-house-moving"
                           type="button"
                           role="tab"
-                          aria-controls="pills-profile"
+                          aria-controls="pills-house-moving"
                           aria-selected="false"
                         >
                           House Moving
@@ -439,10 +442,10 @@
                           class="nav-link"
                           id="pills-contact-tab"
                           data-bs-toggle="pill"
-                          data-bs-target="#pills-contact"
+                          data-bs-target="#pills-international"
                           type="button"
                           role="tab"
-                          aria-controls="pills-contact"
+                          aria-controls="pills-international"
                           aria-selected="false"
                         >
                           International
@@ -450,36 +453,38 @@
                       </li>
                     </div>
                   </ul>
+
                   <div class="tab-content" id="pills-tabContent">
+                    <!-- Tab 1: Item Moving -->
                     <div
                       class="tab-pane fade show active"
-                      id="pills-home"
+                      id="pills-item-moving"
                       role="tabpanel"
                       aria-labelledby="pills-home-tab"
                     >
                       <p class="mb-4 ps-3">
                         Moving items in Singapore made easy. Door to Door
-                        deliery. We pick, we pack, we handle everything in
-                        between. Safe, Fast and on-time delivery- each time,
-                        every thime.
+                        delivery. We pick, we pack, we handle everything in
+                        between. Safe, Fast and on-time delivery - each time,
+                        every time.
                       </p>
                       <div class="row">
                         <div class="col-md-8 col-12">
-                          <ol class="">
+                          <ol>
                             <li>
                               We pick, we drop and handle everything in between.
                             </li>
-                            <li>Affordable, Safe and Fast</li>
+                            <li>Affordable, Safe and Fast.</li>
                             <li>
                               Big or Small, Commercial or Residential, we handle
-                              them all
+                              them all.
                             </li>
                           </ol>
                         </div>
                         <div class="col-md-4 col-12">
                           <div class="d-flex justify-content-center">
                             <img
-                              src="./assets/images/homeSection-2_bg_image_1.png"
+                              src="./assets/images/homeSection-2_bg_image_1.webp"
                               alt="Bg_image"
                               class="img-fluid"
                             />
@@ -487,99 +492,90 @@
                         </div>
                       </div>
                     </div>
+
+                    <!-- Tab 2: House Moving -->
                     <div
                       class="tab-pane fade"
-                      id="pills-profile"
-                      role="tabpanel"
+                      id="pills-house-moving"
+                      role="tabpane2"
                       aria-labelledby="pills-profile-tab"
                     >
-                      <div
-                        class="tab-pane fade show active"
-                        id="pills-home"
-                        role="tabpanel"
-                        aria-labelledby="pills-home-tab"
-                      >
-                        <p class="mb-4 ps-3">
-                          Interested in a stress-free, zero worries house
-                          moving? Look no further because Trucklah ensures door
-                          to door delivery and handles everything in between.
-                        </p>
-                        <div class="row">
-                          <div class="col-md-8 col-12">
-                            <ol class="">
-                              <li>Help with packing and manpower assistance</li>
-                              <li>Can handle moving of all sizes</li>
-                              <li>Delivery on-time, without any damages</li>
-                            </ol>
-                          </div>
-                          <div class="col-md-4 col-12">
-                            <div class="d-flex justify-content-center">
-                              <img
-                                src="./assets/images/homeSection-2_bg_image_1.png"
-                                alt="Bg_image"
-                                class="img-fluid"
-                              />
-                            </div>
+                      <p class="mb-4 ps-3">
+                        Interested in a stress-free, zero worries house moving?
+                        Look no further because Trucklah ensures door to door
+                        delivery and handles everything in between.
+                      </p>
+                      <div class="row">
+                        <div class="col-md-8 col-12">
+                          <ol>
+                            <li>Help with packing and manpower assistance.</li>
+                            <li>Can handle moving of all sizes.</li>
+                            <li>Delivery on-time, without any damages.</li>
+                          </ol>
+                        </div>
+                        <div class="col-md-4 col-12">
+                          <div class="d-flex justify-content-center">
+                            <img
+                              src="./assets/images/homeSection-2_bg_image_1.webp"
+                              alt="Bg_image"
+                              class="img-fluid"
+                            />
                           </div>
                         </div>
                       </div>
                     </div>
+
+                    <!-- Tab 3: International -->
                     <div
                       class="tab-pane fade"
-                      id="pills-contact"
-                      role="tabpanel"
+                      id="pills-international"
+                      role="tabpane3"
                       aria-labelledby="pills-contact-tab"
                     >
-                      <div
-                        class="tab-pane fade show active"
-                        id="pills-home"
-                        role="tabpanel"
-                        aria-labelledby="pills-home-tab"
-                      >
-                        <p class="mb-2 ps-3">
-                          Send packages anywhere in the world. Be it the US, UK,
-                          Australia, Malaysia, you name and we deliver and
-                          handle everything in between including customs
-                          clearance and insurance.
-                        </p>
-                        <p class="mb-3 ps-3">
-                          Safe and damage free delivery for complete peace of
-                          mind.
-                        </p>
-                        <div class="row">
-                          <div class="col-md-8 col-12">
-                            <ol class="">
-                              <li>Door to Door delivery</li>
-                              <li>. Handles packages big and small</li>
-                              <li>
-                                Handing moving commercial and residential
-                                pacakges
-                              </li>
-                              <li>
-                                Customs Clearance, Insurance and anything you
-                                can imagine.
-                              </li>
-                            </ol>
-                          </div>
-                          <div class="col-md-4 col-12">
-                            <div class="d-flex justify-content-center">
-                              <img
-                                src="./assets/images/homeSection-2_bg_image_1.png"
-                                alt="Bg_image"
-                                class="img-fluid"
-                              />
-                            </div>
+                      <p class="mb-2 ps-3">
+                        Send packages anywhere in the world. Be it the US, UK,
+                        Australia, Malaysia, you name it, we deliver and handle
+                        everything in between including customs clearance and
+                        insurance.
+                      </p>
+                      <p class="mb-3 ps-3">
+                        Safe and damage-free delivery for complete peace of
+                        mind.
+                      </p>
+                      <div class="row">
+                        <div class="col-md-8 col-12">
+                          <ol>
+                            <li>Door to Door delivery.</li>
+                            <li>Handles packages big and small.</li>
+                            <li>
+                              Handling moving commercial and residential
+                              packages.
+                            </li>
+                            <li>
+                              Customs Clearance, Insurance, and anything you can
+                              imagine.
+                            </li>
+                          </ol>
+                        </div>
+                        <div class="col-md-4 col-12">
+                          <div class="d-flex justify-content-center">
+                            <img
+                              src="./assets/images/homeSection-2_bg_image_1.webp"
+                              alt="Bg_image"
+                              class="img-fluid"
+                            />
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+
                 <div class="col-md-3 col-12 mt-5">
                   <div class="d-flex justify-content-around mb-3">
                     <p></p>
                     <img
-                      src="./assets/images/homeSection-2_bg_image_1.png"
+                      src="./assets/images/homeSection-2_bg_image_1.webp"
                       alt="Bg_image"
                       class="img-fluid"
                     />
@@ -600,7 +596,7 @@
                   </div>
                   <div class="d-flex justify-content-center mt-4">
                     <img
-                      src="./assets/images/homeSection-2_bg_image_2.png"
+                      src="./assets/images/homeSection-2_bg_image_2.webp"
                       alt="Bg_image"
                       class="img-fluid"
                     />
@@ -618,7 +614,7 @@
               <div class="col-md-6 col-12">
                 <div class="d-flex justify-content-center align-items-center">
                   <img
-                    src="./assets/images/shipping_done_image.png"
+                    src="./assets/images/shipping_done_image.webp"
                     alt="Image"
                     class="img-fluid"
                   />
@@ -648,7 +644,7 @@
                     <div class="d-flex gap-2 align-items-center">
                       <div class="">
                         <img
-                          src="./assets/images/full_load_icon.png"
+                          src="./assets/images/full_load_icon.webp"
                           alt="full_load_icon"
                           class="img-fluid"
                         />
@@ -662,7 +658,7 @@
                     <div class="d-flex gap-2 align-items-center">
                       <div class="">
                         <img
-                          src="./assets/images/dollar_icon.png"
+                          src="./assets/images/dollar_icon.webp"
                           alt="dollar_icon"
                           class="img-fluid"
                         />
@@ -676,7 +672,7 @@
                     <div class="d-flex gap-2 align-items-center">
                       <div class="">
                         <img
-                          src="./assets/images/quick&easy_icon.png"
+                          src="./assets/images/quick&easy_icon.webp"
                           alt="quick&easy_icon"
                           class="img-fluid"
                         />
@@ -705,7 +701,7 @@
               <div class="card-body">
                 <div class="imageDiv">
                   <img
-                    src="./assets/images/why_trucklah/decoration1.png"
+                    src="./assets/images/why_trucklah/decoration1.webp"
                     alt="decoration1"
                     class="img-fluid"
                   />
@@ -724,7 +720,7 @@
               <div class="card-body">
                 <div class="imageDiv">
                   <img
-                    src="./assets/images/why_trucklah/decoration2.png"
+                    src="./assets/images/why_trucklah/decoration2.webp"
                     alt="decoration2"
                     class="img-fluid"
                   />
@@ -742,7 +738,7 @@
               <div class="card-body">
                 <div class="imageDiv">
                   <img
-                    src="./assets/images/why_trucklah/decoration3.png"
+                    src="./assets/images/why_trucklah/decoration3.webp"
                     alt="decoration3"
                     class="img-fluid"
                   />
@@ -762,7 +758,7 @@
               <div class="card-body">
                 <div class="imageDiv">
                   <img
-                    src="./assets/images/why_trucklah/decoration1.png"
+                    src="./assets/images/why_trucklah/decoration1.webp"
                     alt="decoration1"
                     class="img-fluid"
                   />
@@ -783,7 +779,7 @@
               <div class="card-body">
                 <div class="imageDiv">
                   <img
-                    src="./assets/images/why_trucklah/decoration2.png"
+                    src="./assets/images/why_trucklah/decoration2.webp"
                     alt="decoration2"
                     class="img-fluid"
                   />
@@ -802,7 +798,7 @@
               <div class="card-body">
                 <div class="imageDiv">
                   <img
-                    src="./assets/images/why_trucklah/decoration3.png"
+                    src="./assets/images/why_trucklah/decoration3.webp"
                     alt="decoration3"
                     class="img-fluid"
                   />
@@ -822,7 +818,7 @@
               <div class="card-body">
                 <div class="imageDiv">
                   <img
-                    src="./assets/images/why_trucklah/decoration1.png"
+                    src="./assets/images/why_trucklah/decoration1.webp"
                     alt="decoration1"
                     class="img-fluid"
                   />
@@ -842,7 +838,7 @@
               <div class="card-body">
                 <div class="imageDiv">
                   <img
-                    src="./assets/images/why_trucklah/decoration2.png"
+                    src="./assets/images/why_trucklah/decoration2.webp"
                     alt="decoration2"
                     class="img-fluid"
                   />
@@ -862,7 +858,7 @@
               <div class="card-body">
                 <div class="imageDiv">
                   <img
-                    src="./assets/images/why_trucklah/decoration3.png"
+                    src="./assets/images/why_trucklah/decoration3.webp"
                     alt="decoration3"
                     class="img-fluid"
                   />
@@ -889,7 +885,7 @@
             <div class="character_cards card h-100">
               <div class="text-center p-5" style="height: 250px">
                 <img
-                  src="./assets/images/Characters1.png"
+                  src="./assets/images/Characters1.webp"
                   alt="character_cards"
                   class="img-fluid"
                 />
@@ -907,7 +903,7 @@
             <div class="character_cards card h-100">
               <div class="text-center p-5" style="height: 250px">
                 <img
-                  src="./assets/images/Characters2.png"
+                  src="./assets/images/Characters2.webp"
                   alt="character_cards"
                   class="img-fluid"
                 />
@@ -923,7 +919,7 @@
             <div class="character_cards card h-100">
               <div class="text-center p-5" style="height: 250px">
                 <img
-                  src="./assets/images/Characters3.png"
+                  src="./assets/images/Characters3.webp"
                   alt="character_cards"
                   class="img-fluid"
                 />
@@ -1122,7 +1118,7 @@
                 <div class="col-md-3 col-12 text-md-start pe-2 pb-2">
                   <a href="#" target="_blank" rel="noopener noreferrer">
                     <img
-                      src="./assets/images/app_store.png"
+                      src="./assets/images/app_store.webp"
                       alt="app_store"
                       class="img-fluid"
                   /></a>
@@ -1134,7 +1130,7 @@
                     rel="noopener noreferrer"
                   >
                     <img
-                      src="./assets/images/Play_store.png"
+                      src="./assets/images/Play_store.webp"
                       alt="Play_store"
                       class="img-fluid"
                     />
@@ -1264,7 +1260,7 @@
             <div class="headings">
               <h5 class="footer-title">Location</h5>
               <img
-                src="./assets/images/footer/underline_footer_title.png"
+                src="./assets/images/footer/underline_footer_title.webp"
                 alt="underline_footer_title"
                 class="underline_img img-fluid"
               />
@@ -1314,7 +1310,7 @@
             <div class="headings">
               <h5 class="footer-title">Help</h5>
               <img
-                src="./assets/images/footer/underline_footer_title.png"
+                src="./assets/images/footer/underline_footer_title.webp"
                 alt="underline_footer_title"
                 class="underline_img img-fluid"
               />
@@ -1366,7 +1362,7 @@
                 Our Services
               </h5>
               <img
-                src="./assets/images/footer/underline_footer_title.png"
+                src="./assets/images/footer/underline_footer_title.webp"
                 alt="underline_footer_title"
                 class="underline_img img-fluid"
               />

@@ -272,7 +272,7 @@
 }
 
 .banner_section {
-  background-image: url("../images/banner_image_1.png");
+  background-image: url("../images/banner_image_1.webp");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 10px 10px 80px;
@@ -512,7 +512,7 @@
 }
 
 /* .bg-image {
-  background-image: url("../images/homeSection-2_bg_image_2.png");
+  background-image: url("../images/homeSection-2_bg_image_2.webp");
   background-repeat: no-repeat;
 } */
 
@@ -605,12 +605,12 @@
 }
 
 .homeSection-3 {
-  background-image: url("../images/home_bg-design_image.png");
+  background-image: url("../images/home_bg-design_image.webp");
   background-repeat: no-repeat;
   background-position: left bottom;
 }
 .text-backgroung-image {
-  background-image: url("../images/bg_transport_agency_text\ _image.png");
+  background-image: url("../images/bg_transport_agency_text\ _image.webp");
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -793,7 +793,7 @@
 
 /* FAQ Start  */
 .frequently_content {
-  background: url(../images/accortion_bg_img.jpg);
+  background: url(../images/accortion_bg_img.webp);
   background-size: cover;
   height: auto;
   display: flex;
@@ -808,7 +808,7 @@
   text-align: left;
 }
 .bg_frequently {
-  background-image: url(../images/freqently_bg_img.jpg);
+  background-image: url(../images/freqently_bg_img.webp);
   background-repeat: no-repeat;
   height: 40vh;
   background-position: bottom;
@@ -816,7 +816,7 @@
 }
 @media screen and (max-width: 425px) {
   .bg_frequently {
-    background-image: url(../images/freqently_bg_img.jpg);
+    background-image: url(../images/freqently_bg_img.webp);
     background-repeat: no-repeat;
     height: 16vh;
     background-position: bottom;
@@ -913,14 +913,14 @@ button.accordion-button:not(.collapsed)::after {
 
 /* Download Start */
 .troubled_content {
-  background: url(../images/troubled_bg_img.png);
+  background: url(../images/troubled_bg_img.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 }
 @media screen and (max-width: 1350px) {
   .troubled_content {
-    background: url(../images/troubled_bg_img.png);
+    background: url(../images/troubled_bg_img.webp);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
@@ -928,7 +928,7 @@ button.accordion-button:not(.collapsed)::after {
 }
 @media screen and (min-width: 1350px) and (max-width: 1850px) {
   .troubled_content {
-    background: url(../images/troubled_bg_img.png);
+    background: url(../images/troubled_bg_img.webp);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
@@ -960,7 +960,7 @@ button.accordion-button:not(.collapsed)::after {
 
 @media screen and (min-width: 1050px) {
   .store .col-background {
-    background-image: url(../images/store_bg.png);
+    background-image: url(../images/store_bg.webp);
     background-repeat: no-repeat;
     background-position: right;
   }
