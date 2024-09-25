@@ -190,6 +190,7 @@
   }
   .conect_heading {
     text-align: center;
+    line-height: 2rem !important;
   }
 }
 @media screen and (max-width: 768px) {
@@ -237,6 +238,7 @@
 }
 .conect_heading {
   margin-top: 8rem;
+  line-height: 4rem;
 }
 .footer-title {
   font-weight: bolder;
@@ -582,7 +584,7 @@
   font-size: 22px;
 }
 .tab-content {
-  padding: 25px;
+  padding: 20px 25px;
 }
 
 .bookingNow_btn {
