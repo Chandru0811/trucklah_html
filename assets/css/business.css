@@ -327,15 +327,12 @@
 
 .homeSection-1 {
     background-color: #ffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .homecard {
     background-color: #acff3b;
     border-radius: 20px;
-
+    margin-top: -40px;
 }
 
 .recommend-text {
@@ -353,8 +350,6 @@
 .contentcard-1 {
     padding: 15px;
     background-color: #D1FE93;
-    min-height: 20vh;
-    min-width: 10px;
     border-radius: 6px;
     font-family: Afacad;
     font-size: 22px;
@@ -408,17 +403,6 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 24px;
-    text-align: left;
-    /* width: Hug (151px)px;
-    height: Hug (42px)px; */
-    top: 928px;
-    left: 192px;
-    padding: 9px 50px 9px 50px;
-    gap: 10px;
-    border-radius: 4px 0px 0px 0px;
-    opacity: 0px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .smart-text {
@@ -441,8 +425,6 @@
     font-weight: 600;
     line-height: 24px;
     text-align: left;
-    /* width: Hug (201px)px;
-    height: Hug (42px)px; */
     top: 1524px;
     left: 86px;
     padding: 9px 50px 9px 50px;
@@ -478,8 +460,6 @@
     font-weight: 600;
     line-height: 24px;
     text-align: left;
-    /* width: Hug (201px)px;
-    height: Hug (42px)px; */
     top: 1524px;
     left: 86px;
     padding: 9px 50px 9px 50px;
@@ -536,4 +516,16 @@
     border-radius: 4px 0px 0px 0px;
     border: 1px 0px 0px 0px;
     opacity: 0px;
+}
+
+.year {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+}
+
+.established {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 29.33px;
 }
