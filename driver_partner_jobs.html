@@ -70,7 +70,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
-    <link rel="stylesheet" href="./assets/css/landing_page.css" />
+    <link rel="stylesheet" href="./assets/css/driver_partner_jobs.css" />
 
     <!-- AOS Animation CSS -->
     <link
@@ -141,7 +141,7 @@
 
             <!-- Expanded View (Large Screens) -->
             <div class="ms-auto d-none d-xl-flex align-items-center">
-              <ul class="navbar-nav pe-4 flex-row gap-4">
+              <ul class="navbar-nav pe-4 flex-row m-0 gap-4">
                 <li class="nav-item header-menu">
                   <a class="nav-link" aria-current="page" href="#">Business</a>
                 </li>
@@ -177,95 +177,176 @@
     <!-- landing banner start -->
     <section class="landing_banner">
       <div class="container-fluid p-5">
-        <div class="p-5">
+        <div class="p-5 header_text">
           <p class="landing_banner_content pt-5">
-            Become Trucklah Partner-Driver
+            Join Trucklah as a Driver and Grab $100 !
           </p>
-          <div class="row">
-            <div class="col-lg-5 col-md-5 col-12">
+          <div class="row m-0">
+            <div class="col-lg-8 col-md-8 col-12">
               <p class="landing_banner_content2">
-                TheLorry is a platform that connects drivers with individuals
-                and organizations that need movers and transporters.
+                Are you a Singaporean or a PR? Want to earn big and have a safe
+                career? Join Trucklah Fleet as a Driver. Win assured $ 100, get
+                premium benefits like discounted petrol rates, drive whenever
+                you want facility and more perks.
               </p>
             </div>
           </div>
         </div>
-        <div class="container-fluid px-5 landing_form">
-          <div
-            class="register_form d-flex justify-content-center align-items-center"
-          >
-            <p>Registration Form</p>
-          </div>
-          <form id="registrationForm">
-            <div class="row">
-              <div class="col-lg-4 col-md-4 col-12">
-                <div class="inputs pb-4">
-                  <label class="form_label" for="Name">Name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    class="form-control mt-2 landing_inputs"
-                    placeholder="Name"
-                    required
-                  />
-                </div>
-                <div class="inputs pb-4">
-                  <label class="form_label" for="phone">Phone No</label>
-                  <input
-                    type="number"
-                    id="phone"
-                    name="phone"
-                    class="form-control mt-2 landing_inputs"
-                    placeholder="Phone No"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-12">
-                <div class="inputs pb-4">
-                  <label class="form_label" for="email">Email ID</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    class="form-control mt-2 landing_inputs"
-                    placeholder="Email ID"
-                    required
-                  />
-                </div>
-                <div class="inputs pb-4">
-                  <label class="form_label" for="VehicleType"
-                    >Vehicle Type</label
-                  >
-                  <select
-                    id="name"
-                    name="name"
-                    class="form-control-lg mt-2 landing_inputs w-100 border-0"
-                    required
-                  >
-                    <option value="">Select Vehicle Type</option>
-                    <option value="1">Truck</option>
-                    <option value="2">Car</option>
-                    <option value="3">Van</option>
-                  </select>
-                </div>
-              </div>
-              <div
-                class="col-lg-4 col-md-4 col-12 d-flex justify-content-center align-items-center"
-              >
-                <button type="submit" class="register_btn">Register Now</button>
-              </div>
+        <div>
+          <div class="container-fluid px-5 landing_form">
+            <div
+              class="register_form d-flex justify-content-center align-items-center"
+            >
+              <p class="text-center register_text">Registration Form</p>
             </div>
-          </form>
+            <form id="registrationForm">
+              <div class="row m-0">
+                <div class="col-lg-4 col-md-4 col-12">
+                  <div class="inputs pb-4">
+                    <label class="form_label" for="driver_name">Name</label>
+                    <input
+                      type="text"
+                      id="driver_name"
+                      name="driver_name"
+                      class="form-control mt-2 landing_inputs"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div class="inputs pb-4">
+                    <label class="form_label" for="driver_phone"
+                      >Phone No</label
+                    >
+                    <input
+                      type="text"
+                      id="driver_phone"
+                      name="driver_phone"
+                      class="form-control mt-2 landing_inputs"
+                      placeholder="Phone No"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                  <div class="inputs pb-4">
+                    <label class="form_label" for="driver_email"
+                      >Email ID</label
+                    >
+                    <input
+                      type="driver_email"
+                      id="driver_email"
+                      name="driver_email"
+                      class="form-control mt-2 landing_inputs"
+                      placeholder="Email ID"
+                      required
+                    />
+                  </div>
+                  <div class="inputs pb-4">
+                    <label class="form_label" for="driver_VehicleType"
+                      >Vehicle Type</label
+                    >
+                    <select
+                      id="driver_VehicleType"
+                      name="driver_VehicleType"
+                      class="form-control-lg mt-2 landing_inputs w-100"
+                      required
+                    >
+                      <option value="">Select Vehicle Type</option>
+                      <option value="1">Truck</option>
+                      <option value="2">Car</option>
+                      <option value="3">Van</option>
+                    </select>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-4 col-md-4 col-12 d-flex justify-content-center align-items-center"
+                >
+                  <button type="submit" class="register_btn">
+                    Register Now
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
     <!-- landing banner end -->
 
+    <!-- Ways to earn start -->
+    <section class="ways_to_earn">
+      <div class="row m-0 ways_section">
+        <div class="col-lg-6 col-md-6 col-12">
+          <div class="px-5 py-2">
+            <p class="ways_heading">Ways to earn more only with Trucklah</p>
+            <p class="ways_sub_heading">
+              Earn daily income, set your flexible working hours, and enjoy
+              exclusive rewards.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+          <img
+            src="./assets/images/driver_ways_to_earn_img.webp"
+            alt="driver_ways_to_earn_img"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Ways to earn end -->
+
+    <!-- b2b jobs start  -->
+    <section class="btwob_jobs">
+      <div class="row m-0 py-5">
+        <div class="col-lg-8 col-md-8 col-12 p-5 four_cards">
+          <div class="row m-0">
+            <div class="col-lg-6 col-md-6 col-12 p-0">
+              <div class="card_b2b">
+                <p class="card_num">102</p>
+                <p class="weekly_text">B2B Jobs weekly</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 p-0">
+              <div class="card_b2b">
+                <p class="card_num">102</p>
+                <p class="weekly_text">B2B Jobs weekly*</p>
+              </div>
+            </div>
+          </div>
+          <div class="row m-0">
+            <div class="col-lg-6 col-md-6 col-12 p-0">
+              <div class="card_b2b">
+                <p class="card_num">102</p>
+                <p class="weekly_text">B2B Jobs weekly*</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 p-0">
+              <div class="card_b2b">
+                <p class="card_num">102</p>
+                <p class="weekly_text">B2B Jobs weekly*</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-4 col-md-4 col-12 d-flex justify-content-center align-items-center"
+        >
+          <div
+            class="d-flex justify-content-center align-items-center pt-5 sgd_content"
+          >
+            <p class="sgd_text pt-5">
+              To earn an average of SGD 15,000 monthly
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- b2b jobs end  -->
+
     <!-- Why Start -->
     <section class="whyTrucklahBackground pb-5">
-      <h3 class="whyTrucklahHeading text-center py-5">Why Trucklah?</h3>
+      <h3 class="whyTrucklahHeading text-center py-5">Why Join Trucklah?</h3>
       <div class="container-fluid">
         <div class="owl-carousel carousel_cards_slide owl-theme px-4">
           <div class="item">
@@ -278,11 +359,11 @@
                     class="img-fluid"
                   />
                 </div>
-                <h5 class="card-title mb-4">Door to Door Delivery</h5>
+                <h5 class="card-title mb-4">Assured $100</h5>
                 <p class="card-text">
-                  Make a phone call and we handle the rest. From picking from
-                  your door to delivery at the other end, everything handled
-                  safe and fast.
+                  We give you $100 just for becoming one of us. Join and prove
+                  you belong here. That’s all. $100 is yours, no strings
+                  attached.
                 </p>
               </div>
             </div>
@@ -297,10 +378,11 @@
                     class="img-fluid"
                   />
                 </div>
-                <h5 class="card-title mb-4">Packing Handled</h5>
+                <h5 class="card-title mb-4">Drive whenever you want</h5>
                 <p class="card-text">
-                  We do not just pick, we can pack it for you. Safe and reliable
-                  packing so that your good reach the other end safely.
+                  You are free man with us. Ride whenever you like, whenever you
+                  want. There is no need to work 24x7. Take orders that you like
+                  and skip that you don’t.
                 </p>
               </div>
             </div>
@@ -315,12 +397,11 @@
                     class="img-fluid"
                   />
                 </div>
-                <h5 class="card-title mb-4">Customs Clearance</h5>
+                <h5 class="card-title mb-4">Steady Income</h5>
                 <p class="card-text">
-                  Singapore to India, India to Singapore, anywhere in the world,
-                  we handle the customs clearance. Singapore customs, India
-                  customs and anywhere in the world. Your packages are a
-                  priority for us.
+                  Steady income, now and always. We make sure you get enough
+                  rides when you are with us. No more ride hunting or bargaining
+                  with customers. Easy life, quality living.
                 </p>
               </div>
             </div>
@@ -335,13 +416,11 @@
                     class="img-fluid"
                   />
                 </div>
-                <h5 class="card-title mb-4">Insurance</h5>
+                <h5 class="card-title mb-4">Safe Career</h5>
                 <p class="card-text">
-                  Safe delivery guaranteed. We handle all types of insurance so
-                  that you don’t have to worry about a thing. Give us a phone
-                  call, and we handle the rest. From packing to custom,
-                  Insurance to delivery, error free and safe handling at all
-                  ends.
+                  A safe life and a safe career, that’s what you get with
+                  Trucklah. No more waiting for the customer calls or new ride
+                  orders. We give you enough to keep going, for a long time.
                 </p>
               </div>
             </div>
@@ -356,11 +435,11 @@
                     class="img-fluid"
                   />
                 </div>
-                <h5 class="card-title mb-4">Small, Medium & Big Packages</h5>
+                <h5 class="card-title mb-4">Premium benefits</h5>
                 <p class="card-text">
-                  Got a package to send? Don’t worry about the size. Be it a
-                  gift box or a container, we handle them all. Small or Big, or
-                  anything in between, trust us like a friend.
+                  We care, we do everything in our power to keep you safe, happy
+                  and healthy. From fuel discounts to vehicle loans, a lot of
+                  perks are in the queue. Are you trying?
                 </p>
               </div>
             </div>
@@ -375,12 +454,11 @@
                     class="img-fluid"
                   />
                 </div>
-                <h5 class="card-title mb-4">Commercial & Residential</h5>
+                <h5 class="card-title mb-4">Discounted Petrol</h5>
                 <p class="card-text">
-                  Residential to Residential, Commercial to Commercial,
-                  Residential to Commercial, Commercial to Residential, we
-                  handle every type of moving. Item moving was never been so
-                  easy in Singapore before.
+                  Fuel rates are now under control. Trucklah makes sure that you
+                  get the best possible rates for petrol. Discounted rates to
+                  keep you life and vehicle run smooth.
                 </p>
               </div>
             </div>
@@ -395,51 +473,11 @@
                     class="img-fluid"
                   />
                 </div>
-                <h5 class="card-title mb-4">Air Freight and Ship</h5>
+                <h5 class="card-title mb-4">Get a new vehicle</h5>
                 <p class="card-text">
-                  Air or ship, you pick, we deliver at the best rates ever.
-                  Safe, fast, on time, every time. We handle packing, customs
-                  clearance, insurance and everything in between. Door to Door
-                  delivery for complete peace of mind.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="card h-100">
-              <div class="card-body">
-                <div class="imageDiv">
-                  <img
-                    src="./assets/images/why_trucklah/decoration2.webp"
-                    alt="decoration2"
-                    class="img-fluid"
-                  />
-                </div>
-                <h5 class="card-title mb-4">Affordable</h5>
-                <p class="card-text">
-                  Get the best rates ever. We prefer mouth publicity than any
-                  other mode of advertisements. We make sure that you get the
-                  best moving rates in Singapore, Malaysia, India or any
-                  destination you pick.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="card h-100">
-              <div class="card-body">
-                <div class="imageDiv">
-                  <img
-                    src="./assets/images/why_trucklah/decoration3.webp"
-                    alt="decoration3"
-                    class="img-fluid"
-                  />
-                </div>
-                <h5 class="card-title mb-4">Safe</h5>
-                <p class="card-text">
-                  We deliver safe, 100%. No excuses, no arguments, we deliver
-                  every item safe and damage free with great care. We handle
-                  packages with utmost care and dedication.
+                  A good driver, but no vehicle? Don’t worry, Trucklah can help
+                  you. We can work with vehicle companies and get you a new
+                  ride. As simple as that!
                 </p>
               </div>
             </div>
@@ -449,10 +487,119 @@
     </section>
     <!-- Why End  -->
 
+    <!-- benefits  start -->
+    <section class="benefits">
+      <div class="row m-0">
+        <div class="col-lg-6 col-md-6 col-12">
+          <div class="benefits_text p-5">
+            <p class="benefit_heading">Benefits for our Logistics Partners</p>
+            <p class="benefit_sub_heading">
+              Not only do we provide more opportunities for our drivers, but we
+              will ensure that you will be well taken care of.
+            </p>
+          </div>
+          <img
+            src="./assets/images/benefits.webp"
+            alt="benefits"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+          <div class="card mt-5">
+            <div class="benefits_points mt-3">
+              <div class="row m-0">
+                <div
+                  class="col-lg-2 col-md-2 col-12 d-flex justify-content-center align-items-center count_benefit"
+                >
+                  <span>01</span>
+                </div>
+                <div class="col-lg-10 col-md-10 col-12">
+                  <p class="points_heading">Health benefits program</p>
+                  <p class="points_sub_heading">
+                    Trucklah ensures that you get help on your bills when you’re
+                    ill and healthcare that is extended to your family, too. 
+                  </p>
+                </div>
+              </div>
+              <hr />
+            </div>
+            <div class="benefits_points">
+              <div class="row m-0">
+                <div
+                  class="col-lg-2 col-md-2 col-12 d-flex justify-content-center align-items-center count_benefit"
+                >
+                  <span>02</span>
+                </div>
+                <div class="col-lg-10 col-md-10 col-12">
+                  <p class="points_heading">Vehicle rental solutions</p>
+                  <p class="points_sub_heading">
+                    Exclusive rates and flexible lease plans for all vehicle
+                    types with Trucklah rental drivers to start work fast. 
+                  </p>
+                </div>
+              </div>
+              <hr />
+            </div>
+            <div class="benefits_points">
+              <div class="row m-0">
+                <div
+                  class="col-lg-2 col-md-2 col-12 d-flex justify-content-center align-items-center count_benefit"
+                >
+                  <span>03</span>
+                </div>
+                <div class="col-lg-10 col-md-10 col-12">
+                  <p class="points_heading">Fuel discount</p>
+                  <p class="points_sub_heading">
+                    Trucklah ensures that you get help on your bills when you’re
+                    ill and healthcare that is extended to your family, too. 
+                  </p>
+                </div>
+              </div>
+              <hr />
+            </div>
+            <div class="benefits_points">
+              <div class="row m-0">
+                <div
+                  class="col-lg-2 col-md-2 col-12 d-flex justify-content-center align-items-center count_benefit"
+                >
+                  <span>04</span>
+                </div>
+                <div class="col-lg-10 col-md-10 col-12">
+                  <p class="points_heading">Servicing & maintenance</p>
+                  <p class="points_sub_heading">
+                    Exclusive rates and flexible lease plans for all vehicle
+                    types with Trucklah rental drivers to start work fast.
+                  </p>
+                </div>
+              </div>
+              <hr />
+            </div>
+            <div class="benefits_points">
+              <div class="row m-0">
+                <div
+                  class="col-lg-2 col-md-2 col-12 d-flex justify-content-center align-items-center count_benefit"
+                >
+                  <span>05</span>
+                </div>
+                <div class="col-lg-10 col-md-10 col-12">
+                  <p class="points_heading">Incentives</p>
+                  <p class="points_sub_heading">
+                    Exclusive rates and flexible lease plans for all vehicle
+                    types with Trucklah rental drivers to start work fast.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- benefits  end -->
+
     <!-- Footer Start -->
     <section class="footer">
       <div class="connect">
-        <div class="row m-0">
+        <div class="row m-0 m-0">
           <div class="col-md-5 col-12">
             <div class="d-flex justify-content-center align-items-center px-5">
               <h3 class="conect_heading display-5 fw-bold pt-5">
@@ -463,7 +610,7 @@
           </div>
           <div class="col-md-7 col-12">
             <form id="contactForm">
-              <div class="row d-flex justify-content-center">
+              <div class="row m-0 d-flex justify-content-center">
                 <div class="col-lg-6 col-12 input-colum">
                   <input
                     type="text"
@@ -522,7 +669,7 @@
     </section>
     <section class="footer-conent">
       <div class="container">
-        <div class="row m-0">
+        <div class="row m-0 m-0">
           <div class="col-md-3 text-start mt-4">
             <div class="headings">
               <h5 class="footer-title">Location</h5>

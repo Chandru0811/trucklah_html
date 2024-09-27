@@ -271,7 +271,7 @@
 .landing_banner {
   background: linear-gradient(#25222266, #25222266),
     url("../images/landing_bg.webp") top center no-repeat;
-  min-height: 75vh;
+  /* min-height: 75vh; */
   /* / background-attachment: fixed; / */
   background-size: contain;
   -webkit-background-size: cover;
@@ -296,11 +296,44 @@
   color: #ffffff;
 }
 
+@media screen and (max-width: 425px) {
+  .landing_banner_content {
+    font-family: "Afacad", system-ui;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 49.33px;
+    text-align: start;
+    color: #ffffff;
+    text-align: center !important;
+  }
+  .landing_banner_content2 {
+    font-family: "Afacad", system-ui;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26.67px;
+    text-align: left;
+    color: #ffffff;
+    text-align: center !important;
+  }
+  .header_text {
+    padding: 0 !important;
+  }
+  .landing_form {
+    padding: 0 auto 10px !important;
+    top: 0 !important;
+  }
+  .register_text {
+    font-size: 16px !important;
+  }
+}
+
 .landing_form {
   background-color: #acff3b;
   padding: 20px;
   margin-top: 50px;
   border-radius: 15px;
+  position: relative;
+  top: 180px;
 }
 .register_form p {
   font-family: "Afacad";
@@ -350,6 +383,111 @@
   width: 100%;
 }
 /* landing banner end  */
+
+/* ways to earn start */
+.ways_heading {
+  font-family: "Afacad";
+  font-size: 59px;
+  font-weight: 700;
+  line-height: 78.67px;
+  text-align: left;
+  color: #333333;
+}
+.ways_sub_heading {
+  font-family: "Afacad";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26.67px;
+  text-align: left;
+  color: #333333;
+}
+
+@media screen and (max-width: 425px) {
+  .ways_heading {
+    font-family: "Afacad";
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 48.67px;
+    text-align: center !important;
+    color: #333333;
+  }
+  .ways_sub_heading {
+    font-family: "Afacad";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26.67px;
+    text-align: center !important;
+    color: #333333;
+  }
+  .sgd_text {
+    font-family: "Afacad";
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 22.67px;
+    text-align: center !important;
+  }
+  .ways_section {
+    top: 0 !important;
+  }
+  .sgd_content {
+    padding: 10px !important;
+  }
+  .sgd_text {
+    padding: 0 !important;
+  }
+}
+
+.ways_cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ways_section {
+  position: relative;
+  top: 200px;
+}
+/* ways to earn end */
+
+/* b2bjobs start  */
+.btwob_jobs {
+  background: #95f70d;
+}
+.card_b2b {
+  border: 0.1px solid #95f70d !important;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.four_cards {
+  z-index: 999;
+}
+.card_num {
+  font-family: "Afacad";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+  text-align: left;
+  color: #000;
+}
+.weekly_text {
+  font-family: "Afacad";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 29.33px;
+  text-align: left;
+  color: #000;
+}
+.sgd_text {
+  font-family: "Afacad";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42.67px;
+  text-align: left;
+}
+/* b2bjobs end  */
 
 /* Why Trucklah Start  */
 
@@ -471,3 +609,97 @@
 }
 
 /* Why Trucklah End  */
+
+/* benefits start  */
+.benefits {
+  background: #f9f9f9;
+}
+.benefit_heading {
+  font-family: "Afacad";
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 58px;
+  text-align: start;
+  color: #333333;
+}
+.benefit_sub_heading {
+  font-family: "Afacad";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: start;
+  color: #333333;
+}
+
+@media screen and (max-width: 425px) {
+  .benefit_heading {
+    font-family: "Afacad";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    text-align: center;
+    color: #333333;
+  }
+  .benefit_sub_heading {
+    font-family: "Afacad";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+    color: #333333;
+  }
+  .points_heading {
+    font-family: "Afacad";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center !important;
+    color: #333333;
+  }
+  .points_sub_heading {
+    font-family: "Afacad";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center !important;
+    color: #333333;
+  }
+}
+
+.benefits_points {
+  padding: 0 20px !important;
+}
+.count_benefit {
+  font-family: "Afacad";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+  color: #000;
+}
+.count_benefit span {
+  border: 1px solid #000;
+  border-radius: 100% !important;
+  padding: 8px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+
+.points_heading {
+  font-family: "Afacad";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: start;
+  color: #333333;
+}
+.points_sub_heading {
+  font-family: "Afacad";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: start;
+  color: #333333;
+}
+/* benefits end  */
