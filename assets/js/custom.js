@@ -50,6 +50,31 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $("#registrationForm").submit(function (event) {
+    event.preventDefault();
+
+    var formData = {
+      driver_name: $("#driver_name").val(),
+      driver_email: $("#driver_email").val(),
+      driver_phone: $("#driver_phone").val(),
+      driver_VehicleType: $("#driver_VehicleType").val(),
+    };
+
+    console.log("Form Data:", formData);
+
+    $.ajax({
+      data: formData,
+      success: function () {
+        $("#registrationForm").trigger("reset");
+      },
+      error: function (error) {
+        console.error("Error:", error);
+      },
+    });
+  });
+});
+
 document
   .getElementById("view-more-item-moving")
   .addEventListener("click", function () {

@@ -1,0 +1,705 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Afacad", system-ui;
+}
+
+/* Header Start  */
+.header {
+  background-color: #acff3b;
+}
+
+.header .userlogin-button {
+  background-color: #333333;
+  color: #acff3b;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Afacad", system-ui;
+}
+
+.dotted-border {
+  position: relative;
+}
+
+.dotted-border::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 2px dotted rgba(51, 51, 51, 1);
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+.header .userlogin-button:hover {
+  background-color: #333333;
+  color: #acff3b;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Afacad", system-ui;
+}
+
+.header .userlogin-button-large {
+  background-color: #333333;
+  color: #acff3b;
+  font-size: 16px;
+  font-family: "Afacad", system-ui;
+  padding: 2px 18px !important;
+  margin: 0 25px 0 10px;
+}
+
+.header .userlogin-button-large:hover {
+  background-color: #333333;
+  color: #acff3b;
+  font-size: 16px;
+  font-family: "Afacad", system-ui;
+  padding: 2px 18px !important;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding-left: 1rem;
+  padding-right: 0rem;
+}
+
+.header-menu a {
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Afacad", system-ui;
+}
+
+.header-menu a:hover {
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Afacad", system-ui;
+}
+
+.header-menu .nav-link {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.header-menu .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 1);
+  transition: width 0.3s ease;
+}
+
+.header-menu .nav-link:hover::after {
+  width: 100%;
+}
+
+@media screen and (max-width: 380px) and (min-width: 320px) {
+  .header-logo {
+    max-width: 120px;
+  }
+  .navbar-toggler .button {
+    max-width: 150px;
+  }
+  .button {
+    max-width: 200px;
+  }
+}
+
+.icon-input {
+  position: absolute;
+  left: 10px;
+  color: #9c54ff;
+}
+
+/* Header End  */
+
+/* Footer Start  */
+
+.footer {
+  background-color: #acff3b;
+  padding: 15px 0;
+}
+.footer-conent {
+  color: #acff3b;
+  background-color: #333333;
+  padding: 15px 0;
+}
+.connect_heading {
+  color: #333333 !important;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 69.33px;
+  text-align: left;
+}
+.connect {
+  padding: 0 0 40px 0 !important;
+}
+/* form */
+.connect .footer-form {
+  background: none !important;
+  border: none;
+  border-bottom: 1px solid #333333 !important;
+  border-radius: 0;
+  font-weight: 700;
+  margin: 1.8rem 0;
+  box-shadow: none !important;
+  text-align: start !important;
+  padding: 24px 0;
+}
+@media screen and (max-width: 425px) {
+  .input-colum {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+  .footer-title {
+    margin: 0 auto 15px auto;
+  }
+  .links {
+    text-align: center !important;
+    display: flex;
+    justify-content: center;
+  }
+  .links2 {
+    text-align: center !important;
+  }
+  .footer-links {
+    padding: 0 !important;
+  }
+  .footer-links .links {
+    padding: 0;
+    cursor: pointer;
+  }
+  .footer-links .links2 {
+    padding: 0;
+    cursor: pointer;
+  }
+  .headings {
+    text-align: center;
+  }
+  .headings img {
+    display: none;
+  }
+  .send_btn {
+    text-align: center;
+  }
+  .conect_heading {
+    text-align: center;
+    line-height: 2rem !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .connect .footer-form {
+    background: none !important;
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    font-weight: 700;
+    margin: 0;
+    box-shadow: none !important;
+    text-align: start !important;
+    padding: 18px 0;
+  }
+  .conect_heading {
+    margin-top: 0 !important;
+  }
+  .connect .footer-btn {
+    border: 1px solid;
+    padding: 12px 45px !important;
+    font-weight: 500;
+    align-items: center !important;
+    margin-top: 40px !important;
+  }
+}
+@media (max-width: 992px) {
+  .footer .row {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.connect .footer-btn {
+  border: 1px solid;
+  padding: 12px 45px !important;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.connect .footer-btn:hover {
+  border: 1px solid;
+  background-color: #95f70d !important;
+  color: black !important;
+  padding: 12px 45px !important;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.conect_heading {
+  margin-top: 8rem;
+  line-height: 4rem;
+}
+.footer-title {
+  font-weight: bolder;
+  cursor: pointer;
+  position: relative;
+  top: 2px;
+}
+.underline_img {
+  position: absolute;
+}
+.footer-links .links {
+  margin: 30px 0;
+  padding: 5px;
+  cursor: pointer;
+}
+.footer-links .links2 {
+  margin: 30px 0;
+  padding: 0px;
+  cursor: pointer;
+}
+.line-divider i {
+  /* border-right: 1px solid; */
+  padding: 0 9px;
+}
+
+/* Footer End  */
+
+/* landing banner start  */
+
+.landing_banner {
+  background: linear-gradient(#25222266, #25222266),
+    url("../images/landing_bg.webp") top center no-repeat;
+  /* min-height: 75vh; */
+  /* / background-attachment: fixed; / */
+  background-size: contain;
+  -webkit-background-size: cover;
+
+  -moz-background-size: cover;
+}
+
+.landing_banner_content {
+  font-family: "Afacad", system-ui;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 69.33px;
+  text-align: start;
+  color: #ffffff;
+}
+.landing_banner_content2 {
+  font-family: "Afacad", system-ui;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26.67px;
+  text-align: left;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 425px) {
+  .landing_banner_content {
+    font-family: "Afacad", system-ui;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 49.33px;
+    text-align: start;
+    color: #ffffff;
+    text-align: center !important;
+  }
+  .landing_banner_content2 {
+    font-family: "Afacad", system-ui;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26.67px;
+    text-align: left;
+    color: #ffffff;
+    text-align: center !important;
+  }
+  .header_text {
+    padding: 0 !important;
+  }
+  .landing_form {
+    padding: 0 auto 10px !important;
+    top: 0 !important;
+  }
+  .register_text {
+    font-size: 16px !important;
+  }
+}
+
+.landing_form {
+  background-color: #acff3b;
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 15px;
+  position: relative;
+  top: 180px;
+}
+.register_form p {
+  font-family: "Afacad";
+  background-color: #acff3b;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 34.67px;
+  text-align: left;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #333333;
+  width: fit-content;
+  padding: 10px 50px;
+  position: relative;
+  top: -45px;
+}
+
+.landing_inputs {
+  background: #d7fea1;
+  border: 1px solid #7bd103 !important;
+  min-height: 45px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+.landing_inputs:focus {
+  box-shadow: none;
+}
+.form_label {
+  font-family: "Afacad";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+.register_btn {
+  border: 1px solid #333333;
+  background: #333333;
+  color: #ffffff;
+  border-radius: 5px;
+  font-family: "Afacad";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+}
+/* landing banner end  */
+
+/* ways to earn start */
+.ways_heading {
+  font-family: "Afacad";
+  font-size: 59px;
+  font-weight: 700;
+  line-height: 78.67px;
+  text-align: left;
+  color: #333333;
+}
+.ways_sub_heading {
+  font-family: "Afacad";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26.67px;
+  text-align: left;
+  color: #333333;
+}
+
+@media screen and (max-width: 425px) {
+  .ways_heading {
+    font-family: "Afacad";
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 48.67px;
+    text-align: center !important;
+    color: #333333;
+  }
+  .ways_sub_heading {
+    font-family: "Afacad";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26.67px;
+    text-align: center !important;
+    color: #333333;
+  }
+  .sgd_text {
+    font-family: "Afacad";
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 22.67px;
+    text-align: center !important;
+  }
+  .ways_section {
+    top: 0 !important;
+  }
+  .sgd_content {
+    padding: 10px !important;
+  }
+  .sgd_text {
+    padding: 0 !important;
+  }
+}
+
+.ways_cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ways_section {
+  position: relative;
+  top: 200px;
+}
+/* ways to earn end */
+
+/* b2bjobs start  */
+.btwob_jobs {
+  background: #95f70d;
+}
+.card_b2b {
+  border: 0.1px solid #95f70d !important;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.four_cards {
+  z-index: 999;
+}
+.card_num {
+  font-family: "Afacad";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+  text-align: left;
+  color: #000;
+}
+.weekly_text {
+  font-family: "Afacad";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 29.33px;
+  text-align: left;
+  color: #000;
+}
+.sgd_text {
+  font-family: "Afacad";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42.67px;
+  text-align: left;
+}
+/* b2bjobs end  */
+
+/* Why Trucklah Start  */
+
+.whyTrucklahBackground {
+  background: linear-gradient(to bottom, #f6f6f6 80%, #fff 80%);
+}
+
+.whyTrucklahHeading {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 69.33px;
+  text-align: left;
+}
+
+.whyTrucklahBackground .card {
+  border: none;
+  box-shadow: 2px 4px 4px #ccc;
+  min-height: 360px;
+  margin: 8px;
+}
+.whyTrucklahBackground .card-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+}
+
+.whyTrucklahBackground .card-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 34px;
+  text-align: left;
+}
+.owl-theme .owl-dots .owl-dot {
+  border: none !important;
+  border-radius: 100%;
+  margin: 0 2.5px;
+}
+.owl-theme .owl-dots .owl-dot.active {
+  border: 1px solid #333 !important;
+  border-radius: 100%;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  margin: 3px !important;
+  border: none;
+  background-color: #6a6666;
+}
+
+.whyTrucklahBackground .owl-theme .owl-dots .owl-dot.active span {
+  border: 4px solid #333 !important;
+  background: 495057 !important;
+  margin: 3px !important;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #333 !important;
+}
+
+.whyTrucklahBackground .imageDiv {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 35px;
+}
+
+.carousel_cards_slide .owl-stage-outer {
+  margin: 0 0 3rem 0;
+}
+
+@media screen and (min-width: 1142px) and (max-width: 1292px) {
+  .carousel_cards_slide .owl-stage-outer {
+    margin: 0 0 4rem 0;
+  }
+  .whyTrucklahBackground .card {
+    border: none;
+    box-shadow: 2px 4px 4px #ccc;
+    min-height: 390px;
+    margin: 8px;
+  }
+}
+@media screen and (min-width: 999px) and (max-width: 1142px) {
+  .carousel_cards_slide .owl-stage-outer {
+    margin: 0 0 4rem 0;
+  }
+  .whyTrucklahBackground .card {
+    border: none;
+    box-shadow: 2px 4px 4px #ccc;
+    min-height: 450px;
+    margin: 8px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 882px) {
+  .carousel_cards_slide .owl-stage-outer {
+    margin: 0 0 4rem 0;
+  }
+  .whyTrucklahBackground .card {
+    border: none;
+    box-shadow: 2px 4px 4px #ccc;
+    min-height: 420px;
+    margin: 8px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 472px) {
+  .whyTrucklahBackground .card {
+    border: none;
+    box-shadow: 2px 4px 4px #ccc;
+    min-height: 460px;
+    margin: 8px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .whyTrucklahBackground .card {
+    border: none;
+    box-shadow: 2px 4px 4px #ccc;
+    min-height: 520px;
+    margin: 8px;
+  }
+}
+
+/* Why Trucklah End  */
+
+/* benefits start  */
+.benefits {
+  background: #f9f9f9;
+}
+.benefit_heading {
+  font-family: "Afacad";
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 58px;
+  text-align: start;
+  color: #333333;
+}
+.benefit_sub_heading {
+  font-family: "Afacad";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: start;
+  color: #333333;
+}
+
+@media screen and (max-width: 425px) {
+  .benefit_heading {
+    font-family: "Afacad";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    text-align: center;
+    color: #333333;
+  }
+  .benefit_sub_heading {
+    font-family: "Afacad";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+    color: #333333;
+  }
+  .points_heading {
+    font-family: "Afacad";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center !important;
+    color: #333333;
+  }
+  .points_sub_heading {
+    font-family: "Afacad";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center !important;
+    color: #333333;
+  }
+}
+
+.benefits_points {
+  padding: 0 20px !important;
+}
+.count_benefit {
+  font-family: "Afacad";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+  color: #000;
+}
+.count_benefit span {
+  border: 1px solid #000;
+  border-radius: 100% !important;
+  padding: 8px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+
+.points_heading {
+  font-family: "Afacad";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: start;
+  color: #333333;
+}
+.points_sub_heading {
+  font-family: "Afacad";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: start;
+  color: #333333;
+}
+/* benefits end  */
