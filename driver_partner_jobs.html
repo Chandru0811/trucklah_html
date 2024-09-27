@@ -262,10 +262,12 @@
                       class="form-control-lg mt-2 landing_inputs w-100"
                       required
                     >
-                      <option value="">Select Vehicle Type</option>
-                      <option value="1">Truck</option>
-                      <option value="2">Car</option>
-                      <option value="3">Van</option>
+                      <option>Select Vehicle Type</option>
+                      <option value="1.7M_VAN">1.7M VAN</option>
+                      <option value="2.4M_VAN">2.4M VAN</option>
+                      <option value="10FT_LORRY">10FT LORRY</option>
+                      <option value="14FT_LORRY">14FT LORRY</option>
+                      <option value="24FT_LORRY ">24FT LORRY</option>
                     </select>
                   </div>
                 </div>
@@ -320,7 +322,7 @@
             </div>
             <div class="col-lg-6 col-md-6 col-12 p-0">
               <div class="card_b2b">
-                <p class="card_num">102</p>
+                <p class="card_num">85</p>
                 <p class="weekly_text">B2B Jobs weekly*</p>
               </div>
             </div>
@@ -328,13 +330,13 @@
           <div class="row m-0">
             <div class="col-lg-6 col-md-6 col-12 p-0">
               <div class="card_b2b">
-                <p class="card_num">102</p>
+                <p class="card_num">08</p>
                 <p class="weekly_text">B2B Jobs weekly*</p>
               </div>
             </div>
             <div class="col-lg-6 col-md-6 col-12 p-0">
               <div class="card_b2b">
-                <p class="card_num">102</p>
+                <p class="card_num">202</p>
                 <p class="weekly_text">B2B Jobs weekly*</p>
               </div>
             </div>
@@ -891,6 +893,113 @@
         </p>
       </div>
     </section>
+
+    <!-- error model -->
+    <div
+      class="modal fade"
+      id="errorModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="errorModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modalContent">
+          <div
+            class="modal-header d-flex align-items-center justify-content-between errorHeading shadow-none mb-2"
+            style="background-color: rgb(255, 80, 80); color: white"
+          >
+            <h5
+              class="modal-title"
+              id="errorModalLabel"
+              style="font-size: 28px"
+            >
+              There was an error
+            </h5>
+            <button
+              type="button"
+              class="btn btn-sm"
+              onclick="closePopup()"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center pt-0">
+            <!-- Error Icon -->
+            <i
+              class="fa-solid fa-circle-exclamation my-4"
+              style="color: rgb(255, 80, 80); font-size: 70px"
+            ></i>
+            <p class="mb-0 errorMagnetSubHeading fw-bold pb-4">
+              We are sorry !
+            </p>
+            <p class="mb-0 errorMagnetSubHeading text-muted fw-bold pb-2">
+              You can reach us on
+            </p>
+            <p class="mb-0 errorMobile pb-4">+65 8894 1306</p>
+
+            <!-- Contact Us Button -->
+            <a href="./" class="btn successMagnetButton">
+              <i class="fas fa-arrow m-0-left"></i> Back to Home
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Success mode -->
+    <div
+      class="modal fade text-center"
+      id="successModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="successModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modalContent">
+          <div
+            class="modal-header d-flex align-content-center justify-content-between"
+            style="background: #acff3b; color: #333"
+          >
+            <h5
+              class="modal-title"
+              id="successModalLabel"
+              style="font-size: 28px"
+            >
+              That's all required !
+            </h5>
+            <button
+              type="button"
+              class="close btn"
+              onclick="closePopup()"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body pt-0">
+            <!-- Success Video -->
+            <i
+              class="fa-solid fa-circle-check my-5"
+              style="color: #28a745; font-size: 80px"
+            ></i>
+            <p class="mb-0 SuccessMagnetSubHeading pb-4">
+              We will get back you soon!
+            </p>
+
+            <!-- Back to Home Button -->
+            <a href="./">
+              <button class="btn successMagnetButton">Back to Home</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Footer End  -->
     <script
       src="https://kit.fontawesome.com/5b8838406b.js"

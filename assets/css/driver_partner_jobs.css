@@ -152,7 +152,7 @@
   text-align: start !important;
   padding: 24px 0;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 555px) {
   .input-colum {
     width: 100% !important;
     margin-bottom: 15px;
@@ -296,7 +296,7 @@
   color: #ffffff;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 555px) {
   .landing_banner_content {
     font-family: "Afacad", system-ui;
     font-size: 42px;
@@ -402,7 +402,7 @@
   color: #333333;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 555px) {
   .ways_heading {
     font-family: "Afacad";
     font-size: 39px;
@@ -631,7 +631,7 @@
   color: #333333;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 555px) {
   .benefit_heading {
     font-family: "Afacad";
     font-size: 32px;
@@ -702,4 +702,31 @@
   text-align: start;
   color: #333333;
 }
+
 /* benefits end  */
+
+.SuccessMagnetSubHeading {
+  color: #333;
+  font-size: 26px;
+  font-weight: 600 !important;
+}
+
+.successMagnetButton {
+  background-color: #95f70d;
+  color: #333;
+  font-weight: 600;
+  position: relative;
+}
+.successMagnetButton:hover {
+  background-color: #80dc00;
+  color: #333 !important;
+}
+
+.errorMagnetSubHeading {
+  font-size: 18px !important;
+}
+
+.errorMobile {
+  font-size: 26px !important;
+  font-weight: 700 !important;
+}

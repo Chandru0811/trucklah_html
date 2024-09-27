@@ -61,19 +61,53 @@ $(document).ready(function () {
       driver_VehicleType: $("#driver_VehicleType").val(),
     };
 
-    console.log("Form Data:", formData);
+    // console.log("Form Data:", formData);
 
+    var payload = {
+      first_name: $("#driver_name").val(),
+      last_name: $("#lastName").val(),
+      email: $("#driver_email").val(),
+      company_id: 2,
+      company: "ECSCloudInfotech",
+      lead_status: "PENDING",
+      description_info: $("#driver_VehicleType").val(),
+      phone: $("#driver_phone").val(),
+      country_code: "65",
+    };
+
+    // console.log("Payload for First API:", payload);
+
+    // First API call
     $.ajax({
-      data: formData,
-      success: function () {
-        $("#registrationForm").trigger("reset");
+      url: "https://crmlah.com/ecscrm/api/newClient",
+      type: "POST",
+      contentType: "application/json",
+      data: JSON.stringify(payload),
+      success: function (response, status, xhr) {
+        console.log("First API response:", response);
+
+        if (xhr.status === 201 && response) {
+          $("#successModal").modal("show");
+          $("#registrationForm")[0].reset();
+        } else {
+          console.error("Unexpected response or missing leadId:", response);
+        }
+
+        $("#registrationForm")[0].reset();
       },
-      error: function (error) {
-        console.error("Error:", error);
+      error: function (xhr, status, error) {
+        console.error("First API call failed:", error);
+        $("#errorModal").modal("show");
+        $("#registrationForm")[0].reset();
       },
     });
   });
 });
+
+function closePopup() {
+  $("#successModal").modal("hide");
+  $("#errorModal").modal("hide");
+}
 
 document
   .getElementById("view-more-item-moving")
