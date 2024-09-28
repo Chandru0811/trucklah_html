@@ -69,7 +69,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
-    <link rel="stylesheet" href="./assets/css/driver_partner_jobs.css" />
+    <link rel="stylesheet" href="./assets/css/contact_us.css" />
 
     <!-- AOS Animation CSS -->
     <link
@@ -184,507 +184,217 @@
     </section>
     <!-- Header End  -->
 
-    <!-- landing banner start -->
-    <section class="landing_banner">
-      <div class="container-fluid p-5">
-        <div class="p-5 header_text">
-          <p class="landing_banner_content pt-5">
-            Join Trucklah as a Driver and Grab $100 !
-          </p>
-          <div class="row m-0">
-            <div class="col-lg-8 col-md-12 col-12">
-              <p class="landing_banner_content2">
-                Are you a Singaporean or a PR? Want to earn big and have a safe
-                career? Join Trucklah Fleet as a Driver. Win assured $ 100, get
-                premium benefits like discounted petrol rates, drive whenever
-                you want facility and more perks.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="form_section">
-          <div class="container-fluid px-5 landing_form">
-            <div
-              class="register_form d-flex justify-content-center align-items-center"
-            >
-              <p class="text-center register_text">Registration Form</p>
-            </div>
-            <form id="registrationForm">
-              <div class="row m-0">
-                <div class="col-lg-4 col-md-4 col-12">
-                  <div class="inputs pb-4">
-                    <label class="form_label" for="driver_name">Name</label>
+    <!-- Contact US -->
+
+    <section>
+      <div class="main-container">
+        <!-- Form Overlay -->
+        <div class="form-overlay my-5 px-2">
+          <div class="container card shadow py-5">
+            <div class="row">
+              <div class="col-md-6 col-12 px-5">
+                <h1 class="contact-heading mb-4">Contact Us</h1>
+                <br />
+                <form id="contactUsForm">
+                  <div class="row g-3">
+                    <div class="col-md-6 col-12">
+                      <div class="input-group mb-4">
+                        <input
+                          type="text"
+                          class="form-control contact-icon-group input-text-color"
+                          style="box-shadow: none"
+                          placeholder="First Name *"
+                          id="contact_us_first_name"
+                          name="contact_us_first_name"
+                          aria-label="First Name *"
+                          aria-describedby="basic-addon1"
+                          required
+                        />
+                        <div class="error mt-0 mb-3 col-12"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <div class="input-group mb-4">
+                        <input
+                          type="text"
+                          class="form-control contact-icon-group input-text-color"
+                          style="box-shadow: none"
+                          placeholder="Last Name"
+                          id="contact_us_last_name"
+                          name="contact_us_last_name"
+                          aria-label="Last Name"
+                          aria-describedby="basic-addon1"
+                        />
+                        <div class="error mt-0 mb-3 col-12"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input-group mb-4">
                     <input
                       type="text"
-                      id="driver_name"
-                      name="driver_name"
-                      class="form-control mt-2 landing_inputs"
-                      placeholder="Name"
+                      class="form-control contact-icon-group input-text-color"
+                      style="box-shadow: none"
+                      placeholder="Email *"
+                      id="contact_us_email"
+                      name="contact_us_email"
+                      aria-label="Email *"
+                      aria-describedby="basic-addon1"
                       required
                     />
+                    <div class="error mt-0 mb-3 col-12"></div>
                   </div>
-                  <div class="inputs pb-4">
-                    <label class="form_label" for="driver_phone"
-                      >Phone No</label
-                    >
+                  <div class="input-group mb-4">
                     <input
                       type="text"
-                      id="driver_phone"
-                      name="driver_phone"
-                      class="form-control mt-2 landing_inputs"
-                      placeholder="Phone No"
+                      class="form-control contact-icon-group input-text-color"
+                      style="box-shadow: none"
+                      placeholder="Phone *"
+                      id="contact_us_phone"
+                      name="contact_us_phone"
+                      aria-label="Phone *"
+                      aria-describedby="basic-addon1"
                       required
                     />
+                    <div class="error mt-0 mb-3 col-12"></div>
                   </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-12">
-                  <div class="inputs pb-4">
-                    <label class="form_label" for="driver_email"
-                      >Email ID</label
+                  <div class="mb-5">
+                    <label for="description_info" class="form-label text-muted"
+                      >Leave your Message</label
                     >
-                    <input
-                      type="email"
-                      id="driver_email"
-                      name="driver_email"
-                      class="form-control mt-2 landing_inputs"
-                      placeholder="Email ID"
-                      required
-                    />
+                    <textarea
+                      class="form-control input-text-color"
+                      style="box-shadow: none"
+                      id="contact_us_message"
+                      name="contact_us_message"
+                      rows="4"
+                    ></textarea>
+                    <div class="error mt-0 mb-3 col-12"></div>
                   </div>
-                  <div class="inputs pb-4">
-                    <label class="form_label" for="driver_VehicleType"
-                      >Vehicle Type</label
-                    >
-                    <select
-                      id="driver_VehicleType"
-                      name="driver_VehicleType"
-                      class="form-control-lg mt-2 landing_inputs w-100"
-                      required
-                    >
-                      <option value="">Select Vehicle Type</option>
-                      <option value="1.7M_VAN">1.7M VAN</option>
-                      <option value="2.4M_VAN">2.4M VAN</option>
-                      <option value="10FT_LORRY">10FT LORRY</option>
-                      <option value="14FT_LORRY">14FT LORRY</option>
-                      <option value="24FT_LORRY ">24FT LORRY</option>
-                    </select>
-                  </div>
-                </div>
-                <div
-                  class="col-lg-4 col-md-4 col-12 d-flex justify-content-center align-items-center"
-                >
-                  <button type="submit" class="register_btn">
-                    Register Now
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- landing banner end -->
-
-    <!-- Ways to earn start -->
-    <section class="ways_to_earn">
-      <div class="row m-0 ways_section">
-        <div class="col-lg-6 col-md-6 col-12">
-          <div class="px-5 py-2 ways_content">
-            <p class="ways_heading">Ways to earn more only with Trucklah</p>
-            <p class="ways_sub_heading">
-              Earn daily income, set your flexible working hours, and enjoy
-              exclusive rewards.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-12 ways_img_section">
-          <img
-            src="./assets/images/driver_ways_to_earn_img.webp"
-            alt="driver_ways_to_earn_img"
-            class="img-fluid"
-          />
-        </div>
-      </div>
-    </section>
-    <!-- Ways to earn end -->
-
-    <!-- b2b jobs start  -->
-    <section class="btwob_jobs">
-      <div class="row m-0 py-5">
-        <div class="col-lg-8 col-md-8 col-12 p-5 four_cards">
-          <div class="row m-0">
-            <div class="col-lg-6 col-md-6 col-12 p-0">
-              <div class="card_b2b">
-                <p class="card_num">Assured</p>
-                <p class="weekly_text">Rides and Delivery Orders</p>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12 p-0">
-              <div class="card_b2b">
-                <p class="card_num">Discounted</p>
-                <p class="weekly_text">Fuel Rates</p>
-              </div>
-            </div>
-          </div>
-          <div class="row m-0">
-            <div class="col-lg-6 col-md-6 col-12 p-0">
-              <div class="card_b2b">
-                <p class="card_num">Support</p>
-                <p class="weekly_text">Collaboration with vehicle companies</p>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12 p-0">
-              <div class="card_b2b">
-                <p class="card_num">Premium</p>
-                <p class="weekly_text">Perks & Benefits</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="col-lg-4 col-md-4 col-12 d-flex justify-content-center align-items-center"
-        >
-          <div
-            class="d-flex justify-content-center align-items-center pt-5 sgd_content"
-          >
-            <p class="sgd_text pt-5">Join Trucklah and upgrade your career!</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- b2b jobs end  -->
-
-    <!-- Why Start -->
-    <section class="whyTrucklahBackground pb-5">
-      <h3 class="whyTrucklahHeading text-center py-5">Why Join Trucklah?</h3>
-      <div class="container-fluid">
-        <div class="owl-carousel carousel_cards_slide owl-theme px-4">
-          <div class="item">
-            <div class="card h-100">
-              <div class="card-body">
-                <div class="imageDiv">
-                  <img
-                    src="./assets/images/why_trucklah/decoration1.webp"
-                    alt="decoration1"
-                    class="img-fluid"
-                  />
-                </div>
-                <h5 class="card-title mb-4">Assured $100</h5>
-                <p class="card-text">
-                  We give you $100 just for becoming one of us. Join and prove
-                  you belong here. That’s all. $100 is yours, no strings
-                  attached.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="card h-100">
-              <div class="card-body">
-                <div class="imageDiv">
-                  <img
-                    src="./assets/images/why_trucklah/decoration2.webp"
-                    alt="decoration2"
-                    class="img-fluid"
-                  />
-                </div>
-                <h5 class="card-title mb-4">Drive whenever you want</h5>
-                <p class="card-text">
-                  You are free man with us. Ride whenever you like, whenever you
-                  want. There is no need to work 24x7. Take orders that you like
-                  and skip that you don’t.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="card h-100">
-              <div class="card-body">
-                <div class="imageDiv">
-                  <img
-                    src="./assets/images/why_trucklah/decoration3.webp"
-                    alt="decoration3"
-                    class="img-fluid"
-                  />
-                </div>
-                <h5 class="card-title mb-4">Steady Income</h5>
-                <p class="card-text">
-                  Steady income, now and always. We make sure you get enough
-                  rides when you are with us. No more ride hunting or bargaining
-                  with customers. Easy life, quality living.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="card h-100">
-              <div class="card-body">
-                <div class="imageDiv">
-                  <img
-                    src="./assets/images/why_trucklah/decoration1.webp"
-                    alt="decoration1"
-                    class="img-fluid"
-                  />
-                </div>
-                <h5 class="card-title mb-4">Safe Career</h5>
-                <p class="card-text">
-                  A safe life and a safe career, that’s what you get with
-                  Trucklah. No more waiting for the customer calls or new ride
-                  orders. We give you enough to keep going, for a long time.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="card h-100">
-              <div class="card-body">
-                <div class="imageDiv">
-                  <img
-                    src="./assets/images/why_trucklah/decoration2.webp"
-                    alt="decoration2"
-                    class="img-fluid"
-                  />
-                </div>
-                <h5 class="card-title mb-4">Premium benefits</h5>
-                <p class="card-text">
-                  We care, we do everything in our power to keep you safe, happy
-                  and healthy. From fuel discounts to vehicle loans, a lot of
-                  perks are in the queue. Are you trying?
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="card h-100">
-              <div class="card-body">
-                <div class="imageDiv">
-                  <img
-                    src="./assets/images/why_trucklah/decoration3.webp"
-                    alt="decoration3"
-                    class="img-fluid"
-                  />
-                </div>
-                <h5 class="card-title mb-4">Discounted Petrol</h5>
-                <p class="card-text">
-                  Fuel rates are now under control. Trucklah makes sure that you
-                  get the best possible rates for petrol. Discounted rates to
-                  keep you life and vehicle run smooth.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="card h-100">
-              <div class="card-body">
-                <div class="imageDiv">
-                  <img
-                    src="./assets/images/why_trucklah/decoration1.webp"
-                    alt="decoration1"
-                    class="img-fluid"
-                  />
-                </div>
-                <h5 class="card-title mb-4">Get a new vehicle</h5>
-                <p class="card-text">
-                  A good driver, but no vehicle? Don’t worry, Trucklah can help
-                  you. We can work with vehicle companies and get you a new
-                  ride. As simple as that!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Why End  -->
-
-    <!-- benefits  start -->
-    <section class="benefits">
-      <div class="row m-0">
-        <div
-          class="col-lg-6 d-flex flex-column justify-content-between col-md-6 col-12"
-        >
-          <div class="benefits_text p-5">
-            <p class="benefit_heading">Benefits for our Logistics Partners</p>
-            <p class="benefit_sub_heading">
-              Not only do we provide more opportunities for our drivers, but we
-              will ensure that you will be well taken care of.
-            </p>
-          </div>
-          <img
-            src="./assets/images/benefits.webp"
-            alt="benefits"
-            class="img-fluid"
-          />
-        </div>
-        <div class="col-lg-6 col-md-6 col-12">
-          <div class="card my-5">
-            <div class="benefits_points mt-3">
-              <div class="row m-0">
-                <div
-                  class="col-lg-2 col-md-2 col-12 d-flex justify-content-center align-items-center count_benefit"
-                >
-                  <span>01</span>
-                </div>
-                <div class="col-lg-10 col-md-10 col-12">
-                  <p class="points_heading">Health benefits program</p>
-                  <p class="points_sub_heading">
-                    We believe in healthy living and will ensure that you have a
-                    healthy environment too with flexible timings. With Trucklah
-                    you don’t have to work 24x7. Drive when you want and stay
-                    healthy.
-                  </p>
-                </div>
-              </div>
-              <hr />
-            </div>
-            <div class="benefits_points">
-              <div class="row m-0">
-                <div
-                  class="col-lg-2 col-md-2 col-12 d-flex justify-content-center align-items-center count_benefit"
-                >
-                  <span>02</span>
-                </div>
-                <div class="col-lg-10 col-md-10 col-12">
-                  <p class="points_heading">Vehicle rental solutions</p>
-                  <p class="points_sub_heading">
-                    A good driver but no vehicle? We collaborate with vehicle
-                    companies to solve this issue. Trucklah care, now and
-                    always..
-                  </p>
-                </div>
-              </div>
-              <hr />
-            </div>
-            <div class="benefits_points">
-              <div class="row m-0">
-                <div
-                  class="col-lg-2 col-md-2 col-12 d-flex justify-content-center align-items-center count_benefit"
-                >
-                  <span>03</span>
-                </div>
-                <div class="col-lg-10 col-md-10 col-12">
-                  <p class="points_heading">Fuel Discount</p>
-                  <p class="points_sub_heading">
-                    Though the fuel price is on the high note, Trucklah will
-                    help you in reducing fuel expenses by providing the best
-                    possible rate and in addition fuel discounts.
-                  </p>
-                </div>
-              </div>
-              <hr />
-            </div>
-            <div class="benefits_points">
-              <div class="row m-0">
-                <div
-                  class="col-lg-2 col-md-2 col-12 d-flex justify-content-center align-items-center count_benefit"
-                >
-                  <span>04</span>
-                </div>
-                <div class="col-lg-10 col-md-10 col-12">
-                  <p class="points_heading">Servicing and Maintenance</p>
-                  <p class="points_sub_heading">
-                    A driver is only as good as his vehicle. With Trucklah,
-                    these are no longer a nightmare to handle. We ensure that we
-                    got the best vehicles on road for us.
-                  </p>
-                </div>
-              </div>
-              <hr />
-            </div>
-            <div class="benefits_points">
-              <div class="row m-0">
-                <div
-                  class="col-lg-2 col-md-2 col-12 d-flex justify-content-center align-items-center count_benefit"
-                >
-                  <span>05</span>
-                </div>
-                <div class="col-lg-10 col-md-10 col-12">
-                  <p class="points_heading">Incentives</p>
-                  <p class="points_sub_heading">
-                    Trucklah always take care of you by providing attractive
-                    incentives in addition to your regular earnings. The more
-                    you work the more you earn, guaranteed.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- benefits  end -->
-
-    <!-- Footer Start -->
-    <section class="footer">
-      <div class="connect">
-        <div class="row m-0 m-0">
-          <div class="col-md-5 col-12">
-            <div class="d-flex justify-content-center align-items-center px-5">
-              <h3 class="conect_heading display-5 fw-bold pt-5">
-                Let’s talk! <br />
-                Moving Is Now Easy.
-              </h3>
-            </div>
-          </div>
-          <div class="col-md-7 col-12">
-            <form id="contactForm">
-              <div class="row m-0 d-flex justify-content-center">
-                <div class="col-lg-6 col-12 input-colum">
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Name"
-                    class="form-control footer-form"
-                  />
-                </div>
-                <div class="col-lg-6 col-12 input-colum">
-                  <input
-                    type="text"
-                    id="email"
-                    name="email"
-                    placeholder="Email ID"
-                    class="form-control footer-form"
-                  />
-                </div>
-                <div class="col-lg-6 col-12 input-colum">
-                  <input
-                    type="text"
-                    id="phone"
-                    name="phone"
-                    placeholder="Phone Number"
-                    class="form-control footer-form"
-                  />
-                </div>
-                <div class="col-lg-6 col-12 input-colum">
-                  <input
-                    type="text"
-                    id="country"
-                    name="country"
-                    placeholder="Country"
-                    class="form-control footer-form"
-                  />
-                </div>
-                <div class="col-12">
-                  <input
-                    type="text"
-                    id="message"
-                    name="message"
-                    placeholder="Message"
-                    class="form-control footer-form"
-                  />
-                </div>
-                <div class="col-12 send_btn">
-                  <button type="submit" class="btn footer-btn">
+                  <button
+                    type="submit"
+                    style="width: 100%"
+                    class="btn mb-5 contact-button"
+                  >
                     Send Message
                   </button>
+                </form>
+              </div>
+              <div class="borderline col-md-6 col-12 px-5">
+                <h2 class="contact-heading mb-4">Get In Touch</h2>
+                <a
+                  href=" https://www.google.com/maps/place/The+Alexcier/@1.2916847,103.8111868,17z/data=!3m2!4b1!5s0x31da1a2cf1b2be13:0x7b0f9d88a36fdfbb!4m6!3m5!1s0x31da1bb95520771b:0xf2b9dfa378aa9a6e!8m2!3d1.2916793!4d103.8137617!16s%2Fg%2F11gyxjfkjk?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D"
+                  class="text-decoration-none text-dark align-screen"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h6 class="text-muted mt-3 contact-subheading">
+                    <i class="fa-solid fa-location-dot"></i>&nbsp; Address
+                  </h6>
+                  <p>
+                    <b
+                      >The Alexcier, 237 Alexandra Road, #04-10,<br />
+                      Singapore-159929.</b
+                    >
+                  </p>
+                </a>
+
+                <a
+                  href="tel:88941306"
+                  class="contact-subheading text-muted text-decoration-none d-flex"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h6 class="text-muted mt-4">
+                    <i class="fa-solid fa-mobile icon-color"></i>&nbsp; Phone
+                    <span>
+                      <h3 class="text-dark"><b>+65 8894 1306</b></h3>
+                    </span>
+                  </h6>
+                </a>
+                <a
+                  href="mailto:info@ecsaio.com"
+                  class="text-decoration-none text-dark"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h6 class="text-muted mt-4 contact-subheading">
+                    <i class="fa-solid fa-envelope icon-color"></i>&nbsp; Email
+                  </h6>
+                  <p><b>info@ecsaio.com</b></p>
+                </a>
+                <br /><br />
+                <div class="d-flex flex-wrap my-2 socialicons">
+                  <a
+                    href="https://sg.linkedin.com/company/ecs-cloud-infotech"
+                    class="p-1 text-decoration-none text-white"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="mediaIconBgIcon">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </span>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/ecscloud/"
+                    class="p-1 text-decoration-none text-white"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="mediaIconBgIcon px-3">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </span>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/ecscloudinfotech/"
+                    class="p-1 text-decoration-none text-white"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="mediaIconBgIcon">
+                      <i class="fa-brands fa-instagram"></i>
+                    </span>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/channel/UCIbNIWhaDnRs-gFuJ0sTNCQ/videos"
+                    class="p-1 text-decoration-none text-white"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="mediaIconBgIcon">
+                      <i class="fa-brands fa-youtube"></i>
+                    </span>
+                  </a>
+                  <a
+                    href="https://www.tiktok.com/@ecsaio"
+                    class="p-1 text-decoration-none text-white"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="mediaIconBgIcon">
+                      <i class="fab fa-tiktok"></i>
+                    </span>
+                  </a>
+                  <a
+                    href="https://x.com/ecscloudinfote2"
+                    class="p-1 text-decoration-none text-white"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span class="mediaIconBgIcon">
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </span>
+                  </a>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Contact US End -->
+
+    <!-- Footer Start -->
     <section class="footer-conent">
       <div class="container">
         <div class="row m-0 m-0">
