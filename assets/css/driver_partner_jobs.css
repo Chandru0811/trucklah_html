@@ -273,7 +273,7 @@
     url("../images/landing_bg.webp") top center no-repeat;
   /* min-height: 75vh; */
   /* / background-attachment: fixed; / */
-  background-size: contain;
+  background-size: cover;
   -webkit-background-size: cover;
 
   -moz-background-size: cover;
@@ -296,13 +296,20 @@
   color: #ffffff;
 }
 
+.header_text {
+  padding: 10rem 0 0 0 !important;
+}
+
 @media screen and (max-width: 555px) {
+  .landing_banner .container-fluid {
+    padding: 15px !important;
+  }
   .landing_banner_content {
     font-family: "Afacad", system-ui;
     font-size: 42px;
     font-weight: 600;
     line-height: 49.33px;
-    text-align: start;
+    text-align: center;
     color: #ffffff;
     text-align: center !important;
   }
@@ -311,9 +318,76 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 26.67px;
-    text-align: left;
     color: #ffffff;
     text-align: center !important;
+  }
+  .header_text {
+    padding: 0 !important;
+  }
+  .landing_form {
+    padding: 0 auto 10px !important;
+    top: 0 !important;
+  }
+  .register_text {
+    font-size: 16px !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .landing_banner_content {
+    font-family: "Afacad", system-ui;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 49.33px;
+    text-align: start !important;
+    display: flex;
+    justify-content: start !important;
+    color: #ffffff;
+    text-align: center !important;
+  }
+  .landing_banner_content2 {
+    font-family: "Afacad", system-ui;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26.67px;
+    display: flex;
+    justify-content: start !important;
+    text-align: start;
+    color: #ffffff;
+    text-align: start;
+  }
+  .header_text {
+    padding: 0 !important;
+  }
+  .landing_form {
+    padding: 0 auto 10px !important;
+    top: 0 !important;
+  }
+  .register_text {
+    font-size: 16px !important;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1270px) {
+  .landing_banner_content {
+    font-family: "Afacad", system-ui;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 49.33px;
+    text-align: start !important;
+    display: flex;
+    justify-content: start !important;
+    color: #ffffff;
+    text-align: center !important;
+  }
+  .landing_banner_content2 {
+    font-family: "Afacad", system-ui;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26.67px;
+    display: flex;
+    justify-content: start !important;
+    text-align: start;
+    color: #ffffff;
+    text-align: start;
   }
   .header_text {
     padding: 0 !important;
@@ -333,7 +407,7 @@
   margin-top: 50px;
   border-radius: 15px;
   position: relative;
-  top: 180px;
+  top: 160px;
 }
 .register_form p {
   font-family: "Afacad";
@@ -410,6 +484,8 @@
     line-height: 48.67px;
     text-align: center !important;
     color: #333333;
+    padding: 15px !important;
+    margin: 0;
   }
   .ways_sub_heading {
     font-family: "Afacad";
@@ -418,6 +494,85 @@
     line-height: 26.67px;
     text-align: center !important;
     color: #333333;
+  }
+  .sgd_text {
+    font-family: "Afacad";
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 22.67px;
+    text-align: center !important;
+  }
+  .ways_section {
+    top: 0 !important;
+  }
+  .ways_content {
+    padding: 0 !important;
+  }
+  .sgd_content {
+    padding: 10px !important;
+  }
+  .sgd_text {
+    padding: 0 !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .ways_heading {
+    font-family: "Afacad";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.67px;
+    text-align: center !important;
+    color: #333333;
+    padding: 30px 0;
+  }
+  .ways_sub_heading {
+    font-family: "Afacad";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26.67px;
+    text-align: center !important;
+    color: #333333;
+  }
+  .ways_img_section {
+    padding: 0;
+  }
+  .sgd_text {
+    font-family: "Afacad";
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 22.67px;
+    text-align: center !important;
+  }
+  .ways_section {
+    top: 0 !important;
+  }
+  .sgd_content {
+    padding: 10px !important;
+  }
+  .sgd_text {
+    padding: 0 !important;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1270px) {
+  .ways_heading {
+    font-family: "Afacad";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.67px;
+    text-align: center !important;
+    color: #333333;
+    padding: 30px 0;
+  }
+  .ways_sub_heading {
+    font-family: "Afacad";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26.67px;
+    text-align: center !important;
+    color: #333333;
+  }
+  .ways_img_section {
+    padding: 0;
   }
   .sgd_text {
     font-family: "Afacad";
@@ -463,6 +618,37 @@
 }
 .four_cards {
   z-index: 999;
+}
+
+@media screen and (max-width: 555px) {
+  .four_cards {
+    padding: 20px !important;
+  }
+  .sgd_content {
+    padding: 20px !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card_b2b {
+    padding: 20px 2px !important;
+  }
+  .card_num {
+    font-family: "Afacad";
+    font-size: 20px !important;
+    font-weight: 600;
+    line-height: 20px !important;
+    text-align: center !important;
+    color: #000;
+  }
+  .weekly_text {
+    font-family: "Afacad";
+    font-size: 12px !important;
+    font-weight: 500;
+    line-height: 16.33px !important;
+    text-align: center !important;
+    color: #000;
+  }
 }
 .card_num {
   font-family: "Afacad";
@@ -595,8 +781,12 @@
   .whyTrucklahBackground .card {
     border: none;
     box-shadow: 2px 4px 4px #ccc;
-    min-height: 460px;
+    min-height: 420px;
     margin: 8px;
+  }
+  .whyTrucklahHeading {
+    padding: 0 !important;
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 320px) {
