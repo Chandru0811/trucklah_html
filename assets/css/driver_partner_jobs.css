@@ -650,6 +650,28 @@
     color: #000;
   }
 }
+@media screen and (min-width: 992px) and (max-width: 1248px) {
+  .card_b2b {
+    padding: 20px 2px !important;
+  }
+  .card_num {
+    font-family: "Afacad";
+    font-size: 20px !important;
+    font-weight: 600;
+    line-height: 20px !important;
+    text-align: center !important;
+    color: #000;
+  }
+  .weekly_text {
+    font-family: "Afacad";
+    font-size: 12px !important;
+    font-weight: 500;
+    line-height: 16.33px !important;
+    text-align: center !important;
+    color: #000;
+  }
+}
+
 .card_num {
   font-family: "Afacad";
   font-size: 48px;
