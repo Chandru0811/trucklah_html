@@ -541,3 +541,29 @@
     padding: 20px 0 !important;
   }
 }
+
+.SuccessMagnetSubHeading {
+  color: #333;
+  font-size: 26px;
+  font-weight: 600 !important;
+}
+
+.successMagnetButton {
+  background-color: #95f70d;
+  color: #333;
+  font-weight: 600;
+  position: relative;
+}
+.successMagnetButton:hover {
+  background-color: #80dc00;
+  color: #333 !important;
+}
+
+.errorMagnetSubHeading {
+  font-size: 18px !important;
+}
+
+.errorMobile {
+  font-size: 26px !important;
+  font-weight: 700 !important;
+}
