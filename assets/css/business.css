@@ -10,6 +10,10 @@
     background-color: #acff3b;
 }
 
+.active_menu {
+    border-bottom: 2px solid #000 !important;
+}
+
 .header .userlogin-button {
     background-color: #333333;
     color: #acff3b;
