@@ -198,38 +198,40 @@
                 <form id="contactUsForm">
                   <div class="row g-3">
                     <div class="col-md-6 col-12">
-                      <div class="input-group mb-4">
+                        <div class="mb-4">
+                          <input
+                            type="text"
+                            class="form-control contact-icon-group input-text-color"
+                            style="box-shadow: none"
+                            placeholder="First Name *"
+                            id="contact_us_first_name"
+                            name="contact_us_first_name"
+                            aria-label="First Name *"
+                            aria-describedby="basic-addon1"
+                            required
+                          />
+                          <!-- Error message will be inserted here -->
+                          <div class="error mt-0 mb-3"></div>
+                        </div>
+                      </div>
+                    <div class="col-md-6 col-12">
+                      <div class="mb-4">
                         <input
                           type="text"
                           class="form-control contact-icon-group input-text-color"
                           style="box-shadow: none"
-                          placeholder="First Name *"
-                          id="contact_us_first_name"
-                          name="contact_us_first_name"
-                          aria-label="First Name *"
+                          placeholder="Last Name *"
+                          id="contact_us_last_name"
+                          name="contact_us_last_name"
+                          aria-label="Last Name"
                           aria-describedby="basic-addon1"
                           required
                         />
                         <div class="error mt-0 mb-3 col-12"></div>
                       </div>
                     </div>
-                    <div class="col-md-6 col-12">
-                      <div class="input-group mb-4">
-                        <input
-                          type="text"
-                          class="form-control contact-icon-group input-text-color"
-                          style="box-shadow: none"
-                          placeholder="Last Name"
-                          id="contact_us_last_name"
-                          name="contact_us_last_name"
-                          aria-label="Last Name"
-                          aria-describedby="basic-addon1"
-                        />
-                        <div class="error mt-0 mb-3 col-12"></div>
-                      </div>
-                    </div>
                   </div>
-                  <div class="input-group mb-4">
+                  <div class="mb-4">
                     <input
                       type="text"
                       class="form-control contact-icon-group input-text-color"
@@ -243,7 +245,7 @@
                     />
                     <div class="error mt-0 mb-3 col-12"></div>
                   </div>
-                  <div class="input-group mb-4">
+                  <div class="mb-4">
                     <input
                       type="text"
                       class="form-control contact-icon-group input-text-color"
@@ -258,14 +260,12 @@
                     <div class="error mt-0 mb-3 col-12"></div>
                   </div>
                   <div class="mb-5">
-                    <label for="description_info" class="form-label text-muted"
-                      >Leave your Message</label
-                    >
                     <textarea
                       class="form-control input-text-color"
                       style="box-shadow: none"
                       id="contact_us_message"
                       name="contact_us_message"
+                      placeholder="Leave your Message *"
                       rows="4"
                     ></textarea>
                     <div class="error mt-0 mb-3 col-12"></div>
@@ -312,7 +312,7 @@
                   </h6>
                 </a>
                 <a
-                  href="mailto:info@ecsaio.com"
+                  href="mailto:info@trucklah.com"
                   class="text-decoration-none text-dark"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -320,7 +320,7 @@
                   <h6 class="text-muted mt-4 contact-subheading">
                     <i class="fa-solid fa-envelope icon-color"></i>&nbsp; Email
                   </h6>
-                  <p><b>info@ecsaio.com</b></p>
+                  <p><b>info@trucklah.com</b></p>
                 </a>
                 <br /><br />
                 <div class="d-flex flex-wrap my-2 socialicons">

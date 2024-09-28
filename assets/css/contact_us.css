@@ -319,11 +319,6 @@
     }
   }
   
-  /* .contact-heading {
-    font-family: "Marcellus";
-    font-size: 2em;
-  }
-   */
   .contact-icon-group {
     background-color: #fff;
     border: none;
@@ -352,12 +347,35 @@
     margin-top: 10px;
   }
   
-  /* .contact-subheading {
-    font-family: "Marcellus" !important;
-  } */
-  
   .contact-subheading2 {
     font-family: "Marcellus" !important;
     color: #00d570;
   }
+
+  .SuccessMagnetSubHeading {
+    color: #333;
+    font-size: 26px;
+    font-weight: 600 !important;
+  }
+  
+  .successMagnetButton {
+    background-color: #95f70d;
+    color: #333;
+    font-weight: 600;
+    position: relative;
+  }
+  .successMagnetButton:hover {
+    background-color: #80dc00;
+    color: #333 !important;
+  }
+  
+  .errorMagnetSubHeading {
+    font-size: 18px !important;
+  }
+  
+  .errorMobile {
+    font-size: 26px !important;
+    font-weight: 700 !important;
+  }
+
   /* Contact Us End */

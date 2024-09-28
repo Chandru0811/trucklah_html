@@ -213,6 +213,106 @@ function closePopup() {
   $("#errorModal").modal("hide");
 }
 
+// Contact US Form Api
+$(document).ready(function () {
+  $("#contactUsForm").validate({
+    rules: {
+      contact_us_first_name: {
+        required: true,
+        minlength: 3,
+      },
+      contact_us_last_name: {
+        minlength: 3,
+      },
+      contact_us_email: {
+        required: true,
+        email: true,
+      },
+      contact_us_phone: {
+        required: true,
+        digits: true,
+        minlength: 8,
+        maxlength: 10,
+      },
+      contact_us_message: {
+        required: true,
+      },
+    },
+    messages: {
+      contact_us_first_name: {
+        required: "Please enter your first name",
+        minlength: "First name must be at least 3 characters long",
+      },
+      contact_us_last_name: {
+        required: "Please enter your last name",
+        minlength: "Last name must be at least 3 characters long",
+      },
+      contact_us_email: {
+        required: "Please enter your email",
+        email: "Please enter a valid email address",
+      },
+      contact_us_phone: {
+        required: "Please enter your phone number",
+        digits: "Please enter a valid phone number",
+        minlength: "Phone number must be at least 8 digits",
+        maxlength: "Phone number can't exceed 10 digits",
+      },
+      contact_us_message: {
+        required: "Please enter your message",
+      },
+    },
+
+     errorPlacement: function (error, element) {
+      // Insert error after the .error div next to each input
+      error.appendTo(element.closest('.input-group').find('.error'));
+    },
+    errorPlacement: function (error, element) {
+      error.insertAfter(element);
+    },
+    highlight: function (element, errorClass) {
+      $(element).addClass("is-invalid");
+    },
+    unhighlight: function (element, errorClass) {
+      $(element).removeClass("is-invalid");
+    },
+    submitHandler: function (form) {
+      var payload = {
+        first_name: $("#contact_us_first_name").val(),
+        last_name: $("#contact_us_last_name").val(),
+        email: $("#contact_us_email").val(),
+        description_info: $("#contact_us_message").val(),
+        phone: $("#contact_us_phone").val(),
+        company_id: 2,
+        company: "ECSCloudInfotech",
+        lead_status: "PENDING",
+        country_code: "65",
+      };
+
+      $.ajax({
+        url: "https://crmlah.com/ecscrm/api/newClient",
+        type: "POST",
+        contentType: "application/json",
+        data: JSON.stringify(payload),
+        success: function (response, status, xhr) {
+          if (xhr.status === 201 && response) {
+            $("#successModal").modal("show");
+            $("#contactUsForm")[0].reset();
+          } else {
+            console.error("Unexpected response or missing leadId:", response);
+          }
+
+          $("#contactUsForm")[0].reset();
+        },
+        error: function (xhr, status, error) {
+          console.error("First API call failed:", error);
+          $("#errorModal").modal("show");
+          $("#contactUsForm")[0].reset();
+        },
+      });
+    },
+  });
+});
+
 document
   .getElementById("view-more-item-moving")
   .addEventListener("click", function () {
