@@ -103,9 +103,11 @@
   .header-logo {
     max-width: 120px;
   }
+
   .navbar-toggler .button {
     max-width: 150px;
   }
+
   .button {
     max-width: 200px;
   }
@@ -125,11 +127,13 @@
   background-color: #acff3b;
   padding: 15px 0;
 }
+
 .footer-conent {
   color: #acff3b;
   background-color: #333333;
   padding: 15px 0;
 }
+
 .connect_heading {
   color: #333333 !important;
   font-size: 52px;
@@ -137,9 +141,11 @@
   line-height: 69.33px;
   text-align: left;
 }
+
 .connect {
   padding: 0 0 40px 0 !important;
 }
+
 /* form */
 .connect .footer-form {
   background: none !important;
@@ -152,47 +158,59 @@
   text-align: start !important;
   padding: 24px 0;
 }
+
 @media screen and (max-width: 425px) {
   .input-colum {
     width: 100% !important;
     margin-bottom: 15px;
   }
+
   .footer-title {
     margin: 0 auto 15px auto;
   }
+
   .links {
     text-align: center !important;
     display: flex;
     justify-content: center;
   }
+
   .links2 {
     text-align: center !important;
   }
+
   .footer-links {
     padding: 0 !important;
   }
+
   .footer-links .links {
     padding: 0;
     cursor: pointer;
   }
+
   .footer-links .links2 {
     padding: 0;
     cursor: pointer;
   }
+
   .headings {
     text-align: center;
   }
+
   .headings img {
     display: none;
   }
+
   .send_btn {
     text-align: center;
   }
+
   .conect_heading {
     text-align: center;
     line-height: 2rem !important;
   }
 }
+
 @media screen and (max-width: 768px) {
   .connect .footer-form {
     background: none !important;
@@ -205,9 +223,11 @@
     text-align: start !important;
     padding: 18px 0;
   }
+
   .conect_heading {
     margin-top: 0 !important;
   }
+
   .connect .footer-btn {
     border: 1px solid;
     padding: 12px 45px !important;
@@ -216,18 +236,21 @@
     margin-top: 40px !important;
   }
 }
+
 @media (max-width: 992px) {
   .footer .row {
     display: flex;
     flex-direction: row;
   }
 }
+
 .connect .footer-btn {
   border: 1px solid;
   padding: 12px 45px !important;
   font-weight: 500;
   margin-top: 10px;
 }
+
 .connect .footer-btn:hover {
   border: 1px solid;
   background-color: #95f70d !important;
@@ -236,29 +259,35 @@
   font-weight: 500;
   margin-top: 10px;
 }
+
 .conect_heading {
   margin-top: 8rem;
   line-height: 4rem;
 }
+
 .footer-title {
   font-weight: bolder;
   cursor: pointer;
   position: relative;
   top: 2px;
 }
+
 .underline_img {
   position: absolute;
 }
+
 .footer-links .links {
   margin: 30px 0;
   padding: 5px;
   cursor: pointer;
 }
+
 .footer-links .links2 {
   margin: 30px 0;
   padding: 0px;
   cursor: pointer;
 }
+
 .line-divider i {
   /* border-right: 1px solid; */
   padding: 0 9px;
@@ -286,6 +315,7 @@
   font-weight: 500;
   color: white;
 }
+
 .banner h2 {
   font-size: 32px;
   font-weight: 700;
@@ -341,14 +371,17 @@
   background-color: #95f70d;
   border-color: #95f70d;
 }
+
 @media screen and (max-width: 593px) {
   .customNav-tabs .nav-link {
     border-radius: 5px !important;
   }
+
   .customNav-tabs .nav-link.active {
     border-radius: 5px !important;
   }
 }
+
 .customNav-tabs {
   border-width: 0px;
 }
@@ -367,6 +400,7 @@
   color: transparent !important;
   -webkit-text-stroke: 1px #acff3b;
 }
+
 .delivery-text1 {
   color: white;
   font-weight: 700 !important;
@@ -434,6 +468,7 @@
     min-width: 12rem !important;
   }
 }
+
 @media screen and (max-width: 593px) {
   .item-moving-radius {
     border-radius: 20px !important;
@@ -492,10 +527,12 @@
     font-weight: 700 !important;
     font-size: 100px;
   }
+
   .custome-tab-body p {
     font-size: 26px !important;
   }
 }
+
 @media screen and (max-width: 425px) {
   .banner-heding {
     text-align: center !important;
@@ -534,6 +571,7 @@
     margin: 0 !important;
   }
 }
+
 @media screen and (max-width: 425px) {
   .tab-content {
     padding: 5px !important;
@@ -546,24 +584,29 @@
   border-bottom: 2px dotted #acff3b;
   border-radius: 0px;
 }
+
 .homeSection-2 .nav-pills .nav-link.active:focus-visible {
   box-shadow: none;
 }
+
 .top_nav_pills {
   margin: 0 35px !important;
 }
+
 @media screen and (min-width: 1200px) {
   .top_nav_pills {
     position: relative;
     top: 15px;
   }
 }
+
 @media screen and (max-width: 553px) {
   .nav-pills {
     display: flex;
     justify-content: center;
   }
 }
+
 @media screen and (min-width: 524px) and (max-width: 768px) {
   .nav-pills {
     display: flex;
@@ -583,6 +626,7 @@
   font-weight: 500;
   font-size: 22px;
 }
+
 .tab-content {
   padding: 20px 25px;
 }
@@ -611,16 +655,19 @@
   background-repeat: no-repeat;
   background-position: left bottom;
 }
+
 .text-backgroung-image {
   background-image: url("../images/bg_transport_agency_text\ _image.webp");
   background-repeat: no-repeat;
   background-position: top;
 }
+
 @media screen and (max-width: 425px) {
   .transport_agency {
     padding-top: 2.5rem;
   }
 }
+
 /* Home Section Two End  */
 
 /* Why Trucklah Start  */
@@ -642,6 +689,7 @@
   min-height: 360px;
   margin: 8px;
 }
+
 .whyTrucklahBackground .card-title {
   font-size: 24px;
   font-weight: 700;
@@ -655,11 +703,13 @@
   line-height: 34px;
   text-align: left;
 }
+
 .owl-theme .owl-dots .owl-dot {
   border: none !important;
   border-radius: 100%;
   margin: 0 2.5px;
 }
+
 .owl-theme .owl-dots .owl-dot.active {
   border: 1px solid #333 !important;
   border-radius: 100%;
@@ -676,6 +726,7 @@
   background: 495057 !important;
   margin: 3px !important;
 }
+
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #333 !important;
@@ -695,6 +746,7 @@
   .carousel_cards_slide .owl-stage-outer {
     margin: 0 0 4rem 0;
   }
+
   .whyTrucklahBackground .card {
     border: none;
     box-shadow: 2px 4px 4px #ccc;
@@ -702,10 +754,12 @@
     margin: 8px;
   }
 }
+
 @media screen and (min-width: 999px) and (max-width: 1142px) {
   .carousel_cards_slide .owl-stage-outer {
     margin: 0 0 4rem 0;
   }
+
   .whyTrucklahBackground .card {
     border: none;
     box-shadow: 2px 4px 4px #ccc;
@@ -713,10 +767,12 @@
     margin: 8px;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 882px) {
   .carousel_cards_slide .owl-stage-outer {
     margin: 0 0 4rem 0;
   }
+
   .whyTrucklahBackground .card {
     border: none;
     box-shadow: 2px 4px 4px #ccc;
@@ -733,6 +789,7 @@
     margin: 8px;
   }
 }
+
 @media screen and (max-width: 320px) {
   .whyTrucklahBackground .card {
     border: none;
@@ -780,6 +837,7 @@
   .character_cards {
     height: 300px !important;
   }
+
   .inner_btn {
     border: 1px solid #333333 !important;
     background: #acff3b !important;
@@ -802,6 +860,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .frequently_content h1 {
   font-family: "Afacad", system-ui;
   font-size: 72px;
@@ -809,6 +868,7 @@
   line-height: 96px;
   text-align: left;
 }
+
 .bg_frequently {
   background-image: url(../images/freqently_bg_img.webp);
   background-repeat: no-repeat;
@@ -816,6 +876,7 @@
   background-position: bottom;
   background-size: contain;
 }
+
 @media screen and (max-width: 425px) {
   .bg_frequently {
     background-image: url(../images/freqently_bg_img.webp);
@@ -831,28 +892,30 @@
   border-bottom: 1px solid lightgray;
   box-shadow: none;
 }
-.toggler_accordion
-  .accordion-item:first-of-type
-  > .accordion-header
-  .accordion-button {
+
+.toggler_accordion .accordion-item:first-of-type>.accordion-header .accordion-button {
   background: none;
   box-shadow: none;
 }
+
 .toggler_accordion .accordion-button:not(.collapsed) {
   background: none !important;
   box-shadow: none !important;
   color: #000 !important;
   padding: 0 15px !important;
 }
+
 [type="button"]:not(:disabled),
 [type="reset"]:not(:disabled),
 [type="submit"]:not(:disabled),
 button:not(:disabled) {
   padding: 10px 15px;
 }
+
 button:focus:not(:focus-visible):focus {
   box-shadow: none !important;
 }
+
 .conntent_text {
   line-height: 34px;
   font-size: 18px;
@@ -860,30 +923,36 @@ button:focus:not(:focus-visible):focus {
   color: #6b6a6a;
   padding: 15px;
 }
+
 button.accordion-button::after {
   background-image: url("../images/open.svg");
 }
+
 button.accordion-button:not(.collapsed)::after {
   background-image: url("../images/close.svg");
 }
+
 .accordian_heading {
   font-size: 26px;
   font-weight: 700;
   line-height: 42.67px;
   text-align: left;
 }
+
 .faq_text {
   font-size: 72px;
   font-weight: 700;
   line-height: 96px;
   text-align: left;
 }
+
 @media screen and (max-width: 1200px) {
   .faq_text {
     font-size: 38px;
     font-weight: 700;
     line-height: 46px;
   }
+
   .accordian_heading {
     font-size: 18px;
     font-weight: 700;
@@ -891,12 +960,14 @@ button.accordion-button:not(.collapsed)::after {
     text-align: left;
   }
 }
+
 @media screen and (max-width: 425px) {
   .faq_text {
     font-size: 32px;
     font-weight: 700;
     line-height: 36px;
   }
+
   .accordian_heading {
     font-size: 16px;
     font-weight: 700;
@@ -904,10 +975,8 @@ button.accordion-button:not(.collapsed)::after {
     text-align: left;
   }
 }
-.toggler_accordion
-  .accordion-item:first-of-type
-  > .accordion-header
-  .accordion-button {
+
+.toggler_accordion .accordion-item:first-of-type>.accordion-header .accordion-button {
   padding: 0 15px !important;
 }
 
@@ -920,6 +989,7 @@ button.accordion-button:not(.collapsed)::after {
   background-size: cover;
   background-position: bottom;
 }
+
 @media screen and (max-width: 1350px) {
   .troubled_content {
     background: url(../images/troubled_bg_img.webp);
@@ -928,6 +998,7 @@ button.accordion-button:not(.collapsed)::after {
     background-position: bottom;
   }
 }
+
 @media screen and (min-width: 1350px) and (max-width: 1850px) {
   .troubled_content {
     background: url(../images/troubled_bg_img.webp);
@@ -972,17 +1043,20 @@ button.accordion-button:not(.collapsed)::after {
   display: flex;
   justify-content: center;
 }
+
 .store_imgs img {
   max-width: 100px;
   display: flex;
   flex-direction: column;
 }
+
 .let_us {
   font-size: 22px;
   font-weight: 500;
   line-height: 29.33px;
   color: #000;
 }
+
 .let_us_para {
   font-size: 22px;
   font-weight: 500;
@@ -990,4 +1064,31 @@ button.accordion-button:not(.collapsed)::after {
   text-align: center;
   color: #000;
 }
+
 /* Download End */
+.SuccessMagnetSubHeading {
+  color: #333;
+  font-size: 26px;
+  font-weight: 600 !important;
+}
+
+.successMagnetButton {
+  background-color: #95f70d;
+  color: #333;
+  font-weight: 600;
+  position: relative;
+}
+
+.successMagnetButton:hover {
+  background-color: #80dc00;
+  color: #333 !important;
+}
+
+.errorMagnetSubHeading {
+  font-size: 18px !important;
+}
+
+.errorMobile {
+  font-size: 26px !important;
+  font-weight: 700 !important;
+}

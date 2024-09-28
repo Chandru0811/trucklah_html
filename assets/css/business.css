@@ -427,7 +427,6 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 34px;
-    text-align: left;
 
 }
 
@@ -476,22 +475,14 @@
 .contactusbtn {
     background: #acff3b;
     color: #333333;
-    width: Hug (177px)px;
-    height: Hug (42px)px;
-    top: 3421px;
-    left: 799px;
-    padding: 9px 50px 9px 50px;
-    gap: 10px;
     border-radius: 4px 0px 0px 0px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
-    top: 3421px;
-    left: 799px;
     padding: 9px 50px 9px 50px;
-    gap: 10px;
     border-radius: 4px 4px 4px 4px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
+}
+
+.contactusbtn:hover {
+    outline: 1.4px solid #fff;
+    color: #ffff;
 }
 
 .year {
@@ -504,4 +495,31 @@
     font-size: 22px;
     font-weight: 500;
     line-height: 29.33px;
+}
+
+.SuccessMagnetSubHeading {
+    color: #333;
+    font-size: 26px;
+    font-weight: 600 !important;
+}
+
+.successMagnetButton {
+    background-color: #95f70d;
+    color: #333;
+    font-weight: 600;
+    position: relative;
+}
+
+.successMagnetButton:hover {
+    background-color: #80dc00;
+    color: #333 !important;
+}
+
+.errorMagnetSubHeading {
+    font-size: 18px !important;
+}
+
+.errorMobile {
+    font-size: 26px !important;
+    font-weight: 700 !important;
 }

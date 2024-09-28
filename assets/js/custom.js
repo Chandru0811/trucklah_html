@@ -25,30 +25,101 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $("#contactForm").submit(function (event) {
-    event.preventDefault();
-
-    var formData = {
-      name: $("#name").val(),
-      email: $("#email").val(),
-      phone: $("#phone").val(),
-      country: $("#country").val(),
-      message: $("#message").val(),
-    };
-
-    console.log("Form Data:", formData);
-
-    $.ajax({
-      data: formData,
-      success: function () {
-        $("#contactForm").trigger("reset");
+  $("#contactForm").validate({
+    rules: {
+      footer_name: {
+        required: true,
+        minlength: 3
       },
-      error: function (error) {
-        console.error("Error:", error);
+      footer_email: {
+        required: true,
+        email: true
       },
-    });
+      footer_phone: {
+        required: true,
+        digits: true,
+        minlength: 8,
+        maxlength: 10
+      },
+      footer_country: {
+        required: true
+      },
+      footer_message: {
+        required: true,
+        minlength: 10
+      }
+    },
+    messages: {
+      footer_name: {
+        required: "Please enter your name",
+        minlength: "Name must be at least 3 characters long"
+      },
+      footer_email: {
+        required: "Please enter your email",
+        email: "Please enter a valid email address"
+      },
+      footer_phone: {
+        required: "Please enter your phone number",
+        digits: "Please enter a valid phone number",
+        minlength: "Phone number must be at least 8 digits",
+        maxlength: "Phone number can't exceed 10 digits"
+      },
+      footer_country: {
+        required: "Please enter your country"
+      },
+      footer_message: {
+        required: "Please enter your message",
+        minlength: "Message must be at least 10 characters long"
+      }
+    },
+    errorPlacement: function (error, element) {
+      error.insertAfter(element);
+    },
+    highlight: function (element, errorClass) {
+      $(element).addClass("is-invalid");
+    },
+    unhighlight: function (element, errorClass) {
+      $(element).removeClass("is-invalid");
+    },
+    submitHandler: function (form) {
+      var payload = {
+        first_name: $("#footer_name").val(),
+        last_name: $("#footer_country").val(),
+        email: $("#footer_email").val(),
+        company_id: 2,
+        company: "ECSCloudInfotech",
+        lead_status: "PENDING",
+        description_info: $("#footer_message").val(),
+        phone: $("#footer_phone").val(),
+        country_code: "65",
+      };
+      console.log("Payload to be sent:", payload);
+
+      $.ajax({
+        url: "https://crmlah.com/ecscrm/api/newClient",
+        type: "POST",
+        contentType: "application/json",
+        data: JSON.stringify(payload),
+        success: function (response, status, xhr) {
+          if (xhr.status === 201 && response) {
+            $("#successModal").modal("show");
+            $("#contactForm")[0].reset();
+          } else {
+            console.error("Unexpected response or missing leadId:", response);
+          }
+
+          $("#contactForm")[0].reset();
+        },
+        error: function (xhr, status, error) {
+          console.error("First API call failed:", error);
+          $("#errorModal").modal("show");
+          $("#contactForm")[0].reset();
+        },
+      });
+    }
   });
 });
+
 
 $(document).ready(function () {
   $("#registrationForm").validate({
