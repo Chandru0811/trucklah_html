@@ -305,7 +305,7 @@
 .banner_section {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url("../images/business_bg.webp") center center no-repeat;
-    min-height: 75vh;
+    min-height: 100vh;
     /* background-attachment: fixed; */
     background-size: cover;
     -webkit-background-size: cover;
@@ -320,25 +320,30 @@
 .choice-text {
     font-size: 52px;
     font-weight: 600;
-    line-height: 69.33px;
     text-align: center;
     color: #FFFFFF;
-}
-
-.homeSection-1 {
-    background-color: #ffff;
+    margin-top: 40px;
 }
 
 .homecard {
     background-color: #acff3b;
     border-radius: 20px;
-    margin-top: -40px;
+    position: relative;
+    top: -7rem;
+}
+
+@media (max-width: 1200px) {
+    .homecard {
+        top: 0;
+        margin-top: 2rem;
+    }
 }
 
 .recommend-text {
     font-size: 22px;
     font-weight: 600;
     line-height: 29.33px;
+    padding: 30px 10px !important;
 }
 
 .howcan-text {
@@ -348,54 +353,20 @@
 }
 
 .contentcard-1 {
-    padding: 15px;
+    padding: 45px 10px;
     background-color: #D1FE93;
     border-radius: 6px;
-    font-family: Afacad;
     font-size: 22px;
     font-weight: 600;
     line-height: 29.33px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.contentcard-2 {
-    padding: 15px;
-    background-color: #D1FE93;
-    min-height: 20vh;
-    min-width: 10px;
-    border-radius: 6px;
-    font-family: Afacad;
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 29.33px;
-    text-align: center;
-}
-
-.contentcard-3 {
-    padding: 15px;
-    background-color: #D1FE93;
-    min-height: 20vh;
-    min-width: 10px;
-    border-radius: 6px;
-    font-family: Afacad;
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 29.33px;
-    text-align: center;
-}
-
-.contentcard-4 {
-    padding: 15px;
-    background-color: #D1FE93;
-    min-height: 20vh;
-    min-width: 10px;
-    border-radius: 6px;
-    font-family: Afacad;
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 29.33px;
-    text-align: center;
-}
+/* .contentcard-1:hover {
+    transform: translateY(-7px);
+} */
 
 .selectbtn {
     background: #333333;
@@ -403,6 +374,14 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 24px;
+    width: 70%;
+    margin-top: 1.5rem;
+    border: none;
+    outline: none;
+}
+
+.selectbtn:hover {
+    outline: 1.4px solid #000;
 }
 
 .smart-text {
@@ -415,7 +394,6 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 34px;
-
 }
 
 .smartbtn {
@@ -429,7 +407,7 @@
     left: 86px;
     padding: 9px 50px 9px 50px;
     gap: 10px;
-    border-radius: 4px 0px 0px 0px;
+    border-radius: 4px 4px 4px 4px;
     border: 1px 0px 0px 0px;
     opacity: 0px;
 }
@@ -464,7 +442,7 @@
     left: 86px;
     padding: 9px 50px 9px 50px;
     gap: 10px;
-    border-radius: 4px 0px 0px 0px;
+    border-radius: 4px 4px 4px 4px;
     border: 1px 0px 0px 0px;
     opacity: 0px;
 }
@@ -507,13 +485,11 @@
     border-radius: 4px 0px 0px 0px;
     border: 1px 0px 0px 0px;
     opacity: 0px;
-    /* width: Hug (177px)px;
-    height: Hug (42px)px; */
     top: 3421px;
     left: 799px;
     padding: 9px 50px 9px 50px;
     gap: 10px;
-    border-radius: 4px 0px 0px 0px;
+    border-radius: 4px 4px 4px 4px;
     border: 1px 0px 0px 0px;
     opacity: 0px;
 }
