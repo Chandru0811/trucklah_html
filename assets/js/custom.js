@@ -219,13 +219,11 @@ $(document).ready(function () {
     rules: {
       contact_us_first_name: {
         required: true,
-        minlength: 3,
       },
       contact_us_last_name: {
-        minlength: 3,
+        required: true,
       },
       contact_us_email: {
-        required: true,
         email: true,
       },
       contact_us_phone: {
@@ -241,14 +239,11 @@ $(document).ready(function () {
     messages: {
       contact_us_first_name: {
         required: "Please enter your first name",
-        minlength: "First name must be at least 3 characters long",
       },
       contact_us_last_name: {
         required: "Please enter your last name",
-        minlength: "Last name must be at least 3 characters long",
       },
       contact_us_email: {
-        required: "Please enter your email",
         email: "Please enter a valid email address",
       },
       contact_us_phone: {
@@ -262,9 +257,9 @@ $(document).ready(function () {
       },
     },
 
-     errorPlacement: function (error, element) {
+    errorPlacement: function (error, element) {
       // Insert error after the .error div next to each input
-      error.appendTo(element.closest('.input-group').find('.error'));
+      error.appendTo(element.closest(".input-group").find(".error"));
     },
     errorPlacement: function (error, element) {
       error.insertAfter(element);
