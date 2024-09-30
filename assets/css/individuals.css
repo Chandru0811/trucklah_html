@@ -273,7 +273,7 @@
 
 .landing_banner {
   background: linear-gradient(#25222266, #25222266),
-    url("../images/landing_bg.webp") top center no-repeat;
+    url("../images/individuals.webp") top center no-repeat;
   /* min-height: 75vh; */
   /* / background-attachment: fixed; / */
   background-size: cover;
@@ -512,7 +512,6 @@
   padding: 5px 40px;
 }
 
-/* drop us end */
 @media screen and (max-width: 555px) {
   .drop_us_heading {
     font-family: "Afacad";
@@ -544,6 +543,7 @@
     padding: 20px 0 !important;
   }
 }
+/* drop us end */
 
 .SuccessMagnetSubHeading {
   color: #333;

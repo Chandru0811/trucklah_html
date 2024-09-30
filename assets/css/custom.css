@@ -710,10 +710,10 @@
   margin: 0 2.5px;
 }
 
-.owl-theme .owl-dots .owl-dot.active {
+/* .owl-theme .owl-dots .owl-dot.active {
   border: 1px solid #333 !important;
   border-radius: 100%;
-}
+} */
 
 .owl-theme .owl-dots .owl-dot span {
   margin: 3px !important;
@@ -893,7 +893,10 @@
   box-shadow: none;
 }
 
-.toggler_accordion .accordion-item:first-of-type>.accordion-header .accordion-button {
+.toggler_accordion
+  .accordion-item:first-of-type
+  > .accordion-header
+  .accordion-button {
   background: none;
   box-shadow: none;
 }
@@ -976,7 +979,10 @@ button.accordion-button:not(.collapsed)::after {
   }
 }
 
-.toggler_accordion .accordion-item:first-of-type>.accordion-header .accordion-button {
+.toggler_accordion
+  .accordion-item:first-of-type
+  > .accordion-header
+  .accordion-button {
   padding: 0 15px !important;
 }
 

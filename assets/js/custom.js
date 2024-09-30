@@ -29,48 +29,48 @@ $(document).ready(function () {
     rules: {
       footer_name: {
         required: true,
-        minlength: 3
+        minlength: 3,
       },
       footer_email: {
         required: true,
-        email: true
+        email: true,
       },
       footer_phone: {
         required: true,
         digits: true,
         minlength: 8,
-        maxlength: 10
+        maxlength: 10,
       },
       footer_country: {
-        required: true
+        required: true,
       },
       footer_message: {
         required: true,
-        minlength: 10
-      }
+        minlength: 10,
+      },
     },
     messages: {
       footer_name: {
         required: "Please enter your name",
-        minlength: "Name must be at least 3 characters long"
+        minlength: "Name must be at least 3 characters long",
       },
       footer_email: {
         required: "Please enter your email",
-        email: "Please enter a valid email address"
+        email: "Please enter a valid email address",
       },
       footer_phone: {
         required: "Please enter your phone number",
         digits: "Please enter a valid phone number",
         minlength: "Phone number must be at least 8 digits",
-        maxlength: "Phone number can't exceed 10 digits"
+        maxlength: "Phone number can't exceed 10 digits",
       },
       footer_country: {
-        required: "Please enter your country"
+        required: "Please enter your country",
       },
       footer_message: {
         required: "Please enter your message",
-        minlength: "Message must be at least 10 characters long"
-      }
+        minlength: "Message must be at least 10 characters long",
+      },
     },
     errorPlacement: function (error, element) {
       error.insertAfter(element);
@@ -84,14 +84,15 @@ $(document).ready(function () {
     submitHandler: function (form) {
       var payload = {
         first_name: $("#footer_name").val(),
-        last_name: $("#footer_country").val(),
+        country: $("#footer_country").val(),
         email: $("#footer_email").val(),
-        company_id: 2,
+        company_id: 41,
         company: "ECSCloudInfotech",
         lead_status: "PENDING",
         description_info: $("#footer_message").val(),
         phone: $("#footer_phone").val(),
         country_code: "65",
+        lead_source: "contact us",
       };
       console.log("Payload to be sent:", payload);
 
@@ -116,10 +117,9 @@ $(document).ready(function () {
           $("#contactForm")[0].reset();
         },
       });
-    }
+    },
   });
 });
-
 
 $(document).ready(function () {
   $("#registrationForm").validate({
@@ -175,12 +175,13 @@ $(document).ready(function () {
         first_name: $("#driver_name").val(),
         last_name: $("#lastName").val(),
         email: $("#driver_email").val(),
-        company_id: 2,
+        company_id: 41,
         company: "ECSCloudInfotech",
         lead_status: "PENDING",
         description_info: $("#driver_VehicleType").val(),
         phone: $("#driver_phone").val(),
         country_code: "65",
+        lead_source: "driver partner jobs",
       };
 
       $.ajax({
@@ -220,9 +221,6 @@ $(document).ready(function () {
       contact_us_first_name: {
         required: true,
       },
-      contact_us_last_name: {
-        required: true,
-      },
       contact_us_email: {
         email: true,
       },
@@ -239,9 +237,6 @@ $(document).ready(function () {
     messages: {
       contact_us_first_name: {
         required: "Please enter your first name",
-      },
-      contact_us_last_name: {
-        required: "Please enter your last name",
       },
       contact_us_email: {
         email: "Please enter a valid email address",
@@ -277,10 +272,11 @@ $(document).ready(function () {
         email: $("#contact_us_email").val(),
         description_info: $("#contact_us_message").val(),
         phone: $("#contact_us_phone").val(),
-        company_id: 2,
+        company_id: 41,
         company: "ECSCloudInfotech",
         lead_status: "PENDING",
         country_code: "65",
+        lead_source: "contact us",
       };
 
       $.ajax({

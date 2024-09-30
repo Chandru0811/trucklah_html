@@ -439,6 +439,19 @@
 .landing_inputs:focus {
   box-shadow: none;
 }
+
+.landing_inputs:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #d7fea1 inset;
+  box-shadow: 0 0 0 30px #d7fea1 inset;
+  -webkit-text-fill-color: black;
+}
+
+.landing_inputs:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 30px #d7fea1 inset;
+  box-shadow: 0 0 0 30px #d7fea1 inset;
+  -webkit-text-fill-color: black;
+}
+
 .form_label {
   font-family: "Afacad";
   font-size: 18px;
@@ -737,10 +750,10 @@
   border-radius: 100%;
   margin: 0 2.5px;
 }
-.owl-theme .owl-dots .owl-dot.active {
+/* .owl-theme .owl-dots .owl-dot.active {
   border: 1px solid #333 !important;
   border-radius: 100%;
-}
+} */
 
 .owl-theme .owl-dots .owl-dot span {
   margin: 3px !important;
