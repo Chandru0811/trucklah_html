@@ -321,3 +321,8 @@ document
   .addEventListener("click", function () {
     document.getElementById("pills-contact-tab").click();
   });
+document
+  .getElementById("view-more-chain-supply")
+  .addEventListener("click", function () {
+    document.getElementById("pills-chain-tab").click();
+  });

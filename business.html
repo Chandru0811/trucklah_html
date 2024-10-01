@@ -216,7 +216,13 @@
                     class="card h-100 border-0 d-flex flex-column justify-content-center align-items-center contentcard-1 text-center"
                   >
                     <p class="flex-grow-1">Item Moving</p>
-                    <button class="btn selectbtn">SELECT</button>
+                    <button
+                      class="btn selectbtn"
+                      id="view-more-item-moving"
+                      onclick="document.getElementById('pills-home-tab').scrollIntoView({ behavior: 'smooth', block: 'start' });"
+                    >
+                      SELECT
+                    </button>
                   </div>
                 </div>
 
@@ -225,7 +231,13 @@
                     class="card h-100 border-0 d-flex flex-column justify-content-center align-items-center contentcard-1 text-center"
                   >
                     <p class="flex-grow-1">Office Moving</p>
-                    <button class="btn selectbtn">SELECT</button>
+                    <button
+                      class="btn selectbtn"
+                      id="view-more-office-moving"
+                      onclick="document.getElementById('pills-profile-tab').scrollIntoView({ behavior:'smooth', block:'start' });"
+                    >
+                      SELECT
+                    </button>
                   </div>
                 </div>
 
@@ -234,7 +246,13 @@
                     class="card h-100 border-0 d-flex flex-column justify-content-center align-items-center contentcard-1 text-center"
                   >
                     <p class="flex-grow-1">International</p>
-                    <button class="btn selectbtn">SELECT</button>
+                    <button
+                      class="btn selectbtn"
+                      id="view-more-cross-border"
+                      onclick="document.getElementById('pills-contact-tab').scrollIntoView({ behavior:'smooth', block:'start' });"
+                    >
+                      SELECT
+                    </button>
                   </div>
                 </div>
 
@@ -243,7 +261,13 @@
                     class="card h-100 border-0 d-flex flex-column justify-content-center align-items-center contentcard-1 text-center"
                   >
                     <p class="flex-grow-1">Supply Chain Management</p>
-                    <button class="btn selectbtn">SELECT</button>
+                    <button
+                      class="btn selectbtn"
+                      id="view-more-chain-supply"
+                      onclick="document.getElementById('pills-chain-tab').scrollIntoView({ behavior:'smooth', block:'start' });"
+                    >
+                      SELECT
+                    </button>
                   </div>
                 </div>
               </div>
@@ -265,9 +289,10 @@
                 class="img-fluid"
               />
             </div>
-            <div class="col-lg-6 col-md-6 col-12">
+            <div class="col-lg-6 col-md-6 col-12" id="pills-home-tab">
               <div
                 class="d-flex flex-column justify-content-center align-items-center"
+                aria-labelledby="pills-home-tab"
               >
                 <p class="services_heading py-4">Service we are offering</p>
                 <div class="row m-0">
@@ -324,8 +349,12 @@
             <div class="col-lg-6 col-md-6 col-12 order-2 order-md-1">
               <div
                 class="d-flex flex-column justify-content-center align-items-center pt-5 card_service_section_parent"
+                id="pills-profile-tab"
               >
-                <div class="row m-0 pt-4 card_service_section">
+                <div
+                  class="row m-0 pt-4 card_service_section"
+                  aria-labelledby="pills-profile-tab"
+                >
                   <div
                     class="col-md-6 col-12 pb-4 d-flex flex-column justify-content-center align-items-center service_card1"
                   >
@@ -398,8 +427,12 @@
             <div class="col-lg-6 col-md-6 col-12">
               <div
                 class="d-flex flex-column justify-content-center align-items-center py-5 card_service_section_parent"
+                id="pills-contact-tab"
               >
-                <div class="row m-0 pt-4 card_service_section">
+                <div
+                  class="row m-0 pt-4 card_service_section"
+                  aria-labelledby="pills-contact-tab"
+                >
                   <div
                     class="col-md-6 col-12 pb-4 d-flex flex-column justify-content-center align-items-center service_card1"
                   >
@@ -454,8 +487,12 @@
             <div class="col-lg-6 col-md-6 col-12 order-2 order-md-1">
               <div
                 class="d-flex flex-column justify-content-center align-items-center pt-5 card_service_section_parent"
+                id="pills-chain-tab"
               >
-                <div class="row m-0 pt-4 card_service_section">
+                <div
+                  class="row m-0 pt-4 card_service_section"
+                  aria-labelledby="pills-chain-tab"
+                >
                   <div
                     class="col-md-6 col-12 pb-4 d-flex flex-column justify-content-center align-items-center service_card1"
                   >
