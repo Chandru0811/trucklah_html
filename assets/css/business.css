@@ -83,12 +83,12 @@
   font-family: "Afacad", system-ui;
 }
 
-.header-menu .nav-link {
+.header-menu .active_section {
   position: relative;
   padding-bottom: 5px;
 }
 
-.header-menu .nav-link::after {
+.header-menu .active_section::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -99,7 +99,7 @@
   transition: width 0.3s ease;
 }
 
-.header-menu .nav-link:hover::after {
+.header-menu .active_section:hover::after {
   width: 100%;
 }
 
