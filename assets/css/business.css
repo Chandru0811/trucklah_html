@@ -341,7 +341,7 @@
     margin-top: 2rem;
   }
   .contentcard-1 {
-    padding: 45px 10px;
+    padding: 35px 10px;
     background-color: #d1fe93;
     border-radius: 6px;
     font-size: 20px !important;
@@ -365,7 +365,7 @@
 }
 @media (max-width: 992px) {
   .contentcard-1 {
-    padding: 45px 10px;
+    padding: 35px 10px;
     background-color: #d1fe93;
     border-radius: 6px;
     font-size: 18px !important;
@@ -415,7 +415,7 @@
 }
 
 .contentcard-1 {
-  padding: 45px 10px;
+  padding: 35px 10px;
   background-color: #d1fe93;
   border-radius: 6px;
   font-size: 22px;
@@ -431,6 +431,7 @@
 } */
 
 .selectbtn {
+  border: 1px solid #333 !important;
   background: #333333;
   color: #ffffff;
   font-size: 18px;
@@ -443,7 +444,16 @@
 }
 
 .selectbtn:hover {
-  outline: 1.4px solid #000;
+  border: 1px solid #333 !important;
+  background: #acff3b;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  width: 70%;
+  margin-top: 1.5rem;
+  border: none;
+  outline: none;
 }
 
 /* individual services start */
