@@ -332,7 +332,7 @@
   background-color: #acff3b;
   border-radius: 20px;
   position: relative;
-  top: -7rem;
+  top: -6rem;
 }
 
 @media (max-width: 1200px) {
@@ -445,17 +445,6 @@
 .selectbtn:hover {
   outline: 1.4px solid #000;
 }
-/* business_card_section start */
-.business_card_section {
-  position: relative;
-  top: -9rem;
-}
-@media screen and (max-width: 1200px) {
-  .business_card_section {
-    top: 0 !important;
-  }
-}
-/* business_card_section end */
 
 /* individual services start */
 .individual_services {
