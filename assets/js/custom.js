@@ -82,18 +82,28 @@ $(document).ready(function () {
       $(element).removeClass("is-invalid");
     },
     submitHandler: function (form) {
+      var phoneNumber = $("#footer_phone").val().trim();
+      var countryCode = "65";
+
+      if (phoneNumber.length < 9) {
+        countryCode = "65";
+      } else if (phoneNumber.length >= 9) {
+        countryCode = "91";
+      }
+
       var payload = {
-        first_name: $("#footer_name").val(),
-        country: $("#footer_country").val(),
-        email: $("#footer_email").val(),
+        first_name: $("#footer_name").val().trim(),
+        country: $("#footer_country").val().trim(),
+        email: $("#footer_email").val().trim(),
         company_id: 41,
         company: "Trucklah",
         lead_status: "PENDING",
-        description_info: $("#footer_message").val(),
-        phone: $("#footer_phone").val(),
-        country_code: "65",
+        description_info: $("#footer_message").val().trim(),
+        phone: "+" + countryCode + phoneNumber,
+        country_code: countryCode,
         lead_source: "contact us",
       };
+
       console.log("Payload to be sent:", payload);
 
       $.ajax({
@@ -108,11 +118,9 @@ $(document).ready(function () {
           } else {
             console.error("Unexpected response or missing leadId:", response);
           }
-
-          $("#contactForm")[0].reset();
         },
         error: function (xhr, status, error) {
-          console.error("First API call failed:", error);
+          console.error("API call failed:", xhr.responseText); // Log error details
           $("#errorModal").modal("show");
           $("#contactForm")[0].reset();
         },
