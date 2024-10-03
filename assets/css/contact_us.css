@@ -275,6 +275,20 @@
   color: #333;
 }
 
+@media screen and (max-width: 425px) {
+  .mediaIconBgIcon {
+    padding: 0 !important;
+    font-size: 20px !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .mediaIconBgIcon {
+    padding: 0 !important;
+    font-size: 20px !important;
+    padding: 7px !important;
+  }
+}
+
 .linked_icons {
   margin: 15px 0 !important;
 }
