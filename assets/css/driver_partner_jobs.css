@@ -10,7 +10,13 @@
   background-color: #acff3b;
 }
 .active_menu {
+  position: relative;
+  bottom: 5px;
   border-bottom: 2px solid #000 !important;
+}
+.tab_section {
+  position: relative;
+  top: 4px;
 }
 
 .header .userlogin-button {
@@ -369,12 +375,12 @@
     font-size: 16px !important;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1270px) {
+@media screen and (min-width: 1024px) and (max-width: 1299px) {
   .landing_banner_content {
     font-family: "Afacad", system-ui;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 600;
-    line-height: 49.33px;
+    line-height: 39.33px;
     text-align: start !important;
     display: flex;
     justify-content: start !important;
@@ -391,6 +397,24 @@
     text-align: start;
     color: #ffffff;
     text-align: start;
+  }
+
+  .ways_heading {
+    font-family: "Afacad";
+    font-size: 50px !important;
+    font-weight: 700;
+    line-height: 58.67px !important;
+    text-align: start;
+    color: #333333;
+    margin: 0 !important;
+  }
+  .ways_sub_heading {
+    font-family: "Afacad";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18.67px !important;
+    text-align: start;
+    color: #333333;
   }
   .header_text {
     padding: 0 !important;
@@ -479,7 +503,7 @@
   font-family: "Afacad";
   font-size: 59px;
   font-weight: 700;
-  line-height: 78.67px;
+  line-height: 72.67px;
   text-align: left;
   color: #333333;
 }

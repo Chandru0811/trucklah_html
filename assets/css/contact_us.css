@@ -343,6 +343,18 @@
   border-bottom: 1px solid #a7a7a7;
 }
 
+.autofill_bg:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #ffffff inset !important;
+  box-shadow: 0 0 0 30px #ffffff inset !important;
+  -webkit-text-fill-color: black;
+}
+
+.autofill_bg:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 30px #ffffff inset !important ;
+  box-shadow: 0 0 0 30px #ffffff inset !important;
+  -webkit-text-fill-color: black;
+}
+
 .icon-color {
   color: gray !important;
 }

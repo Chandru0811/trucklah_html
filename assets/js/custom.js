@@ -87,7 +87,7 @@ $(document).ready(function () {
         country: $("#footer_country").val(),
         email: $("#footer_email").val(),
         company_id: 41,
-        company: "ECSCloudInfotech",
+        company: "Trucklah",
         lead_status: "PENDING",
         description_info: $("#footer_message").val(),
         phone: $("#footer_phone").val(),
@@ -171,14 +171,18 @@ $(document).ready(function () {
       $(element).removeClass("is-invalid");
     },
     submitHandler: function (form) {
+      var vehicleType = $("#driver_VehicleType").val();
       var payload = {
         first_name: $("#driver_name").val(),
         last_name: $("#lastName").val(),
         email: $("#driver_email").val(),
         company_id: 41,
-        company: "ECSCloudInfotech",
+        company: "Trucklah",
         lead_status: "PENDING",
-        description_info: $("#driver_VehicleType").val(),
+        description_info:
+          "A driver has shown interest in choosing a " +
+          vehicleType +
+          " for their upcoming journey. Please review the details and proceed with the necessary steps to assist them.",
         phone: $("#driver_phone").val(),
         country_code: "65",
         lead_source: "driver partner jobs",
@@ -273,7 +277,7 @@ $(document).ready(function () {
         description_info: $("#contact_us_message").val(),
         phone: $("#contact_us_phone").val(),
         company_id: 41,
-        company: "ECSCloudInfotech",
+        company: "Trucklah",
         lead_status: "PENDING",
         country_code: "65",
         lead_source: "contact us",
