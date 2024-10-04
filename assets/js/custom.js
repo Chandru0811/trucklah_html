@@ -2,11 +2,15 @@ $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     loop: true,
     margin: 10,
-    nav: false,
-    dots: true,
+    nav: true,
+    dots: false,
     autoplay: false,
     autoplayTimeout: 5000,
     autoplayHoverPause: true,
+    navText: [
+      '<span class="owl-nav-prev">&#10094;</span>',
+      '<span class="owl-nav-next">&#10095;</span>',
+    ],
     responsive: {
       0: {
         items: 1,
@@ -316,25 +320,32 @@ $(document).ready(function () {
   });
 });
 
-document
-  .getElementById("view-more-item-moving")
-  .addEventListener("click", function () {
-    document.getElementById("pills-home-tab").click();
-  });
+$(document).ready(function () {
+  const viewMoreItemMoving = document.getElementById("view-more-item-moving");
+  if (viewMoreItemMoving) {
+    viewMoreItemMoving.addEventListener("click", function () {
+      document.getElementById("pills-home-tab").click();
+    });
+  }
 
-document
-  .getElementById("view-more-house-moving")
-  .addEventListener("click", function () {
-    document.getElementById("pills-profile-tab").click();
-  });
+  const viewMoreHouseMoving = document.getElementById("view-more-house-moving");
+  if (viewMoreHouseMoving) {
+    viewMoreHouseMoving.addEventListener("click", function () {
+      document.getElementById("pills-profile-tab").click();
+    });
+  }
 
-document
-  .getElementById("view-more-cross-border")
-  .addEventListener("click", function () {
-    document.getElementById("pills-contact-tab").click();
-  });
-document
-  .getElementById("view-more-chain-supply")
-  .addEventListener("click", function () {
-    document.getElementById("pills-chain-tab").click();
-  });
+  const viewMoreCrossBorder = document.getElementById("view-more-cross-border");
+  if (viewMoreCrossBorder) {
+    viewMoreCrossBorder.addEventListener("click", function () {
+      document.getElementById("pills-contact-tab").click();
+    });
+  }
+
+  const viewMoreChainSupply = document.getElementById("view-more-chain-supply");
+  if (viewMoreChainSupply) {
+    viewMoreChainSupply.addEventListener("click", function () {
+      document.getElementById("pills-chain-tab").click();
+    });
+  }
+});
