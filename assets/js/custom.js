@@ -2,11 +2,15 @@ $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     loop: true,
     margin: 10,
-    nav: false,
-    dots: true,
+    nav: true,
+    dots: false,
     autoplay: false,
     autoplayTimeout: 5000,
     autoplayHoverPause: true,
+    navText: [
+      '<span class="owl-nav-prev">&#10094;</span>',
+      '<span class="owl-nav-next">&#10095;</span>',
+    ],
     responsive: {
       0: {
         items: 1,
@@ -82,18 +86,28 @@ $(document).ready(function () {
       $(element).removeClass("is-invalid");
     },
     submitHandler: function (form) {
+      var phoneNumber = $("#footer_phone").val().trim();
+      var countryCode = "65";
+
+      if (phoneNumber.length < 9) {
+        countryCode = "65";
+      } else if (phoneNumber.length >= 9) {
+        countryCode = "91";
+      }
+
       var payload = {
-        first_name: $("#footer_name").val(),
-        country: $("#footer_country").val(),
-        email: $("#footer_email").val(),
+        first_name: $("#footer_name").val().trim(),
+        country: $("#footer_country").val().trim(),
+        email: $("#footer_email").val().trim(),
         company_id: 41,
-        company: "ECSCloudInfotech",
+        company: "Trucklah",
         lead_status: "PENDING",
-        description_info: $("#footer_message").val(),
-        phone: $("#footer_phone").val(),
-        country_code: "65",
+        description_info: $("#footer_message").val().trim(),
+        phone: "+" + countryCode + phoneNumber,
+        country_code: countryCode,
         lead_source: "contact us",
       };
+
       console.log("Payload to be sent:", payload);
 
       $.ajax({
@@ -108,11 +122,9 @@ $(document).ready(function () {
           } else {
             console.error("Unexpected response or missing leadId:", response);
           }
-
-          $("#contactForm")[0].reset();
         },
         error: function (xhr, status, error) {
-          console.error("First API call failed:", error);
+          console.error("API call failed:", xhr.responseText); // Log error details
           $("#errorModal").modal("show");
           $("#contactForm")[0].reset();
         },
@@ -171,14 +183,18 @@ $(document).ready(function () {
       $(element).removeClass("is-invalid");
     },
     submitHandler: function (form) {
+      var vehicleType = $("#driver_VehicleType").val();
       var payload = {
         first_name: $("#driver_name").val(),
         last_name: $("#lastName").val(),
         email: $("#driver_email").val(),
         company_id: 41,
-        company: "ECSCloudInfotech",
+        company: "Trucklah",
         lead_status: "PENDING",
-        description_info: $("#driver_VehicleType").val(),
+        description_info:
+          "A driver has shown interest in choosing a " +
+          vehicleType +
+          " for their upcoming journey. Please review the details and proceed with the necessary steps to assist them.",
         phone: $("#driver_phone").val(),
         country_code: "65",
         lead_source: "driver partner jobs",
@@ -273,7 +289,7 @@ $(document).ready(function () {
         description_info: $("#contact_us_message").val(),
         phone: $("#contact_us_phone").val(),
         company_id: 41,
-        company: "ECSCloudInfotech",
+        company: "Trucklah",
         lead_status: "PENDING",
         country_code: "65",
         lead_source: "contact us",
@@ -304,25 +320,32 @@ $(document).ready(function () {
   });
 });
 
-document
-  .getElementById("view-more-item-moving")
-  .addEventListener("click", function () {
-    document.getElementById("pills-home-tab").click();
-  });
+$(document).ready(function () {
+  const viewMoreItemMoving = document.getElementById("view-more-item-moving");
+  if (viewMoreItemMoving) {
+    viewMoreItemMoving.addEventListener("click", function () {
+      document.getElementById("pills-home-tab").click();
+    });
+  }
 
-document
-  .getElementById("view-more-house-moving")
-  .addEventListener("click", function () {
-    document.getElementById("pills-profile-tab").click();
-  });
+  const viewMoreHouseMoving = document.getElementById("view-more-house-moving");
+  if (viewMoreHouseMoving) {
+    viewMoreHouseMoving.addEventListener("click", function () {
+      document.getElementById("pills-profile-tab").click();
+    });
+  }
 
-document
-  .getElementById("view-more-cross-border")
-  .addEventListener("click", function () {
-    document.getElementById("pills-contact-tab").click();
-  });
-document
-  .getElementById("view-more-chain-supply")
-  .addEventListener("click", function () {
-    document.getElementById("pills-chain-tab").click();
-  });
+  const viewMoreCrossBorder = document.getElementById("view-more-cross-border");
+  if (viewMoreCrossBorder) {
+    viewMoreCrossBorder.addEventListener("click", function () {
+      document.getElementById("pills-contact-tab").click();
+    });
+  }
+
+  const viewMoreChainSupply = document.getElementById("view-more-chain-supply");
+  if (viewMoreChainSupply) {
+    viewMoreChainSupply.addEventListener("click", function () {
+      document.getElementById("pills-chain-tab").click();
+    });
+  }
+});

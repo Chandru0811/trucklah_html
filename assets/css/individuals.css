@@ -10,7 +10,13 @@
   background-color: #acff3b;
 }
 .active_menu {
+  position: relative;
+  bottom: 5px;
   border-bottom: 2px solid #000 !important;
+}
+.tab_section {
+  position: relative;
+  top: 4px;
 }
 
 .header .userlogin-button {

@@ -275,6 +275,20 @@
   color: #333;
 }
 
+@media screen and (max-width: 425px) {
+  .mediaIconBgIcon {
+    padding: 0 !important;
+    font-size: 20px !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .mediaIconBgIcon {
+    padding: 0 !important;
+    font-size: 20px !important;
+    padding: 7px !important;
+  }
+}
+
 .linked_icons {
   margin: 15px 0 !important;
 }
@@ -327,6 +341,18 @@
   border: none;
   border-radius: 0px;
   border-bottom: 1px solid #a7a7a7;
+}
+
+.autofill_bg:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #ffffff inset !important;
+  box-shadow: 0 0 0 30px #ffffff inset !important;
+  -webkit-text-fill-color: black;
+}
+
+.autofill_bg:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 30px #ffffff inset !important ;
+  box-shadow: 0 0 0 30px #ffffff inset !important;
+  -webkit-text-fill-color: black;
 }
 
 .icon-color {
