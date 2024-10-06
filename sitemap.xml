@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://trucklah.com/</loc>
+  <lastmod>2024-10-04T17:33:41+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://trucklah.com/auth/</loc>
+  <lastmod>2024-10-03T08:15:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://trucklah.com/business</loc>
+  <lastmod>2024-10-04T17:33:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://trucklah.com/individuals</loc>
+  <lastmod>2024-10-04T17:33:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://trucklah.com/driver_partner_jobs</loc>
+  <lastmod>2024-10-04T17:33:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://trucklah.com/contact_us</loc>
+  <lastmod>2024-10-04T17:33:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://trucklah.com/termsandconditions</loc>
+  <lastmod>2024-10-04T17:37:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://trucklah.com/privacypolicy</loc>
+  <lastmod>2024-10-04T17:36:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+</urlset>
