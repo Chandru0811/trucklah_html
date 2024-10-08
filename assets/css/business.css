@@ -648,3 +648,14 @@
   font-size: 26px !important;
   font-weight: 700 !important;
 }
+
+/* Lazyloader */
+.lazyload {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.lazyloaded {
+  opacity: 1;
+}
+/* Lazyloader */
