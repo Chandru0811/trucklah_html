@@ -429,7 +429,7 @@
   text-align: center;
   color: #000;
 }
-.read_more_btn {
+/* .read_more_btn {
   background: #333333;
   color: #fff;
   border: 1px solid #333;
@@ -442,7 +442,7 @@
   border: 1px solid #333;
   border-radius: 5px;
   padding: 5px 25px;
-}
+} */
 
 @media screen and (max-width: 1200px) {
   .services_heading {
