@@ -299,7 +299,6 @@
 }
 
 .line-divider i {
-  /* border-right: 1px solid; */
   padding: 0 9px;
 }
 
@@ -431,10 +430,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
-
-/* .contentcard-1:hover {
-    transform: translateY(-7px);
-} */
 
 .selectbtn {
   border: 1px solid #333 !important;

@@ -269,7 +269,6 @@
   cursor: pointer;
 }
 .line-divider i {
-  /* border-right: 1px solid; */
   padding: 0 9px;
 }
 
@@ -280,8 +279,6 @@
 .landing_banner {
   background: linear-gradient(#25222266, #25222266),
     url("../images/landing_bg.webp") top center no-repeat;
-  /* min-height: 75vh; */
-  /* / background-attachment: fixed; / */
   background-size: cover;
   -webkit-background-size: cover;
 
@@ -788,10 +785,6 @@
   border-radius: 100%;
   margin: 0 2.5px;
 }
-/* .owl-theme .owl-dots .owl-dot.active {
-  border: 1px solid #333 !important;
-  border-radius: 100%;
-} */
 
 .owl-theme .owl-dots .owl-dot span {
   margin: 3px !important;
