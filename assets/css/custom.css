@@ -302,14 +302,6 @@
   padding-right: 0px !important;
 }
 
-.banner_section {
-  background-image: url("../images/banner_image_1.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 10px 10px 80px;
-  background-position: center;
-}
-
 .banner h1 {
   font-size: 32px;
   font-weight: 500;
