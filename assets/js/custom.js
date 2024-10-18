@@ -1,4 +1,23 @@
 $(document).ready(function () {
+  var hasVisited = sessionStorage.getItem("hasVisited") === "true";
+
+  if (!hasVisited) {
+    $(document).on("mouseleave", function (e) {
+      if (e.clientY < 0 && !sessionStorage.getItem("hasVisited")) {
+        $("#errorModal").modal("hide");
+        $("#successModal").modal("hide");
+        $("#leadMagnetModal").modal("show");
+        sessionStorage.setItem("hasVisited", "true");
+      }
+    });
+  }
+
+  $("#closePopupButton").on("click", function () {
+    $("#leadMagnetModal").modal("hide");
+  });
+});
+
+$(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     loop: true,
     margin: 10,
