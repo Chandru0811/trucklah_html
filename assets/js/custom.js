@@ -45,6 +45,7 @@ $(document).ready(function () {
       },
     },
   });
+  $(".owl-carousel .owl-nav button").removeAttr("role");
 });
 
 $(document).ready(function () {
