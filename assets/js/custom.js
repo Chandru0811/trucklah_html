@@ -17,35 +17,126 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    dots: false,
-    autoplay: false,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
-    navText: [
-      '<span class="owl-nav-prev">&#10094;</span>',
-      '<span class="owl-nav-next">&#10095;</span>',
-    ],
-    responsive: {
-      0: {
-        items: 1,
-      },
-      768: {
-        items: 2,
-      },
-      1000: {
-        items: 3,
-      },
-      1500: {
-        items: 4,
-      },
+// $(document).ready(function () {
+//   $(".owl-carousel").owlCarousel({
+//     loop: true,
+//     margin: 10,
+//     nav: true,
+//     dots: false,
+//     autoplay: false,
+//     autoplayTimeout: 5000,
+//     autoplayHoverPause: true,
+//     navText: [
+//       '<span class="owl-nav-prev">&#10094;</span>',
+//       '<span class="owl-nav-next">&#10095;</span>',
+//     ],
+//     responsive: {
+//       0: {
+//         items: 1,
+//       },
+//       768: {
+//         items: 2,
+//       },
+//       1000: {
+//         items: 3,
+//       },
+//       1500: {
+//         items: 4,
+//       },
+//     },
+//   });
+//   $(".owl-carousel .owl-nav button").removeAttr("role");
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+  new Glider(document.querySelector(".glider"), {
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: "#dots",
+    arrows: {
+      prev: ".glider-prev",
+      next: ".glider-next",
     },
+    draggable: true,
+    loop: true,
+    responsive: [
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          loop: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          loop: true,
+        },
+      },
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          loop: true,
+        },
+      },
+      {
+        breakpoint: 2400,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          loop: true,
+        },
+      },
+    ],
   });
-  $(".owl-carousel .owl-nav button").removeAttr("role");
+});
+
+const slider = document.querySelector(".slider");
+
+const leftArrow = document.querySelector(".left");
+const rightArrow = document.querySelector(".right");
+const indicatorParents = document.querySelector(".slider-controls ul");
+let sectionIndex = 0;
+let numberOfSlide = 10;
+
+document
+  .querySelectorAll(".slider-controls li")
+  .forEach(function (indicator, ind) {
+    indicator.addEventListener("click", function () {
+      sectionIndex = ind;
+      document
+        .querySelector(".slider-controls .selected")
+        .classList.remove("selected");
+      indicator.classList.add("selected");
+      slider.style.transform =
+        "translate(" + (sectionIndex * -100) / numberOfSlide + "%)";
+    });
+  });
+
+rightArrow.addEventListener("click", function () {
+  sectionIndex =
+    sectionIndex < numberOfSlide - 1 ? sectionIndex + 1 : numberOfSlide - 1;
+  document
+    .querySelector(".slider-controls .selected")
+    .classList.remove("selected");
+  indicatorParents.children[sectionIndex].classList.add("selected");
+  slider.style.transform =
+    "translate(" + (sectionIndex * -100) / numberOfSlide + "%)";
+});
+
+leftArrow.addEventListener("click", function () {
+  sectionIndex = sectionIndex > 0 ? sectionIndex - 1 : 0;
+  document
+    .querySelector(".slider-controls .selected")
+    .classList.remove("selected");
+  indicatorParents.children[sectionIndex].classList.add("selected");
+  slider.style.transform =
+    "translate(" + (sectionIndex * -100) / numberOfSlide + "%)";
 });
 
 $(document).ready(function () {
