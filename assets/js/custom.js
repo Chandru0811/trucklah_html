@@ -8,7 +8,7 @@ $(document).ready(function () {
         $("#successModal").modal("hide");
         $("#leadMagnetModal").modal("show");
         sessionStorage.setItem("hasVisited", "true");
-      }
+      } 
     });
   }
 
@@ -118,26 +118,40 @@ document
     });
   });
 
-rightArrow.addEventListener("click", function () {
-  sectionIndex =
-    sectionIndex < numberOfSlide - 1 ? sectionIndex + 1 : numberOfSlide - 1;
-  document
-    .querySelector(".slider-controls .selected")
-    .classList.remove("selected");
-  indicatorParents.children[sectionIndex].classList.add("selected");
-  slider.style.transform =
-    "translate(" + (sectionIndex * -100) / numberOfSlide + "%)";
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   const rightArrow = document.querySelector(".your-right-arrow-selector");
+//   if (rightArrow) {
+//     rightArrow.addEventListener("click", function () {
+//       sectionIndex =
+//         sectionIndex < numberOfSlide - 1 ? sectionIndex + 1 : numberOfSlide - 1;
+//       document
+//         .querySelector(".slider-controls .selected")
+//         .classList.remove("selected");
+//       indicatorParents.children[sectionIndex].classList.add("selected");
+//       slider.style.transform =
+//         "translate(" + (sectionIndex * -100) / numberOfSlide + "%)";
+//     });
+//   } else {
+//     console.error("Right arrow element not found.");
+//   }
+// });
 
-leftArrow.addEventListener("click", function () {
-  sectionIndex = sectionIndex > 0 ? sectionIndex - 1 : 0;
-  document
-    .querySelector(".slider-controls .selected")
-    .classList.remove("selected");
-  indicatorParents.children[sectionIndex].classList.add("selected");
-  slider.style.transform =
-    "translate(" + (sectionIndex * -100) / numberOfSlide + "%)";
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   const leftArrow = document.querySelector(".your-left-arrow-selector");
+//   if (leftArrow) {
+//     leftArrow.addEventListener("click", function () {
+//       sectionIndex = sectionIndex > 0 ? sectionIndex - 1 : 0;
+//       document
+//         .querySelector(".slider-controls .selected")
+//         .classList.remove("selected");
+//       indicatorParents.children[sectionIndex].classList.add("selected");
+//       slider.style.transform =
+//         "translate(" + (sectionIndex * -100) / numberOfSlide + "%)";
+//     });
+//   } else {
+//     console.error("Left arrow element not found.");
+//   }
+// });
 
 $(document).ready(function () {
   $("#contactForm").validate({

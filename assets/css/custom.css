@@ -298,7 +298,7 @@
 /* Banner Start  */
 
 .bg_banner {
-  background-image: url("../../assets/images/index_banner_bg.webp");
+  background-image: url("../images/index_banner_bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 10px 10px 80px;
@@ -611,11 +611,11 @@
   font-size: 22px;
 }
 
-.homeSection-3 {
+/* .homeSection-3 {
   background-image: url("../images/home_bg-design_image.webp");
   background-repeat: no-repeat;
   background-position: left bottom;
-}
+} */
 
 .text-backgroung-image {
   background-image: url("../images/bg_transport_agency_text\ _image.webp");
@@ -1058,4 +1058,8 @@ button.accordion-button:not(.collapsed)::after {
 }
 .item .card .card-body .imageDiv {
   background-color: #fff !important;
+}
+
+.glider{
+  scrollbar-width: none !important;
 }
