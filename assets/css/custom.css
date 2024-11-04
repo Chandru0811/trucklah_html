@@ -719,7 +719,7 @@
   .whyTrucklahBackground .card {
     border: none;
     box-shadow: 2px 4px 4px #ccc;
-    min-height: 460px;
+    min-height: 320px;
     margin: 8px;
   }
 }
@@ -1060,6 +1060,21 @@ button.accordion-button:not(.collapsed)::after {
   background-color: #fff !important;
 }
 
-.glider{
-  scrollbar-width: none !important;
+.carousel-inner {
+  width: 100%;
+}
+.carousel-item {
+  padding: 20px;
+}
+.carousel-item .card {
+  margin: 0 auto;
+}
+.carousel-indicators {
+  position: relative;
+  bottom: 10px;
+  display: flex;
+  justify-content: center !important;
+}
+.carousel-indicators li {
+  background-color: #4a4a4a;
 }
