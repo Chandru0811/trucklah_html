@@ -783,6 +783,11 @@
   }
 }
 
+.arrow_book {
+  padding: 0 5px;
+  width: 25px !important;
+}
+
 /* Card End  */
 
 /* FAQ Start  */

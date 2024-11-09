@@ -780,27 +780,6 @@
   line-height: 34px;
   text-align: left;
 }
-.owl-theme .owl-dots .owl-dot {
-  border: none !important;
-  border-radius: 100%;
-  margin: 0 2.5px;
-}
-
-.owl-theme .owl-dots .owl-dot span {
-  margin: 3px !important;
-  border: none;
-  background-color: #6a6666;
-}
-
-.whyTrucklahBackground .owl-theme .owl-dots .owl-dot.active span {
-  border: 4px solid #333 !important;
-  background: 495057 !important;
-  margin: 3px !important;
-}
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span {
-  background: #333 !important;
-}
 
 .whyTrucklahBackground .imageDiv {
   width: 60px;
@@ -813,9 +792,6 @@
 }
 
 @media screen and (min-width: 1142px) and (max-width: 1292px) {
-  .carousel_cards_slide .owl-stage-outer {
-    margin: 0 0 4rem 0;
-  }
   .whyTrucklahBackground .card {
     border: none;
     box-shadow: 2px 4px 4px #ccc;
@@ -824,9 +800,6 @@
   }
 }
 @media screen and (min-width: 999px) and (max-width: 1142px) {
-  .carousel_cards_slide .owl-stage-outer {
-    margin: 0 0 4rem 0;
-  }
   .whyTrucklahBackground .card {
     border: none;
     box-shadow: 2px 4px 4px #ccc;
@@ -835,9 +808,6 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 882px) {
-  .carousel_cards_slide .owl-stage-outer {
-    margin: 0 0 4rem 0;
-  }
   .whyTrucklahBackground .card {
     border: none;
     box-shadow: 2px 4px 4px #ccc;
@@ -867,6 +837,9 @@
   }
 }
 
+.indicator_why_content {
+  position: relative;
+}
 /* Why Trucklah End  */
 
 /* benefits start  */
