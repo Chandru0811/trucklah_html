@@ -47,7 +47,7 @@
   color: #acff3b;
   font-size: 16px;
   font-family: "Afacad", system-ui;
-  padding: 2px 18px !important;
+  padding: 2px 18px 2px 9px !important;
   margin: 0 25px 0 10px;
 }
 
@@ -56,7 +56,7 @@
   color: #acff3b;
   font-size: 16px;
   font-family: "Afacad", system-ui;
-  padding: 2px 18px !important;
+  padding: 2px 18px 2px 9px !important;
 }
 
 .header-logo {

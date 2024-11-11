@@ -183,10 +183,15 @@
               >
                 <a href="https://trucklah.com/auth">
                   <button
-                    class="btn btn-button login-button userlogin-button-large py-2 px-4 dotted-border d-flex justify-content-center align-items-center ms-3"
+                    class="btn btn-button login-button userlogin-button-large py-2 px-4 dotted-border d-flex justify-content-center align-items-center"
                     type="submit"
                   >
-                    <i class="fa fa-user me-2" style="font-size: 12px"></i>
+                    <img
+                      src="./assets/images/user-regular.svg"
+                      alt="user-regular"
+                      class="img-fluid p-2"
+                      style="font-size: 24px; height: 30px"
+                    />
                     Login
                   </button>
                 </a>
@@ -920,7 +925,52 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
       async
     ></script>
-
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MovingCompany",
+        "name": "Trucklah Pte Ltd",
+        "image": "https://trucklah.com/assets/images/trucklah_og.png",
+        "@id": "https://trucklah.com/",
+        "url": "https://trucklah.com/",
+        "telephone": "+6588941306",
+        "priceRange": "$100",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Alexandra Road",
+          "addressLocality": "Singapore",
+          "postalCode": "159929",
+          "addressCountry": "SG"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 1.2883283,
+          "longitude": 103.805457
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        },
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61566556332448",
+          "https://x.com/TrucklahSG",
+          "https://www.instagram.com/trucklah/",
+          "https://www.youtube.com/@TrucklahOfficial",
+          "https://www.linkedin.com/in/trucklah-sg-ba0030333/",
+          "https://trucklah.com/"
+        ]
+      }
+    </script>
     <script src="./assets/js/custom.js"></script>
   </body>
 </html>
