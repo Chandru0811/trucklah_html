@@ -259,6 +259,7 @@ $(document).ready(function () {
       },
       contact_us_email: {
         email: true,
+        required: true,
       },
       contact_us_phone: {
         required: true,
@@ -276,6 +277,7 @@ $(document).ready(function () {
       },
       contact_us_email: {
         email: "Please enter a valid email address",
+        required: "Please enter your email",
       },
       contact_us_phone: {
         required: "Please enter your phone number",
