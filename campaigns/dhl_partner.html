@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trucklah | DHL Partner</title>
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Files -->
+    <link
+      rel="stylesheet"
+      fetchpriority="high"
+      href="../assets/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      fetchpriority="high"
+      href="../assets/css/dhl_partner.css"
+    />
+  </head>
+  <body>
+    <!-- ====HEADER==== -->
+    <section class="headerSection">
+      <nav id="NavBar" class="navbar mainNav navbar-expand-xl header">
+        <div
+          class="container-fluid d-flex justify-content-between align-items-center"
+        >
+          <a href="/">
+            <img
+              src="../assets/images/header/logo.webp"
+              alt="header-logo"
+              class="img-fluid header-logo text-start"
+              width="160"
+            />
+          </a>
+          <div class="d-flex align-items-center mb-1">
+            <span
+              class="navbar-text d-xl-none align-items-center justify-content-end login-button"
+            >
+              <a
+                href="https://trucklah.com/auth/index"
+                style="text-decoration: none"
+              >
+                <button
+                  class="btn btn-button userlogin-button dotted-border d-flex justify-content-center align-items-center"
+                  type="submit"
+                >
+                  <i class="fa fa-user me-2" style="font-size: 12px"></i>
+                  Login
+                </button>
+              </a>
+            </span>
+            &nbsp;&nbsp;&nbsp;
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarText">
+            <!-- Collapsed View (Small Screens) -->
+            <ul
+              class="navbar-nav mx-auto lg-0 d-xl-none d-flex pt-2"
+              id="default-search"
+            >
+              <li class="nav-item header-menu">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../business"
+                  >Business</a
+                >
+              </li>
+              <li class="nav-item header-menu">
+                <a class="nav-link" href="../individuals">Individuals</a>
+              </li>
+              <li class="nav-item header-menu">
+                <a class="nav-link" href="../driver_partner_jobs">Drivers</a>
+              </li>
+            </ul>
+
+            <!-- Expanded View (Large Screens) -->
+            <div class="ms-auto d-none d-xl-flex align-items-center">
+              <ul class="navbar-nav pe-4 flex-row gap-4">
+                <li class="nav-item header-menu">
+                  <a
+                    class="nav-link active_sections active_menu"
+                    aria-current="page"
+                    href="../business"
+                    ><span class="tab_section">Business</span>
+                  </a>
+                </li>
+                <li class="nav-item header-menu">
+                  <a class="nav-link active_section" href="../individuals"
+                    >Individuals</a
+                  >
+                </li>
+                <li class="nav-item header-menu">
+                  <a
+                    class="nav-link active_section"
+                    href="../driver_partner_jobs"
+                    >Drivers</a
+                  >
+                </li>
+              </ul>
+              <span
+                class="navbar-text d-none d-xl-inline align-items-center justify-content-end login-button"
+              >
+                <a
+                  href="https://trucklah.com/auth"
+                  style="text-decoration: none"
+                >
+                  <button
+                    class="btn btn-button login-button userlogin-button-large py-2 px-4 dotted-border d-flex justify-content-center align-items-center"
+                    type="submit"
+                  >
+                    <img
+                      src="../assets/images/user-regular.svg"
+                      alt="user-regular"
+                      class="img-fluid p-2"
+                      style="font-size: 24px; height: 30px"
+                    />
+                    Login
+                  </button>
+                </a>
+              </span>
+              &nbsp;&nbsp;
+            </div>
+            &nbsp;&nbsp;
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- dhl banner start -->
+    <section class="container-fluid py-4">
+      <div class="row">
+        <div
+          class="col-md-6 col-12 d-flex ps-md-4 align-items-center justify-content-center"
+        >
+          <div>
+            <h1 class="dhl_banner_content">Trucklah - DHL Partner !</h1>
+            <h2 class="dhl_banner_content2 ps-2">
+              You are just one step away from exciting offers!
+            </h2>
+          </div>
+        </div>
+        <div
+          class="col-lg-6 col-md-6 col-12 d-flex align-items-center justify-content-center"
+        >
+          <img
+            src="../assets/images/Hero5.webp"
+            alt="Hero image"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- dhl banner end -->
+
+    <!-- service offering start -->
+    <section class="container-fluid pt-3">
+      <div class="row">
+        <h2 class="d-flex justify-content-center align-items-center pt-4 why_trucklah">
+          Why Trucklah?
+        </h2>
+        <div
+          class="col-lg-6 col-md-6 col-12 d-flex ps-md-0 align-items-center justify-content-center"
+        >
+          <img
+            src="../assets/images/dhl_content.webp"
+            alt="DHL Service"
+            class="img-fluid"
+          />
+        </div>
+        <div
+          class="col-lg-6 col-md-6 col-12 d-flex flex-column ps-md-5 justify-content-center align-items-center"
+        >
+          <div class="">
+            <h3 class="h3_services_heading h3y-4">Proud Partner of DHL:</h3>
+            <p class="services_heading">
+              We offer Air Cargo services to over 220 countries and territories
+              worldwide. Big or small, domestic or international, we have got
+              you covered. Experience hassle-free moves with Trucklah. We have a
+              wide network in Singapore and the rest of the world. We believe we
+              are delivering smiles, one package at a time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid pb-3">
+        <div class="row">
+          <div
+            class="col-lg-6 col-md-6 col-12 ps-md-5 d-flex flex-column justify-content-center align-items-center order-0 order-sm-1"
+          >
+            <div>
+              <h3 class="h3_services_heading">Our Specializations:</h3>
+              <p class="services_heading">
+                Item delivery, house moving, commercial moving, e-commerce
+                logistics, warehouse logistics, and international logistics with
+                air, land, and sea freights. We will also handle insurance
+                coverage, customs clearance, and other paperwork for seamless
+                shipping of your packages. Any size, any weight, any destination.
+                We'll handle it all.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-md-6 col-12 d-flex ps-sm-0 align-items-center justify-content-center order-1 order-sm-0"
+          >
+            <img
+              src="../assets/images/all_shifting.webp"
+              alt="All Shifting"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </section>
+      
+    <section class="container-fluid pb-3">
+      <div class="row">
+        <div
+          class="col-lg-6 col-md-6 col-12 d-flex ps-sm-0 align-items-center justify-content-center order-1 order-md-2 order-sm-first"
+        >
+        <img
+        src="../assets/images/fast_delivery.webp"
+        alt="Fast Delivery"
+        class="img-fluid contentImage1"
+        style="width: 80%"
+      />
+        </div>
+        <div
+          class="col-lg-6 col-md-6 col-12 ps-md-5 d-flex flex-column justify-content-center align-items-center order-1 order-md-1 order-sm-2"
+        >
+          <div>
+            <h3 class="h3_services_heading">Safe, Fast, and Affordable:</h3>
+            <p class="services_heading">
+              Safety is always our priority. We use high-quality packing
+              materials to protect your belongings during transit, and we have
+              expert drivers who make swift moves to facilitate prompt delivery
+              every time. We have transparent pricing with no hidden charges to
+              make your every move budget-friendly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid pb-3">
+      <div class="row">
+        <div
+          class="col-lg-6 col-md-6 col-12 ps-md-5 d-flex flex-column justify-content-center align-items-center order-1 order-md-1 order-sm-2"
+        >
+          <div>
+            <h3 class="h3_services_heading">Door To Door Delivery:</h3>
+            <p class="services_heading">
+              We are committed to delivering your parcels to your doorsteps.
+              Your convenience is our priority. No matter how remote you are, we
+              will connect you to the world. Focus on what matters. We'll handle
+              the logistics with ease. We are one of the most reliable logistics
+              partners in Singapore. Thousands of happy customers have fueled
+              our growth.
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-lg-6 col-md-6 col-12 d-flex ps-sm-0 align-items-center justify-content-center order-1 order-md-2 order-sm-first"
+        >
+          <img
+            src="../assets/images/doortodoor.webp"
+            alt="Door To Door"
+            class="img-fluid contentImage1"
+            style="width: 80%"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid pb-3">
+      <div class="row">
+        <div
+          class="col-lg-6 col-md-6 col-12 d-flex ps-sm-0 align-items-center justify-content-center order-1 order-md-2 order-sm-first"
+        >
+          <img
+            src="../assets/images/live_tracking.webp"
+            alt="Live Tracking"
+            class="img-fluid"
+          />
+        </div>
+        <div
+          class="col-lg-6 col-md-6 col-12 ps-md-5 d-flex flex-column justify-content-center align-items-center order-1 order-md-1 order-sm-2"
+        >
+          <div>
+            <h3 class="h3_services_heading">Live Tracking:</h3>
+            <p class="services_heading">
+              Your peace of mind is guaranteed with Trucklah. We will provide
+              live tracking of your parcel from the origin to the destination.
+              This facility will be available on your mobile phone and you can
+              track your parcel 24 x 7. Real-time tracking can help prevent
+              theft or loss of shipments. Also, live tracking will help to
+              identify the issues and resolve the issues promptly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid py-5 text-center">
+      <div class="container card shadow border-0" style="border-radius: 1rem">
+        <div class="row">
+          <!-- <div class="col-lg-1 col-md-6 col-12"></div> -->
+          <div class="col-lg-8 col-md-6 col-12">
+            <p class="h3_services_heading p-5 mb-0 ">
+              Move Faster, Move Smarter! <br />
+              <br />
+              Make Your Move Right Now
+            </p>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6 col-12 d-flex justify-content-end align-items-center py-3"
+          >
+            <button class="btn contact_us">Contact Us</button>
+          </div>
+          <!-- <div class="col-lg-1 col-md-6 col-12"></div> -->
+        </div>
+      </div>
+    </section>
+    <!-- service offering end -->
+
+    <!-- Footer Start -->
+    <!-- <section class="footer">
+      <div class="connect">
+        <div class="row m-0">
+          <div class="col-md-5 col-12">
+            <div class="d-flex justify-content-center align-items-center px-5">
+              <h3 class="conect_heading display-5 fw-bold pt-5">
+                Let’s talk! <br />
+                Moving Is Now Easy.
+              </h3>
+            </div>
+          </div>
+          <div class="col-md-7 col-12">
+            <form id="contactForm">
+              <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 col-12 input-colum">
+                  <input
+                    type="text"
+                    id="footer_name"
+                    name="footer_name"
+                    placeholder="Name"
+                    class="form-control footer-form"
+                    required
+                  />
+                </div>
+                <div class="col-lg-6 col-12 input-colum">
+                  <input
+                    type="text"
+                    id="footer_email"
+                    name="footer_email"
+                    placeholder="Email ID"
+                    class="form-control footer-form"
+                    required
+                  />
+                </div>
+                <div class="col-lg-6 col-12 input-colum">
+                  <input
+                    type="text"
+                    id="footer_phone"
+                    name="footer_phone"
+                    placeholder="Phone Number"
+                    class="form-control footer-form"
+                    required
+                  />
+                </div>
+                <div class="col-lg-6 col-12 input-colum">
+                  <input
+                    type="text"
+                    id="footer_country"
+                    name="footer_country"
+                    placeholder="Country"
+                    class="form-control footer-form"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <input
+                    type="text"
+                    id="footer_message"
+                    name="footer_message"
+                    placeholder="Message"
+                    class="form-control footer-form"
+                    required
+                  />
+                </div>
+                <div class="col-12 send_btn">
+                  <button type="submit" class="btn footer-btn">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="footer-conent">
+      <div class="container">
+        <div class="row m-0 m-0">
+          <div class="col-md-3 text-start mt-4">
+            <div class="headings">
+              <p class="footer-title">Contact</p>
+              <img
+                src="../assets/images/footer/underline_footer_title.webp"
+                alt="underline_footer_title"
+                class="underline_img img-fluid lazyload"
+              />
+            </div>
+            <div class="footer-links">
+              <div class="links">
+                <a
+                  href="https://www.google.com/maps/place/The+Alexcier/@1.2916847,103.8111868,17z/data=!3m2!4b1!5s0x31da1a2cf1b2be13:0x7b0f9d88a36fdfbb!4m6!3m5!1s0x31da1bb95520771b:0xf2b9dfa378aa9a6e!8m2!3d1.2916793!4d103.8137617!16s%2Fg%2F11gyxjfkjk?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D"
+                  class="text-decoration-none d-flex justify-content-md-start align-items-center"
+                  style="font-size: 16px; color: #acff3b"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-solid fa-location-dot me-2"></i>
+                  <div>
+                    <span
+                      >The Alexcier, <br />
+                      237 Alexandra Road, #04-10,<br />
+                      Singapore-159929.</span
+                    >
+                  </div></a
+                >
+              </div>
+              <div class="links">
+                <a
+                  href="mailto:info@trucklah.com"
+                  class="text-decoration-none"
+                  style="font-size: 16px; color: #acff3b"
+                >
+                  <i class="fa-regular fa-envelope me-2"></i
+                  >info@trucklah.com</a
+                >
+              </div>
+              <div class="links">
+                <a
+                  href="tel:+6588941306"
+                  class="text-decoration-none"
+                  style="font-size: 16px; color: #acff3b"
+                >
+                  <i class="fa-solid fa-phone me-2"></i>
+                  +65 8894 1306</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 text-start mt-4">
+            <div class="headings">
+              <p class="footer-title">Help</p>
+              <img
+                src="../assets/images/footer/underline_footer_title.webp"
+                alt="underline_footer_title"
+                class="underline_img img-fluid lazyload"
+              />
+            </div>
+            <div class="footer-links">
+              <div class="links2">
+                <a
+                  href="https://trucklah.com/auth"
+                  rel="noopener noreferrer"
+                  class="text-decoration-none"
+                  style="font-size: 16px; color: #acff3b"
+                  >Register</a
+                >
+              </div>
+              <div class="links2">
+                <a
+                  href="https://trucklah.com/auth"
+                  rel="noopener noreferrer"
+                  class="text-decoration-none"
+                  style="font-size: 16px; color: #acff3b"
+                  >Login</a
+                >
+              </div>
+              <div class="links2">
+                <a
+                  href="contact_us"
+                  rel="noopener noreferrer"
+                  class="text-decoration-none"
+                  style="font-size: 16px; color: #acff3b"
+                  >Contact Us</a
+                >
+              </div>
+              <div class="links2">
+                <a
+                  href="https://trucklah.com/termsandconditions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-decoration-none"
+                  style="font-size: 16px; color: #acff3b"
+                  >Terms & conditions</a
+                >
+              </div>
+              <div class="links2">
+                <a
+                  href="https://trucklah.com/privacypolicy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-decoration-none"
+                  style="font-size: 16px; color: #acff3b"
+                  >Privacy Policy</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 text-start mt-4">
+            <div class="headings">
+              <p class="footer-title" style="white-space: nowrap">
+                Our Services
+              </p>
+              <img
+                src="../assets/images/footer/underline_footer_title.webp"
+                alt="underline_footer_title"
+                class="underline_img img-fluid lazyload"
+              />
+            </div>
+            <div class="footer-links">
+              <div class="links2">
+                <a
+                  href="./business"
+                  class="text-decoration-none"
+                  style="font-size: 16px; color: #acff3b"
+                >
+                  Business</a
+                >
+              </div>
+              <div class="links2">
+                <a
+                  href="./individuals"
+                  class="text-decoration-none"
+                  style="font-size: 16px; color: #acff3b"
+                >
+                  Individuals</a
+                >
+              </div>
+              <div class="links2">
+                <a
+                  href="./driver_partner_jobs"
+                  class="text-decoration-none"
+                  style="font-size: 16px; color: #acff3b"
+                  >Drivers</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 text-start mt-4 d-flex justify-content-center">
+            <div
+              class="list-unstyled d-flex justify-content-center align-items-center"
+            >
+              <span>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61566556332448"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-decoration-none line-divider"
+                  aria-label="Visit our facebook page"
+                >
+                  <i
+                    class="fa-brands fa-facebook"
+                    style="font-size: 24px; color: #acff3b"
+                  ></i>
+                </a>
+              </span>
+              <span>
+                <a
+                  href="https://x.com/TrucklahSG"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-decoration-none line-divider"
+                  aria-label="Visit our twitter page"
+                >
+                  <i
+                    class="fab fa-x-twitter"
+                    style="font-size: 24px; color: #acff3b"
+                  ></i>
+                </a>
+              </span>
+              <span>
+                <a
+                  href="https://www.instagram.com/trucklah/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-decoration-none line-divider"
+                  aria-label="Visit our instagram page"
+                >
+                  <i
+                    class="fab fa-instagram"
+                    style="font-size: 24px; color: #acff3b"
+                  ></i>
+                </a>
+              </span>
+              <span>
+                <a
+                  href="https://www.linkedin.com/in/trucklah-sg-ba0030333/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-decoration-none line-divider"
+                  aria-label="Visit our linkedin page"
+                >
+                  <i
+                    class="fa-brands fa-linkedin"
+                    style="font-size: 24px; color: #acff3b"
+                  ></i>
+                </a>
+              </span>
+              <span>
+                <a
+                  href="https://www.youtube.com/@TrucklahOfficial"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-decoration-none line-divider"
+                  aria-label="Visit our youtube page"
+                >
+                  <i
+                    class="fab fa-youtube"
+                    style="font-size: 24px; color: #acff3b"
+                  ></i>
+                </a>
+              </span>
+              <span>
+                <a
+                  href="https://www.tiktok.com/@ecsaio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-decoration-none line-divider"
+                  aria-label="Visit our tiktok page"
+                >
+                  <i
+                    class="fa-brands fa-tiktok"
+                    style="font-size: 24px; color: #acff3b"
+                  ></i>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="copyrights">
+        <p class="text-center m-0">
+          2024 © Copyright Trucklah Pte Ltd. All Rights Reserved.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
