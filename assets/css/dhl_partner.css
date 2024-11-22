@@ -168,17 +168,39 @@
   line-height: 26.67px;
 }
 .dhl_banner_subcontent {
-  font-size: 60px;
-  color: #67bb27;
+  font-size: 56px;
+  color: #000000;
 }
 .smiley_div {
-  bottom: 53px;
+  bottom: 52px;
   position: absolute;
-  right: 47px;
+  right: 55px;
   width: 20%;
 }
 .smiley_img {
   width: 65%;
+}
+.h3_services_heading {
+  font-family: "Afacad";
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: left;
+  padding: 1rem 0rem 1rem 1rem;
+}
+.services_heading {
+  font-family: "Afacad";
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.contact-us_heading {
+  font-family: "Afacad";
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: left;
+}
+.arrow_brands{
+  width: 14%;
+  padding-bottom: 3px;
 }
 @media screen and (min-width: 300px) and (max-width: 500px) {
   .dhl_banner .container-fluid {
@@ -191,11 +213,11 @@
     line-height: 49.33px;
     display: flex;
     flex-direction: column;
-    justify-content: start !important;
+    justify-content: center !important;
     gap: 5px;
   }
   .dhl_banner_subcontent {
-    font-size: 27px;
+    font-size: 28px;
   }
   .dhl_banner_content2 {
     font-family: "Afacad", system-ui;
@@ -210,19 +232,35 @@
   .header_text {
     padding: 0 !important;
   }
+  .h3_services_heading {
+    padding: 1rem 0rem 0rem 0.3rem;
+  }
   .services_heading {
-    font-family: "Afacad";
-    font-size: 1rem !important;
-    font-weight: 600;
+    font-size: 16px !important;
   }
   .smiley_div {
-    bottom: 21px;
+    bottom: 9px;
     position: absolute;
-    right: 21px;
-    width: 38%;
+    right: 56px;
+    width: 37%;
   }
   .smiley_img {
     width: 40%;
+  }
+  .br1 {
+    display: none;
+  }
+  .contact-us_heading {
+    /* font-family: "Afacad";
+    font-size: 1.5rem;
+    font-weight: 700; */
+    text-align: center;
+  }
+  .talk_us {
+    width: 57% !important;
+  }
+  .arrow_brands{
+    width: 15%;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 769px) {
@@ -255,14 +293,27 @@
   .header_text {
     padding: 0 !important;
   }
+  .services_heading {
+    font-size: 15px !important;
+    /* font-weight: 400; */
+  }
   .smiley_div {
-    bottom: 111px;
+    bottom: 91px;
     position: absolute;
-    right: 23px;
+    right: 30px;
     width: 38%;
   }
   .smiley_img {
     width: 40%;
+  }
+  .br1 {
+    display: none;
+  }
+  .talk_us {
+    width: 48% !important;
+  }
+  .arrow_brands{
+    width: 16%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -290,12 +341,10 @@
     line-height: 26.67px;
   }
   .br1 {
-    /* display: none; */
+    display: none;
   }
   .services_heading {
-    font-family: "Afacad";
-    font-size: 14px !important;
-    font-weight: 400;
+    font-size: 16px;
   }
   .header_text {
     padding: 0 !important;
@@ -304,9 +353,9 @@
     width: 100% !important  ;
   }
   .smiley_div {
-    bottom: 75px;
+    bottom: 60px;
     position: absolute;
-    right: 26px;
+    right: 40px;
     width: 25%;
   }
   .smiley_img {
@@ -315,13 +364,16 @@
 }
 @media screen and (min-width: 1441px) {
   .smiley_div {
-    bottom: 63px;
+    bottom: 56px;
     position: absolute;
-    right: 51px;
+    right: 65px;
     width: 20%;
   }
   .smiley_img {
     width: 60%;
+  }
+  .services_container{
+    width: 75%;
   }
 }
 /* @media screen and (min-width: 1024px) and (max-width: 1270px) {
@@ -350,18 +402,6 @@
   }
 } */
 
-.services_heading {
-  font-family: "Afacad";
-  font-size: 1.2rem;
-  font-weight: 600;
-  /* text-align: left; */
-}
-.h3_services_heading {
-  font-family: "Afacad";
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-align: left;
-}
 .contact_us {
   background: #acff3b !important;
   color: #333;
@@ -381,6 +421,7 @@
   padding: 10px 40px !important;
   /* margin: 10px auto; */
   font-size: 18px;
+  width: 38%;
 }
 
 .talk_us:hover {
@@ -550,7 +591,6 @@
 
 .footer-title {
   font-weight: bolder;
-  cursor: pointer;
   position: relative;
   top: 2px;
 }
@@ -576,3 +616,14 @@
 }
 
 /* Footer End  */
+
+/* Lazyloader */
+.lazyload {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.lazyloaded {
+  opacity: 1;
+}
+/* Lazyloader */
