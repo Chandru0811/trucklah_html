@@ -58,15 +58,12 @@
   font-size: 16px;
   font-family: "Afacad", system-ui;
   padding: 2px 18px 2px 9px !important;
-  margin: 0 25px 0 10px;
 }
 
 .header .userlogin-button-large:hover {
-  background-color: #333333;
+  background-color: #252525;
   color: #acff3b;
   font-size: 16px;
-  font-family: "Afacad", system-ui;
-  padding: 2px 18px 2px 9px !important;
 }
 
 .header-logo {
@@ -372,6 +369,9 @@
   .smiley_img {
     width: 60%;
   }
+  
+}
+@media screen and (min-width: 1600px) {
   .services_container{
     width: 75%;
   }
