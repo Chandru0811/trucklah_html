@@ -196,9 +196,10 @@
   text-align: left;
 }
 .arrow_brands{
-  width: 14%;
+  width: 14px;
   padding-bottom: 3px;
 }
+
 @media screen and (min-width: 300px) and (max-width: 500px) {
   .dhl_banner .container-fluid {
     padding: 5px !important;
@@ -253,11 +254,11 @@
     font-weight: 700; */
     text-align: center;
   }
-  .talk_us {
+  /* .talk_us {
     width: 57% !important;
-  }
+  } */
   .arrow_brands{
-    width: 15%;
+    width: 12px;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 769px) {
@@ -306,11 +307,11 @@
   .br1 {
     display: none;
   }
-  .talk_us {
+  /* .talk_us {
     width: 48% !important;
-  }
+  } */
   .arrow_brands{
-    width: 16%;
+    width: 12px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -376,31 +377,6 @@
     width: 75%;
   }
 }
-/* @media screen and (min-width: 1024px) and (max-width: 1270px) {
-  .dhl_banner_content {
-    font-family: "Afacad", system-ui;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 49.33px;
-    text-align: start !important;
-    display: flex;
-    justify-content: start !important;
-    text-align: center !important;
-  }
-  .dhl_banner_content2 {
-    font-family: "Afacad", system-ui;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 26.67px;
-    display: flex;
-    justify-content: start !important;
-    text-align: start;
-    text-align: start;
-  }
-  .header_text {
-    padding: 0 !important;
-  }
-} */
 
 .contact_us {
   background: #acff3b !important;
@@ -421,7 +397,8 @@
   padding: 10px 40px !important;
   /* margin: 10px auto; */
   font-size: 18px;
-  width: 38%;
+  /* width: 38%; */
+  white-space: nowrap;
 }
 
 .talk_us:hover {
