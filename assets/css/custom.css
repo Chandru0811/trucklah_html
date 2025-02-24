@@ -279,6 +279,11 @@ button:focus:not(:focus-visible):focus {
   background-color: #95f70d;
   border-radius: 3px;
 }
+.book-btn:active {
+  background-color: #95f70d !important; 
+  border-radius: 3px !important;
+  color: #000 !important;
+}
 .customeNav-link .nav-link,
 .customeNav-link :hover {
   color: #000;
@@ -460,6 +465,15 @@ button:focus:not(:focus-visible):focus {
   border: 2px solid #333;
   font-weight: 700;
   font-size: 22px;
+}
+.bookingNow_btn:active {
+  background-color: #acff3b !important;
+  color: #333 !important;
+  padding: 4px 25px !important;
+  border-radius: 3px !important;
+  border: 2px solid #333 !important;
+  font-weight: 700 !important;
+  font-size: 22px !important;
 }
 .text-backgroung-image {
   background-image: url("../images/bg_transport_agency_text\ _image.webp");
@@ -823,4 +837,19 @@ button.accordion-button:not(.collapsed)::after {
 }
 .carousel-indicators li {
   background-color: #4a4a4a;
+}
+.fs-4 {
+  font-size: calc(1.4rem + 1vw);
+}
+.fs-5 {
+  font-size: calc(1.5rem + 1vw);
+}
+.fs-7 {
+  font-size: calc(0.8rem + 0.8vw);
+}
+.text-color {
+  color: #80dc00;
+}
+.fs-8 {
+  font-size: calc(1.8rem + 1.5vw);
 }
