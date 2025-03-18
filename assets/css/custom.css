@@ -312,11 +312,12 @@ button:focus:not(:focus-visible):focus {
 }
 .delivery-text1 {
   color: #fff;
-  font-weight: 700 !important;
-  font-size: 77px;
+  font-weight: 600;
+  font-size: 64px;
 }
 .form-container {
-  background: #e4ffbfcb;
+  background: #e4ffbfe8;
+  /* opacity: 90%; */
   border-radius: 5px;
   border: 1px solid #ACFF3B;
 }
@@ -324,6 +325,20 @@ button:focus:not(:focus-visible):focus {
   color: #000000;
   font-weight: 600;
   font-size: calc(1rem + 1vw) !important;
+}
+.form-container input::placeholder {
+  color: #DEDEDE; 
+}
+.form-container input {
+  width: 225px;
+  border-radius: 4px; 
+}
+.form-container .input-group {
+  width: 225px;
+  border-radius: 4px; 
+}
+.form-container input:focus::placeholder {
+  color: #DEDEDE; /* Optional: Change color when input is focused */
 }
 .form-1-btn {
 background-color: #7FDD00;
@@ -341,37 +356,12 @@ label.error{
   color: #ff3a3a;
   font-size: 13px;
 }
-#toast-container {
-  top: 50px !important;
-}
-#toast-container > .toast {
-  opacity: 1 !important;  /* Ensure full visibility */
-  filter: none !important; /* Remove unwanted blur */
-  background-color: #333; /* Set a solid background */
-  color: white !important; 
-  font-weight: normal !important;
-  /* font-size: 12px !important; */
-}
-.toast {
-  opacity: 1 !important;
-  filter: none !important;
-}
-#toast-container>.toast-error {
-  background-color: #d9534f !important;
-  font-size: 14px !important;
-}
-#toast-container>.toast-success {
-  background-color: #5cb85c !important;
-  font-size: 14px !important;
-}
-#toast-container>.toast-warning {
-  background-color: #f0ad4e !important;
-}
+
 .input-group-text {
   background: #fff;
   border-right: 0;
+  border-radius: 4px; 
 }
-
 .form-control {
   border-left: 0;
 }
@@ -394,7 +384,6 @@ label.error{
 @media screen and (max-width: 425px) {
   .delivery-text1 {
     color: #fff;
-    font-weight: 700 !important;
     font-size: 40px;
   }
   .banner-heding {
@@ -404,21 +393,17 @@ label.error{
 @media screen and (max-width: 1245px) {
   .delivery-text1 {
     color: #fff;
-    font-weight: 700 !important;
     font-size: 60px;
-  }
-}
+  }}
 @media screen and (max-width: 1000px) {
   .delivery-text1 {
     color: #fff;
-    font-weight: 700 !important;
     font-size: 44px;
   }
 }
 @media screen and (min-width: 1600px) {
   .delivery-text1 {
     color: #fff;
-    font-weight: 700 !important;
     font-size: 100px;
   }
   .custome-tab-body p {
@@ -852,7 +837,7 @@ button.accordion-button:not(.collapsed)::after {
 }
 .successMagnetButton {
   background-color: #95f70d;
-  color: #333;
+  color: #ffffff;
   font-weight: 600;
   position: relative;
 }

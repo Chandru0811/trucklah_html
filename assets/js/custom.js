@@ -37,12 +37,12 @@ $("#contactForm").validate({
     },
     from: {
       required: true,
-      minlength: 10,
+      minlength: 5,
       maxlength:125
     },
     to: {
       required: true,
-      minlength: 10,
+      minlength: 5,
       maxlength:125
     },
   },
@@ -60,14 +60,24 @@ $("#contactForm").validate({
     },
     from: {
       required: "*Please enter your from address",
-      // minlength: "*Message should be at least 10 characters long",
+      minlength: "*Message should be at least 5 characters long",
       maxlength: "Address cannot exceed 125 characters.",
     },
     to: {
       required: "*Please enter your to address",
-      // minlength: "*Message should be at least 10 characters long",
+      minlength: "*Message should be at least 5 characters long",
       maxlength: "Address cannot exceed 125 characters.",
     },
+  },
+  errorPlacement: function (error, element) {
+    if (element.attr("name") === "from" ) {
+      error.appendTo("#from-error-container"); // Place error in custom div
+    }else if ( element.attr("name") === "to"){
+      error.appendTo("#from-error-container-1");
+    }
+    else {
+      error.insertAfter(element);
+    }
   },
   submitHandler: function (form) {
     // Submit data using AJAX

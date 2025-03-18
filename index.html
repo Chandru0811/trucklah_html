@@ -90,7 +90,6 @@
       fetchpriority="high"
       href="./assets/css/custom.css"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <link
@@ -224,12 +223,12 @@
                 <div class="banner-heding text-align-start mb-5">
                   <div class="">
                     <h1>Trucklah - Moving Made Easy in Singapore</h1>
-                    <p class="delivery-text1" style="font-weight: 700px">
+                    <p class="delivery-text1 fw-semibold">
                       Starting from just
                       <span class="delivery-text">88 SGD</span>
                     </p>
 
-                    <h2 style="position: relative; top: -25px" class="dhl_img">
+                    <h2 style="position: relative; top: -16px" class="dhl_img">
                       <style>
                         @media (max-width: 450px) {
                           .dhl_img {
@@ -471,8 +470,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xxl-5 col-xl-3 col-12 pt-xl-5">
-                <div class="form-container px-4 py-3 mt-md-5 mt-4">
+              <div class="col-xxl-5 col-xl-3 col-12 pt-xl-4">
+                <div class="form-container px-4 py-3 mt-md-0 mt-4 ms-md-5 ">
                   <form id="contactForm">
                     <div class="row">
                       <div class="col-12 fs-7 mb-4">Quick Booking</div>
@@ -495,9 +494,9 @@
                         </div>
                       </div>
                       <div class="col-md-6 col-12 mb-3">
-                        <div class="input-group mb-3">
-                          <span class="input-group-text">
-                            <i class="fas fa-map-marker-alt" style="color: #474747;"></i>
+                        <div class="input-group ">
+                          <span class="input-group-text ps-2 pe-1">
+                            <i class="fas fa-map-marker-alt" style="color: #DEDEDE;"></i>
                           </span>
                           <input name="from" id="from"
                             type="text"
@@ -505,11 +504,12 @@
                             placeholder="From"
                           />
                         </div>
+                        <div id="from-error-container" class="error-container mb-3"></div>
                       </div>
                       <div class="col-md-6 col-12 mb-3">
-                        <div class="input-group mb-3">
-                          <span class="input-group-text">
-                            <i class="fas fa-map-marker-alt" style="color: #474747;"></i>
+                        <div class="input-group ">
+                          <span class="input-group-text ps-2 pe-1">
+                            <i class="fas fa-map-marker-alt" style="color: #DEDEDE;"></i>
                           </span>
                           <input name="to" id="to"
                             type="text"
@@ -517,8 +517,9 @@
                             placeholder="To"
                           />
                         </div>
+                        <div id="from-error-container-1" class="error-container mb-3"></div>
                       </div>
-                      <div class="col-12 text-end mt-2"><button type="submit" class="form-1-btn">submit</button></div>
+                      <div class="col-12 text-end mt-2"><button type="submit" class="form-1-btn">Submit</button></div>
                     </div>
                   </form>
                 </div>
@@ -1858,9 +1859,9 @@
               class="fa-solid fa-circle-check my-5"
               style="color: #28a745; font-size: 80px"
             ></i> -->
-            <div class="d-flex justify-content-center align-items-center m-2">
+            <div class="d-flex justify-content-center align-items-center mx-2 mb-2 mt-5">
               <div
-                style="height: 80px; width: 80px"
+                style="height: auto; width: 55px"
                 class="text-center d-flex justify-content-center align-items-center"
               >
                 <img
