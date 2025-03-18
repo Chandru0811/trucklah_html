@@ -1,5 +1,11 @@
 $(document).ready(function () {
   var hasVisited = sessionStorage.getItem("hasVisited") === "true";
+  toastr.options = {
+    closeButton: true,
+    progressBar: true,
+    positionClass: "toast-top-right",
+    timeOut: 10000
+  };
 
   if (!hasVisited) {
     $(document).on("mouseleave", function (e) {
@@ -17,6 +23,88 @@ $(document).ready(function () {
   });
 });
 
+$("#contactForm").validate({
+  rules: {
+    fullName: {
+      required: true,
+      minlength: 3,
+    },
+    phone: {
+      required: true,
+      digits: true,
+      minlength: 10,
+      maxlength: 10,
+    },
+    from: {
+      required: true,
+      minlength: 10,
+      maxlength:125
+    },
+    to: {
+      required: true,
+      minlength: 10,
+      maxlength:125
+    },
+  },
+  messages: {
+    fullName: {
+      required: "*Please enter your full name",
+      minlength: "*Name should be at least 3 characters long",
+      maxlength: "Name cannot exceed 255 characters.",
+    },
+    phone: {
+      required: "*Please enter your phone number",
+      digits: "*Only numbers are allowed",
+      minlength: "Phone number must be at least 8 digits",
+        maxlength: "Phone number can't exceed 10 digits",
+    },
+    from: {
+      required: "*Please enter your from address",
+      // minlength: "*Message should be at least 10 characters long",
+      maxlength: "Address cannot exceed 125 characters.",
+    },
+    to: {
+      required: "*Please enter your to address",
+      // minlength: "*Message should be at least 10 characters long",
+      maxlength: "Address cannot exceed 125 characters.",
+    },
+  },
+  submitHandler: function (form) {
+    // Submit data using AJAX
+    var phoneNumber = $("#phone").val().trim();
+      var countryCode = "65";
+
+      if (phoneNumber.length < 9) {
+        countryCode = "65";
+      } else if (phoneNumber.length >= 9) {
+        countryCode = "91";
+      }
+    let payload = {
+      first_name: $("#fullName").val(),
+      phone: $("#phone").val(),
+      country_code: countryCode,
+      description_info: `From: ${$("#from").val()}, To: ${$("#to").val()}`,
+      company_id: 41,
+      company: "Cloud ECS Infotech",
+      lead_source: "TruckLah",
+      createdBy: $("#fullName").val(),
+    };
+    $.ajax({
+      url: "https://crmlah.com/ecscrm/api/newClient", 
+      type: "POST",
+      contentType: "application/json",
+      data: JSON.stringify(payload),
+      success: function (response) {
+        $("#successModal").modal("show");
+        $("#contactForm")[0].reset();
+      },
+      error: function () {
+        $("#errorModal").modal("show");
+        $("#contactForm")[0].reset();
+      },
+    });
+  },
+});
 // $(document).ready(function () {
 //   $(".owl-carousel").owlCarousel({
 //     loop: true,

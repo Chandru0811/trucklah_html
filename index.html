@@ -90,7 +90,16 @@
       fetchpriority="high"
       href="./assets/css/custom.css"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
@@ -209,43 +218,45 @@
     <section class="banner">
       <div class="container-fluid">
         <div class="bg_banner">
-          <div class="p-5">
+          <div class="p-md-5 px-0 px-md-5">
             <div class="row m-0">
-              <div class="banner-heding text-align-start mb-5">
-                <h1>Trucklah - Moving Made Easy in Singapore</h1>
-                <p class="delivery-text1" style="font-weight: 700px">
-                  AFFORDABLE, SAFE & FAST
-                  <span class="delivery-text">DELIVERY</span>
-                </p>
-
-                <h2 style="position: relative; top: -25px" class="dhl_img">
-                  <style>
-                    @media (max-width: 450px) {
-                      .dhl_img {
-                        top: 0 !important;
-                        font-size: 1.4rem !important;
-                      }
-                    }
-                  </style>
-                  Courier & Delivery Services
-                  <span class="dhl" style="margin: 220px">
-                    <style>
-                      @media (max-width: 992px) {
-                        .dhl {
-                          margin: 0 !important;
-                        }
-                      }
-                    </style>
-                    <!-- <img
-                      src="./assets/images/DHL partner logo.svg"
-                      alt="DHL"
-                      class="img-fluid"
-                      style="width: 70px !important"
-                  /> -->
-                  </span>
-                </h2>
-              </div>
               <div class="col-xxl-7 col-xl-9 col-12">
+                <div class="banner-heding text-align-start mb-5">
+                  <div class="">
+                    <h1>Trucklah - Moving Made Easy in Singapore</h1>
+                    <p class="delivery-text1" style="font-weight: 700px">
+                      Starting from just
+                      <span class="delivery-text">88 SGD</span>
+                    </p>
+
+                    <h2 style="position: relative; top: -25px" class="dhl_img">
+                      <style>
+                        @media (max-width: 450px) {
+                          .dhl_img {
+                            top: 0 !important;
+                            font-size: 1.4rem !important;
+                          }
+                        }
+                      </style>
+                      Big or small, We Handle them all 🚛✨
+                      <span class="dhl" style="margin: 220px">
+                        <style>
+                          @media (max-width: 992px) {
+                            .dhl {
+                              margin: 0 !important;
+                            }
+                          }
+                        </style>
+                        <!-- <img
+                        src="./assets/images/DHL partner logo.svg"
+                        alt="DHL"
+                        class="img-fluid"
+                        style="width: 70px !important"
+                    /> -->
+                      </span>
+                    </h2>
+                  </div>
+                </div>
                 <ul
                   class="nav top_nav_pills nav-pills customeNav-pills justify-content-lg-start"
                   id="pills-tab"
@@ -460,6 +471,58 @@
                   </div>
                 </div>
               </div>
+              <div class="col-xxl-5 col-xl-3 col-12 pt-xl-5">
+                <div class="form-container px-4 py-3 mt-md-5 mt-4">
+                  <form id="contactForm">
+                    <div class="row">
+                      <div class="col-12 fs-7 mb-4">Quick Booking</div>
+                      <div class="col-md-6 col-12 mb-4">
+                        <div class="form-group">
+                          <input name="fullName" id="fullName"
+                            type="text"
+                            class="form-control"
+                            placeholder="Name"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-12 mb-4">
+                        <div class="form-group">
+                          <input name="phone" id="phone"
+                            type="text"
+                            class="form-control"
+                            placeholder="Phone Number"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-12 mb-3">
+                        <div class="input-group mb-3">
+                          <span class="input-group-text">
+                            <i class="fas fa-map-marker-alt" style="color: #474747;"></i>
+                          </span>
+                          <input name="from" id="from"
+                            type="text"
+                            class="form-control"
+                            placeholder="From"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-12 mb-3">
+                        <div class="input-group mb-3">
+                          <span class="input-group-text">
+                            <i class="fas fa-map-marker-alt" style="color: #474747;"></i>
+                          </span>
+                          <input name="to" id="to"
+                            type="text"
+                            class="form-control"
+                            placeholder="To"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 text-end mt-2"><button type="submit" class="form-1-btn">submit</button></div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -469,10 +532,14 @@
     <section class="p-lg-3">
       <div class="container-fluid pt-4">
         <div class="row m-0 p-md-4 text-center justify-content-center">
-          <div class="col-12 pb-4"><p class="fs-4 text-color">Happy Moving in Just 3 Steps</p></div>
+          <div class="col-12 pb-4">
+            <p class="fs-4 text-color">Happy Moving in Just 3 Steps</p>
+          </div>
           <div class="col-md-6 col-lg-4 col-12">
             <p class="fs-8">1</p>
-              <p class="mt-5 mb-4"><i class=" fa-solid fa-calendar-days fa-2xl text-color"></i></p>
+            <p class="mt-5 mb-4">
+              <i class="fa-solid fa-calendar-days fa-2xl text-color"></i>
+            </p>
             <p class="fs-7 mb-4">Book Your Move</p>
             <p class="">
               Select a date and time of your choice for moving. Share with us
@@ -483,17 +550,30 @@
           </div>
           <div class="col-md-6 col-lg-4 col-12 pt-4 pt-md-0">
             <p class="fs-8">2</p>
-            <p class="mt-5 mb-4"><i class=" fa-solid fa-file-signature fa-2xl text-color"></i></p>
+            <p class="mt-5 mb-4">
+              <i class="fa-solid fa-file-signature fa-2xl text-color"></i>
+            </p>
             <p class="fs-7 mb-4">On-Site / Virtual Quote</p>
             <p class="">
-              We give you the best price in the market. To make ensure that we manually / virtually inspect your premises at a date and time of your choice. After inspection, we hand over the best price quote so that you get the best moving experience ever at an affordable rate. 
+              We give you the best price in the market. To make ensure that we
+              manually / virtually inspect your premises at a date and time of
+              your choice. After inspection, we hand over the best price quote
+              so that you get the best moving experience ever at an affordable
+              rate.
             </p>
           </div>
           <div class="col-md-6 col-lg-4 col-12 pt-md-4 pt-lg-0 pt-4">
             <p class="fs-8">3</p>
-            <p class="mt-5 mb-4"><i class="fa-solid fa-truck fa-2xl text-color"></i></p>
+            <p class="mt-5 mb-4">
+              <i class="fa-solid fa-truck fa-2xl text-color"></i>
+            </p>
             <p class="fs-7 mb-4">Enjoy Stress Free Moving</p>
-            <p class="">Now is the fun time! We handle everything for you. Safe and stress-free moving guaranteed. Sit back and relax while we handle the difficult part for you. We make sure that your good are delivered on time at destination without any damage.</p>
+            <p class="">
+              Now is the fun time! We handle everything for you. Safe and
+              stress-free moving guaranteed. Sit back and relax while we handle
+              the difficult part for you. We make sure that your good are
+              delivered on time at destination without any damage.
+            </p>
           </div>
         </div>
       </div>
@@ -1899,6 +1979,7 @@
         ]
       }
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script src="./assets/js/custom.js"></script>
   </body>
 </html>
