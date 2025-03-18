@@ -32,18 +32,18 @@ $("#contactForm").validate({
     phone: {
       required: true,
       digits: true,
-      minlength: 10,
+      minlength: 8,
       maxlength: 10,
     },
     from: {
       required: true,
       minlength: 5,
-      maxlength:125
+      maxlength: 125,
     },
     to: {
       required: true,
       minlength: 5,
-      maxlength:125
+      maxlength: 125,
     },
   },
   messages: {
@@ -56,39 +56,38 @@ $("#contactForm").validate({
       required: "*Please enter your phone number",
       digits: "*Only numbers are allowed",
       minlength: "Phone number must be at least 8 digits",
-        maxlength: "Phone number can't exceed 10 digits",
+      maxlength: "Phone number can't exceed 10 digits",
     },
     from: {
-      required: "*Please enter your from address",
-      minlength: "*Message should be at least 5 characters long",
-      maxlength: "Address cannot exceed 125 characters.",
+      required: "*Please enter your Pick location",
+      minlength: "*Location should be at least 5 characters long",
+      maxlength: "Pick location cannot exceed 125 characters.",
     },
     to: {
-      required: "*Please enter your to address",
-      minlength: "*Message should be at least 5 characters long",
-      maxlength: "Address cannot exceed 125 characters.",
+      required: "*Please enter your Drop location",
+      minlength: "*Location should be at least 5 characters long",
+      maxlength: "Drop location cannot exceed 125 characters.",
     },
   },
   errorPlacement: function (error, element) {
-    if (element.attr("name") === "from" ) {
+    if (element.attr("name") === "from") {
       error.appendTo("#from-error-container"); // Place error in custom div
-    }else if ( element.attr("name") === "to"){
+    } else if (element.attr("name") === "to") {
       error.appendTo("#from-error-container-1");
-    }
-    else {
+    } else {
       error.insertAfter(element);
     }
   },
   submitHandler: function (form) {
     // Submit data using AJAX
     var phoneNumber = $("#phone").val().trim();
-      var countryCode = "65";
+    var countryCode = "65";
 
-      if (phoneNumber.length < 9) {
-        countryCode = "65";
-      } else if (phoneNumber.length >= 9) {
-        countryCode = "91";
-      }
+    if (phoneNumber.length < 9) {
+      countryCode = "65";
+    } else if (phoneNumber.length >= 9) {
+      countryCode = "91";
+    }
     let payload = {
       first_name: $("#fullName").val(),
       phone: $("#phone").val(),
@@ -100,7 +99,7 @@ $("#contactForm").validate({
       createdBy: $("#fullName").val(),
     };
     $.ajax({
-      url: "https://crmlah.com/ecscrm/api/newClient", 
+      url: "https://crmlah.com/ecscrm/api/newClient",
       type: "POST",
       contentType: "application/json",
       data: JSON.stringify(payload),

@@ -330,11 +330,11 @@ button:focus:not(:focus-visible):focus {
   color: #DEDEDE; 
 }
 .form-container input {
-  width: 225px;
+  /* width: 225px; */
   border-radius: 4px; 
 }
 .form-container .input-group {
-  width: 225px;
+  /* width: 225px; */
   border-radius: 4px; 
 }
 .form-container input:focus::placeholder {
