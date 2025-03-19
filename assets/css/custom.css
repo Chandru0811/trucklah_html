@@ -32,6 +32,9 @@ button:focus:not(:focus-visible):focus {
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
 .header .userlogin-button,
 .header .userlogin-button:hover {
   background-color: #333;
@@ -54,9 +57,9 @@ button:focus:not(:focus-visible):focus {
   border-radius: 5px;
   pointer-events: none;
 }
-.header .userlogin-button-large {
+/* .header .userlogin-button-large {
   margin: 0 25px 0 10px;
-}
+} */
 .header-logo {
   display: flex;
   justify-content: start;
@@ -69,7 +72,7 @@ button:focus:not(:focus-visible):focus {
 }
 .banner h1,
 .banner h2 {
-  font-size: 32px;
+  /* font-size: 32px; */
   color: #fff;
 }
 .header-menu a:hover {
@@ -173,7 +176,21 @@ button:focus:not(:focus-visible):focus {
     line-height: 2rem !important;
   }
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 1200px) {
+  .navbar-toggler {
+    padding: 5px 7px !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .banner h1,
+  .banner h2 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .delivery-text1 {
+    font-size: 40px !important;
+  }
   .connect .footer-form {
     background: 0 0 !important;
     border: none;
@@ -246,6 +263,11 @@ button:focus:not(:focus-visible):focus {
   padding: 10px 10px 80px;
   background-position: center;
 }
+@media (max-width: 1199px) {
+  .bg_banner {
+    padding: 10px 10px 25px;
+  }
+}
 .banner .container-fluid {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -280,7 +302,7 @@ button:focus:not(:focus-visible):focus {
   border-radius: 3px;
 }
 .book-btn:active {
-  background-color: #95f70d !important; 
+  background-color: #95f70d !important;
   border-radius: 3px !important;
   color: #000 !important;
 }
@@ -308,6 +330,7 @@ button:focus:not(:focus-visible):focus {
 }
 .delivery-text {
   color: #acff3b !important;
+  display: inline-block;
   /* -webkit-text-stroke: 1px #acff3b; */
 }
 .delivery-text1 {
@@ -315,11 +338,21 @@ button:focus:not(:focus-visible):focus {
   font-weight: 600;
   font-size: 64px;
 }
+@media (min-width: 767px) and (max-width:1999px) { 
+  .d-xxxl-flex {
+    display: flex;
+  }
+}
+@media (min-width: 1600px) {
+  .d-xxxl-flex {
+    display: flex;
+  }
+}
 .form-container {
   background: #e4ffbfe8;
-  /* opacity: 90%; */
   border-radius: 5px;
-  border: 1px solid #ACFF3B;
+  border: 1px solid #acff3b;
+  max-width: 560px;
 }
 .form-container .fs-7 {
   color: #000000;
@@ -327,32 +360,37 @@ button:focus:not(:focus-visible):focus {
   font-size: calc(1rem + 1vw) !important;
 }
 .form-container input::placeholder {
-  color: #DEDEDE; 
+  color: #dedede;
 }
 .form-container input {
-  /* width: 225px; */
-  border-radius: 4px; 
+  max-width: 235px;
+  border-radius: 4px;
+}
+.form-container input:focus {
+  border-color: #dee2e6 !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 .form-container .input-group {
-  /* width: 225px; */
-  border-radius: 4px; 
+  max-width: 235px;
+  border-radius: 4px;
 }
 .form-container input:focus::placeholder {
-  color: #DEDEDE; /* Optional: Change color when input is focused */
+  color: #dedede; /* Optional: Change color when input is focused */
 }
 .form-1-btn {
-background-color: #7FDD00;
-color: #ffffff;
-border: none;
-padding: 7px 40px !important;
-border-radius: 4px;
-font-weight: 500;
-font-size: 18px;
+  background-color: #7fdd00;
+  color: #ffffff;
+  border: none;
+  padding: 7px 40px !important;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 18px;
 }
 .form-1-btn:hover {
   background-color: #7ddd00c7;
 }
-label.error{
+label.error {
   color: #ff3a3a;
   font-size: 13px;
 }
@@ -360,7 +398,7 @@ label.error{
 .input-group-text {
   background: #fff;
   border-right: 0;
-  border-radius: 4px; 
+  border-radius: 4px;
 }
 .form-control {
   border-left: 0;
@@ -394,7 +432,8 @@ label.error{
   .delivery-text1 {
     color: #fff;
     font-size: 60px;
-  }}
+  }
+}
 @media screen and (max-width: 1000px) {
   .delivery-text1 {
     color: #fff;
@@ -409,6 +448,7 @@ label.error{
   .custome-tab-body p {
     font-size: 26px !important;
   }
+
 }
 .homeSection-2 {
   background-color: #acff3b;
@@ -426,8 +466,12 @@ label.error{
   margin: 0 0 0 35px !important;
 }
 @media screen and (max-width: 626px) {
+  .homeSection-2 {
+    margin: 0 !important;
+  }
   .homeSection-2_tab {
     display: block;
+    border-radius: 10px;
     margin: 0 !important;
   }
 }
@@ -451,7 +495,7 @@ label.error{
 .top_nav_pills {
   margin: 0 !important;
 }
-@media screen and (min-width: 522px) and (max-width: 786px) {
+@media screen and (min-width: 522px) and (max-width: 767px) {
   .top_nav_pills {
     margin: 0 !important;
     padding: 0 8.2rem !important;
@@ -462,11 +506,18 @@ label.error{
     margin: 0 0 0 35px !important;
   }
 }
+@media screen and (min-width: 767px) { 
+  .frequently_content {
+    display: flex;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .top_nav_pills {
     position: relative;
     top: 15px;
   }
+
 }
 @media screen and (max-width: 553px) {
   .nav-pills {
@@ -474,7 +525,8 @@ label.error{
     justify-content: center;
   }
 }
-@media screen and (min-width: 524px) and (max-width: 768px) {
+
+@media screen and (min-width: 524px) and (max-width: 767px) {
   .nav-pills {
     display: flex;
     justify-content: center;
@@ -494,10 +546,22 @@ label.error{
 .tab-content {
   padding: 20px 25px;
 }
+@media screen and (min-width: 767px) and (max-width: 1000px) {
+  .bookingNow_btn {
+    padding: 4px 14px !important;
+    font-size: 19px !important;
+  }
+  .homeSection-2_tab {
+    margin: 0 !important;
+  }
+  .homeSection-2 .nav-pills .nav-link {
+    font-size: 19px;
+  }
+}
 .bookingNow_btn {
   background-color: #acff3b;
   color: #333;
-  padding: 4px 25px !important;
+  padding: 4px 25px;
   border-radius: 3px;
   border: 2px solid #333;
   font-weight: 700;
@@ -534,10 +598,15 @@ label.error{
   line-height: 69.33px;
   text-align: left;
 }
+@media (min-width:1600px) {
+  .whyTrucklahBackground .card {
+    min-height: 260px;
+  }
+}
 .whyTrucklahBackground .card {
   border: none;
   box-shadow: 2px 4px 4px #ccc;
-  min-height: 360px;
+  /* min-height: 360px; */
   margin: 8px;
 }
 .whyTrucklahBackground .card-title {
@@ -558,7 +627,7 @@ label.error{
   height: 70px;
   margin-bottom: 15px;
 }
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 767px) {
   .cross-broder-radius,
   .item-moving-radius,
   .package-moving-radius {
@@ -590,46 +659,7 @@ label.error{
     flex-grow: 1;
   }
 }
-@media screen and (min-width: 1142px) and (max-width: 1292px) {
-  .whyTrucklahBackground .card {
-    border: none;
-    box-shadow: 2px 4px 4px #ccc;
-    min-height: 390px;
-    margin: 8px;
-  }
-}
-@media screen and (min-width: 999px) and (max-width: 1142px) {
-  .whyTrucklahBackground .card {
-    border: none;
-    box-shadow: 2px 4px 4px #ccc;
-    min-height: 450px;
-    margin: 8px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 882px) {
-  .whyTrucklahBackground .card {
-    border: none;
-    box-shadow: 2px 4px 4px #ccc;
-    min-height: 420px;
-    margin: 8px;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 472px) {
-  .whyTrucklahBackground .card {
-    border: none;
-    box-shadow: 2px 4px 4px #ccc;
-    min-height: 320px;
-    margin: 8px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .whyTrucklahBackground .card {
-    border: none;
-    box-shadow: 2px 4px 4px #ccc;
-    min-height: 520px;
-    margin: 8px;
-  }
-}
+
 .character_cards {
   background-color: #acff3b !important;
   border-radius: 5px;
@@ -678,8 +708,6 @@ label.error{
 .frequently_content {
   background: url(../images/accortion_bg_img.webp) 0 0 / cover;
   height: auto;
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 .frequently_content h1 {
@@ -718,7 +746,7 @@ label.error{
 [type="reset"]:not(:disabled),
 [type="submit"]:not(:disabled),
 button:not(:disabled) {
-  padding: 10px 15px;
+  padding: 10px unset;
 }
 .conntent_text {
   line-height: 34px;
@@ -768,7 +796,7 @@ button.accordion-button:not(.collapsed)::after {
     background-size: contain;
   }
   .faq_text {
-    font-size: 32px;
+    font-size: 27px;
     font-weight: 700;
     line-height: 36px;
   }
@@ -814,7 +842,7 @@ button.accordion-button:not(.collapsed)::after {
 .store {
   background: #acff3b;
 }
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 767px) {
   .store .col-background {
     background-image: url(../images/store_bg.webp);
     background-repeat: no-repeat;

@@ -28,6 +28,7 @@ $("#contactForm").validate({
     fullName: {
       required: true,
       minlength: 3,
+      maxlength: 256,
     },
     phone: {
       required: true,
