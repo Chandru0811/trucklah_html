@@ -338,7 +338,7 @@ a {
   font-weight: 600;
   font-size: 64px;
 }
-@media (min-width: 767px) and (max-width:1999px) { 
+@media (min-width: 320px) and (max-width:1999px) { 
   .d-xxxl-flex {
     display: flex;
   }
@@ -365,6 +365,17 @@ a {
 .form-container input {
   max-width: 235px;
   border-radius: 4px;
+}
+@media (max-width:767px) {
+  .form-container input {
+    max-width: 100%;
+  }
+  .form-container .input-group {
+    max-width: 100% !important;
+  }
+  .form-container {
+    max-width: 400px;
+  }
 }
 .form-container input:focus {
   border-color: #dee2e6 !important;
@@ -495,15 +506,25 @@ label.error {
 .top_nav_pills {
   margin: 0 !important;
 }
-@media screen and (min-width: 522px) and (max-width: 767px) {
+@media (min-width: 402px) and (max-width: 684px) {
   .top_nav_pills {
     margin: 0 !important;
     padding: 0 8.2rem !important;
   }
 }
-@media screen and (min-width: 786px) {
+@media (min-width: 685px) and (max-width: 767px) {
+  .top_nav_pills {
+    margin: 0px 169px  !important;
+  }
+}
+@media screen and (min-width: 1080px) {
   .top_nav_pills {
     margin: 0 0 0 35px !important;
+  }
+}
+@media (min-width: 809px) and (max-width: 1079px) {
+  .top_nav_pills {
+    justify-content: center !important;
   }
 }
 @media screen and (min-width: 767px) { 
@@ -512,7 +533,7 @@ label.error {
     justify-content: center;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1080px) {
   .top_nav_pills {
     position: relative;
     top: 15px;
